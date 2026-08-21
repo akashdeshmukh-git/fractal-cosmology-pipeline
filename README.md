@@ -1,74 +1,89 @@
-FRACTAL HUBBLE MODEL — ANALYSIS PACKAGE
-=========================================
+# Fractal Hubble Model — Analysis Package
 
-WHAT THIS IS
-------------
-Complete analysis package for the paper:
-"Redshift Evolution of the Fractal Cosmic Web Correction to the Hubble Constant"
+Complete analysis package for the paper:  
+**"Redshift Evolution of the Fractal Cosmic Web Correction to the Hubble Constant"**
 
-This runs three analyses:
-  1. LCDM benchmark — verifies the likelihood implementation against DESI's published results
-  2. Joint MCMC     — fractal model vs DESI DR1 + Pantheon+ with full covariance matrices
-  3. CMB check      — confirms the fractal correction is negligible at z=1100
+---
 
-REQUIREMENTS
-------------
-Python 3.13 
+## 🔬 What This Is
+This package runs three distinct analyses:
+1. **LCDM Benchmark** – Verifies the likelihood implementation against DESI's published results.
+2. **Joint MCMC** – Evaluates the fractal model vs DESI DR1 + Pantheon+ with full covariance matrices.
+3. **CMB Check** – Confirms the fractal correction is negligible at $z=1100$.
 
-Install dependencies (one time only):
-  pip install emcee corner numpy scipy pandas matplotlib
+---
 
-Or just run run_all.py — it installs missing packages automatically.
+## 🛠️ Requirements & Installation
+- **Python 3.13** (or later)
 
-FILES
------
-run_all.py              — runs all three steps in sequence
-step1_lcdm_benchmark.py — LCDM implementation verification
-step2_joint_mcmc.py     — full 3-parameter joint MCMC (~20-40 min)
-step3_cmb_check.py      — CMB consistency check (fast, ~1 min)
-data/                   — all official data files included
+### Install Dependencies (One-time setup):
+```bash
+pip install emcee corner numpy scipy pandas matplotlib
+```
+*Alternatively, running `python run_all.py` will automatically attempt to install missing packages.*
 
-HOW TO RUN
-----------
-Option A — run everything at once:
-  python run_all.py
+---
 
-Option B — run steps individually (recommended):
-  python step1_lcdm_benchmark.py    # ~5 min
-  python step2_joint_mcmc.py        # ~20-40 min
-  python step3_cmb_check.py         # ~1 min
+## 📁 Repository Files
+- `run_all.py` – Runs all three analysis steps sequentially.
+- `step1_lcdm_benchmark.py` – LCDM implementation verification pipeline.
+- `step2_joint_mcmc.py` – Full 3-parameter joint MCMC script.
+- `step3_cmb_check.py` – CMB consistency check pipeline.
+- `/data/` – Local folder structure for official data inputs.
 
-OUTPUTS
--------
-All results saved to results/ folder (created automatically):
-  step1_lcdm_benchmark.json   — benchmark numbers
-  step2_joint_mcmc.json       — full MCMC posteriors
-  step3_cmb_check.json        — CMB check table
-  corner_joint_full.png       — corner plot of all 3 parameters
-  zchar_posterior_full.png    — z_char posterior with theoretical bounds
+---
 
-DATA SOURCES
-------------
-DESI DR1:   github.com/CobayaSampler/bao_data  (official DESI release)
-Pantheon+:  github.com/PantheonPlusSH0ES/DataRelease  (official SH0ES release)
+## 🚀 How To Run
 
-WHAT TO EXPECT
---------------
-Step 1 should recover:
-  H0 ≈ 68.5 ± 0.9  (DESI published: 68.52 ± 0.62)
-  Om ≈ 0.294 ± 0.015  (DESI published: 0.2941 ± 0.0095)
+### Option A: Run everything at once
+```bash
+python run_all.py
+```
 
-Step 2 — three possible outcomes:
-  If z_char lands in [0.3, 0.7]   → consistent with theoretical prediction ✓
-  If z_char lands outside [0.3, 0.7] → discrepancy to investigate
-  If z_char is unconstrained       → more data needed
+### Option B: Run individual steps (Recommended)
+```bash
+python step1_lcdm_benchmark.py   # Runtime: ~5 min
+python step2_joint_mcmc.py       # Runtime: ~20-40 min
+python step3_cmb_check.py         # Runtime: ~1 min
+```
 
-Step 3 should confirm:
-  f(z=1100) < 10^-1500 → correction completely negligible at CMB
+---
 
-NOTES
------
-- The Pantheon+ covariance matrix is 32MB. Loading it takes ~30 seconds.
-- The MCMC progress bar shows estimated time remaining.
-- Run on a laptop plugged in — CPU-intensive for ~30 minutes.
-- If MCMC is too slow, reduce nsteps from 6000 to 3000 in step2_joint_mcmc.py
+## 📊 Outputs
+All execution results save directly to an automatically generated `/results/` folder:
+- `step1_lcdm_benchmark.json` – Benchmark numerical files.
+- `step2_joint_mcmc.json` – Full MCMC posterior constraints.
+- `step3_cmb_check.json` – CMB verification data table.
+- `corner_joint_full.png` – Multi-parameter joint contour corner plot.
+- `zchar_posterior_full.png` – Parameter posterior graph with theoretical bounds.
+
+---
+
+## 🛰️ Data Sources
+- **DESI DR1:** [://github.com](https://://github.com) *(Official DESI release)*
+- **Pantheon+:** [://github.com](https://://github.com) *(Official SH0ES release)*
+
+---
+
+## 📈 What To Expect
+
+### Step 1 Recovery:
+- $H_0 = 68.5 \pm 0.9$ *(DESI published: $68.52 \pm 0.62$)*
+- $\Omega_m = 0.294 \pm 0.015$ *(DESI published: $0.2941 \pm 0.0095$)*
+
+### Step 2 Outcomes:
+- If $z_{\text{char}}$ lands in $[0.3, 0.7]$ $\rightarrow$ Consistent with theoretical prediction ✓
+- If $z_{\text{char}}$ lands outside $[0.3, 0.7]$ $\rightarrow$ Discrepancy to investigate
+- If $z_{\text{char}}$ is unconstrained $\rightarrow$ More data points required
+
+### Step 3 Confirmation:
+- $f(z=1100) < 10^{-1500}$ $\rightarrow$ Correction completely negligible at CMB scales.
+
+---
+
+## 📝 Performance Notes
+- **Memory Overhead:** The Pantheon+ covariance matrix takes roughly 32MB. Loading it into memory takes $\sim 30$ seconds.
+- **Progress Tracking:** The active MCMC progress bar displays real-time estimated remaining time.
+- **Hardware Warning:** Run this on a laptop plugged into wall power; joint MCMC execution is CPU-intensive for $\sim 30$ minutes.
+- **Optimization:** If MCMC routines run too slowly, reduce `nsteps` from `6000` down to `3000` inside `step2_joint_mcmc.py`.
+
