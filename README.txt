@@ -13,7 +13,7 @@ This runs three analyses:
 
 REQUIREMENTS
 ------------
-Python 3.13 (you have this)
+Python 3.13 
 
 Install dependencies (one time only):
   pip install emcee corner numpy scipy pandas matplotlib
