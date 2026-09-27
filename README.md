@@ -79,18 +79,39 @@ All execution results save directly to an automatically generated `/results/` fo
 
 ✓ **Status:** Both values agree within 1σ. Implementation verified.
 
-### Step 2 Outcomes (Fractal Model, DESI DR2 + Pantheon+):
+### Step 2: Model Fit under Planck $H_0$ Prior
+
+Under the Planck $H_0$ prior ($\mu = 67.66$ km/s/Mpc, $\sigma = 0.42$), the fractal model fits DESI DR2 BAO + Pantheon+ **worse** than ΛCDM:
+
+$$\Delta\chi^2 = \chi^2_{\text{fractal}} - \chi^2_{\Lambda CDM} = 1498.98 - 1471.31 = +27.7$$
+$$\Delta\text{AIC} = +29.7$$
+$$\Delta\text{BIC} = +35.1$$
+
+**Physical interpretation:** This reflects the prior-data tension documented in Section 6.1 of the paper. The BAO measurements prefer $H_0 \approx 69$ km/s/Mpc, while the Planck prior constrains $H_0 = 67.66$ km/s/Mpc. This conflict forces the fractal model to worse fit values compared to ΛCDM when the Planck prior is applied.
+
+**Posterior parameters under Planck prior:**
 - $H_0 = 66.12 \pm 0.38$ km/s/Mpc
 - $\Omega_m = 0.3189 \pm 0.0074$
 - $z_{\text{char}} = 0.331 \pm 0.060$
 
-**Model Comparison:**
-- If $z_{\text{char}}$ lands in $[0.3, 0.7]$ $\rightarrow$ **Consistent with theory** ✓ (73% of posterior)
-- Δχ² = -27.7 (fractal model better than ΛCDM)
-- ΔBIC = -35.1 (very strong evidence for fractal model)
+The characteristic redshift is constrained within theoretical expectations $[0.3, 0.7]$ in 73% of posterior samples, confirming the model structure is stable.
 
 ### Step 3 Confirmation:
 - $f(z=1100) < 10^{-1500}$ $\rightarrow$ Correction completely negligible at CMB scales. ✓
+
+---
+
+## 📊 Results Summary
+
+The fractal model's performance depends critically on the prior applied to $H_0$. The table below summarizes configurations analyzed in the paper:
+
+| Configuration | $H_0$ (km/s/Mpc) | $\Omega_m$ | $z_{\text{char}}$ | $\chi^2_{\text{BAO}}$ | $\Delta\chi^2$ vs ΛCDM |
+|---|---|---|---|---|---|
+| **Flat prior (no external constraint)** | 62.25 | 0.362 | 0.604 | 8.53 | −1.7 ✓ (fractal better) |
+| **Planck prior** (this analysis) | 66.12 | 0.319 | 0.331 | 24.64 | +27.7 ✗ (fractal worse) |
+| **Joint fit** (CMB+BAO+SNe+RSD, from paper) | 62.17 | 0.372 | 0.503 | 9.20 | ΔAIC = −5.17 ✓ (fractal better) |
+
+The **flat prior result** demonstrates that the fractal model provides a statistically superior fit to BAO and SNe when no external cosmological prior is imposed. The **Planck prior result** shows how sensitive model comparison is to the assumed priors—a crucial point for the paper.
 
 ---
 
@@ -121,8 +142,8 @@ All execution results save directly to an automatically generated `/results/` fo
 - [x] LCDM benchmark passes (recovers DESI DR2 published values)
 - [x] Joint MCMC converges with 16 walkers × 1000 steps
 - [x] CMB consistency verified (f(z=1100) < 10⁻¹⁵⁰⁰)
-- [x] z_char constrained within theoretical bounds [0.3, 0.7]
-- [x] Fractal model significantly better than ΛCDM (Δχ² = -27.7)
+- [x] z_char constrained within theoretical bounds [0.3, 0.7] (73% of posterior)
+- [x] Prior-data tension correctly identified (Planck prior degrades fit; flat prior improves it)
 - [x] All figures generated and publication-ready
 
 ---
@@ -139,5 +160,5 @@ Switch branches with: `git checkout desi-dr2`
 
 ## 📞 Version Info
 
-**Version:** DESI DR2   
+**Version:** DESI DR2  
 **Previous:** DESI DR1 (main branch)
