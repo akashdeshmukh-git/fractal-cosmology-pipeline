@@ -127,14 +127,6 @@ All execution results save directly to an automatically generated `/results/` fo
 
 ---
 
-## 📖 For Your Paper
-
-**Copy-paste these updated results:**
-
-> "Our LCDM analysis on DESI DR2 recovers H₀ = 69.03 ± 0.50 km/s/Mpc and Ω_m = 0.2976 ± 0.0086, consistent with published DESI DR2 values (H₀ = 68.52 ± 0.62, Ω_m = 0.2941 ± 0.0095). The fractal model fit to DESI DR2 + Pantheon+ yields H₀ = 66.12 ± 0.38 km/s/Mpc, Ω_m = 0.3189 ± 0.0074, and characteristic redshift z_char = 0.331 ± 0.060. The fractal model provides superior fit with Δχ² = -27.7 and ΔBIC = -35.1."
-
----
-
 ## 🎯 Branch Information
 
 This is the **`desi-dr2` branch**. The repository has:
@@ -147,6 +139,5 @@ Switch branches with: `git checkout desi-dr2`
 
 ## 📞 Version Info
 
-**Version:** DESI DR2  
-**Date:** September 27, 2026  
+**Version:** DESI DR2   
 **Previous:** DESI DR1 (main branch)
