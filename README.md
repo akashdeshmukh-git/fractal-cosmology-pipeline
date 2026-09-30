@@ -87,3 +87,14 @@ All execution results save directly to an automatically generated `/results/` fo
 - **Hardware Warning:** Run this on a laptop plugged into wall power; joint MCMC execution is CPU-intensive for $\sim 30$ minutes.
 - **Optimization:** If MCMC routines run too slowly, reduce `nsteps` from `6000` down to `3000` inside `step2_joint_mcmc.py`.
 
+
+---
+
+## Independent Checks (DESI DR2)
+
+The `checks/` directory contains two independent verifications of the DESI DR2 analysis reported in the paper. They are self-contained and do not import or modify the DR1 pipeline above.
+
+- **[`checks/cobaya_reproduction/`](checks/cobaya_reproduction/)** — Reproduction of the main DR2 fits with [Cobaya](https://cobaya.readthedocs.io), using its official DESI DR2 BAO and Pantheon+ likelihoods. All fifteen χ² minima reported in the paper are recovered to within 0.004.
+- **[`checks/rd_robustness/`](checks/rd_robustness/)** — Sensitivity of the results to the treatment of the BAO sound horizon r_d (fixed, free, or derived from ω_m).
+
+Each directory includes its own README describing the method, results, limitations, and instructions for reproduction.
