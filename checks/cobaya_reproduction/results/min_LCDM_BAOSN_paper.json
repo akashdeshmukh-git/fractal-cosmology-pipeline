@@ -1,0 +1,16 @@
+{
+ "name": "LCDM_BAOSN_paper",
+ "minus_logpost": 738.04466,
+ "chi2": 1470.0979,
+ "chi2_parts": {
+  "chi2__bao.desi_dr2.desi_bao_all": 10.990787,
+  "chi2__fractal_cobaya.PantheonPlusPaperCut": 1459.1071
+ },
+ "params": {
+  "H0": 68.649182,
+  "omegam": 0.3044946,
+  "H0_local": 68.649182,
+  "hrdrag": 100.97608,
+  "omegamh2": 0.14349948
+ }
+}

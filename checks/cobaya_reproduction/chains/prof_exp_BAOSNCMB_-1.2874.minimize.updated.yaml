@@ -1,0 +1,124 @@
+theory:
+  fractal_cobaya.FractalBackground:
+    family: A
+    kind: exp
+    shape_fixed: 0.2759861714273258
+    speed: -1
+    stop_at_error: false
+    version: null
+    python_path: /home/claude/cobaya_repro
+    input_params:
+    - H0
+    - omegam
+    output_params:
+    - rdrag
+    - omegamh2
+    - H0_local
+likelihood:
+  bao.desi_dr2.desi_bao_all:
+    path: null
+    measurements_file: bao_data/desi_bao_dr2/desi_gaussian_bao_ALL_GCcomb_mean.txt
+    cov_file: bao_data/desi_bao_dr2/desi_gaussian_bao_ALL_GCcomb_cov.txt
+    rs_fid: 1
+    aliases:
+    - BAO
+    speed: 2000
+    type: BAO
+    rs_rescale: null
+    prob_dist: null
+    invcov_file: null
+    redshift: null
+    observable_1: null
+    observable_2: null
+    observable_3: null
+    grid_file: null
+    stop_at_error: false
+    version: null
+    input_params: []
+    output_params: []
+  fractal_cobaya.PantheonPlusPaperCut:
+    path: /home/claude/cobaya_repro/packages/data/sn_data
+    dataset_file: PantheonPlus/config.dataset
+    dataset_params: null
+    aliases:
+    - PantheonPlus
+    use_abs_mag: false
+    speed: 100
+    type: SN
+    stop_at_error: false
+    version: null
+    python_path: /home/claude/cobaya_repro
+    input_params: []
+    output_params: []
+  fractal_cobaya.CompressedCMB:
+    theta_star: 0.010411
+    r_star: 144.43
+    sig_rstar: 0.26
+    omh2: 0.143
+    sig_omh2: 0.0011
+    type: []
+    speed: -1
+    stop_at_error: false
+    version: null
+    python_path: /home/claude/cobaya_repro
+    input_params: []
+    output_params: []
+params:
+  H0:
+    prior:
+      min: 50
+      max: 90
+    ref:
+      dist: uniform
+      min: 55
+      max: 75
+    proposal: 0.5
+    latex: H_E
+  omegam:
+    prior:
+      min: 0.1
+      max: 0.6
+    ref:
+      dist: uniform
+      min: 0.25
+      max: 0.4
+    proposal: 0.01
+    latex: \Omega_m
+  rdrag:
+    latex: r_d
+    derived: true
+  omegamh2:
+    latex: \omega_m
+    derived: true
+  H0_local:
+    latex: H_{\rm local}
+    derived: true
+  hrdrag:
+    derived: 'lambda H0: H0/100*147.09'
+    latex: h r_d
+  chi2__BAO:
+    latex: \chi^2_\mathrm{BAO}
+    derived: true
+  chi2__SN:
+    latex: \chi^2_\mathrm{SN}
+    derived: true
+sampler:
+  minimize:
+    method: bobyqa
+    ignore_prior: false
+    max_evals: 1e6d
+    best_of: 3
+    confidence_for_unbounded: 0.9999995
+    seed: 1
+    override_scipy: null
+    override_bobyqa:
+      rhoend: 1.0e-09
+    override_iminuit: null
+    covmat: null
+    covmat_params: null
+    version: null
+    supports_periodic_params: false
+    fallback_covmat_scale: 4
+packages_path: /home/claude/cobaya_repro/packages
+output: prof_exp_BAOSNCMB_-1.2874
+version: 3.6.2

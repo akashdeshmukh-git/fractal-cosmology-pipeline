@@ -1,0 +1,2 @@
+#        weight    minuslogpost              H0          omegam               n           rdrag        omegamh2        H0_local          hrdrag       chi2__BAO        chi2__SN   minuslogprior minuslogprior__0            chi2 chi2__bao.desi_dr2.desi_bao_all chi2__sn.pantheonplus
+              1       711.20013       62.773247       0.3419075       1.8722838          147.09      0.13472798       67.927317       92.333169       9.2892451       1402.5345        5.288267         5.288267       1411.8237                       9.2892451             1402.5345

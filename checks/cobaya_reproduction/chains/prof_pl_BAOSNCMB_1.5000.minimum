@@ -1,0 +1,16 @@
+ -log(Like) = 754.7471350860794
+  chi-sq    = 1509.4942701721588
+
+    1  6.074447205e+01   H0                                          H_E
+    2  3.748119718e-01   omegam                                      \Omega_m
+
+
+    3  147.09            rdrag                                       r_d
+    4  1.383015278e-01   omegamh2                                    \omega_m
+    5  6.619213340e+01   H0_local                                    H_{\rm local}
+    6  8.934904394e+01   hrdrag                                      h r_d
+    7  2.362540963e+01   chi2__BAO                                   \chi^2_\mathrm{BAO}
+    8  1.460002635e+03   chi2__SN                                    \chi^2_\mathrm{SN}
+    9  2.362540963e+01   chi2__bao.desi_dr2.desi_bao_all             \chi^2_{\rm bao.desi\ dr2.desi\ bao\ all}
+   10  1.460002635e+03   chi2__fractal_cobaya.PantheonPlusPaperCut   \chi^2_{\rm fractal\ cobaya.PantheonPlusPaperCut}
+   11  1.987476134e+01   chi2__fractal_cobaya.CompressedCMB          \chi^2_{\rm fractal\ cobaya.CompressedCMB}

@@ -1,0 +1,54 @@
+theory:
+  fractal_cobaya.FractalBackground:
+    python_path: /home/claude/cobaya_repro
+    family: A
+    kind: pl
+    shape_fixed: 0.3
+likelihood:
+  bao.desi_dr2.desi_bao_all: null
+  fractal_cobaya.PantheonPlusPaperCut:
+    python_path: /home/claude/cobaya_repro
+    path: /home/claude/cobaya_repro/packages/data/sn_data
+    dataset_file: PantheonPlus/config.dataset
+    use_abs_mag: false
+  fractal_cobaya.CompressedCMB:
+    python_path: /home/claude/cobaya_repro
+params:
+  H0:
+    prior:
+      min: 50
+      max: 90
+    ref:
+      dist: uniform
+      min: 55
+      max: 75
+    proposal: 0.5
+    latex: H_E
+  omegam:
+    prior:
+      min: 0.1
+      max: 0.6
+    ref:
+      dist: uniform
+      min: 0.25
+      max: 0.4
+    proposal: 0.01
+    latex: \Omega_m
+  rdrag:
+    latex: r_d
+  omegamh2:
+    latex: \omega_m
+  H0_local:
+    latex: H_{\rm local}
+  hrdrag:
+    derived: 'lambda H0: H0/100*147.09'
+    latex: h r_d
+sampler:
+  minimize:
+    method: bobyqa
+    best_of: 3
+    seed: 1
+    override_bobyqa:
+      rhoend: 1.0e-09
+packages_path: /home/claude/cobaya_repro/packages
+output: prof_pl_BAOSNCMB_0.3000

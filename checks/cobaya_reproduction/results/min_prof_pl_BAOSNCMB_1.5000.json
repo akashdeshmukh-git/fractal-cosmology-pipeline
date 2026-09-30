@@ -1,0 +1,17 @@
+{
+ "name": "prof_pl_BAOSNCMB_1.5000",
+ "minus_logpost": 754.74714,
+ "chi2": 1503.5028,
+ "chi2_parts": {
+  "chi2__bao.desi_dr2.desi_bao_all": 23.62541,
+  "chi2__fractal_cobaya.PantheonPlusPaperCut": 1460.0026,
+  "chi2__fractal_cobaya.CompressedCMB": 19.874761
+ },
+ "params": {
+  "H0": 60.744472,
+  "omegam": 0.37481197,
+  "H0_local": 66.192133,
+  "hrdrag": 89.349044,
+  "omegamh2": 0.13830153
+ }
+}

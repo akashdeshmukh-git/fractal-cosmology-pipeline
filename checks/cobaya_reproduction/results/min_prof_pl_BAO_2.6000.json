@@ -1,0 +1,15 @@
+{
+ "name": "prof_pl_BAO_2.6000",
+ "minus_logpost": 7.8033353,
+ "chi2": 9.6152061,
+ "chi2_parts": {
+  "chi2__bao.desi_dr2.desi_bao_all": 9.6152061
+ },
+ "params": {
+  "H0": 63.336171,
+  "omegam": 0.34881179,
+  "H0_local": 68.637415,
+  "hrdrag": 93.161174,
+  "omegamh2": 0.13992482
+ }
+}

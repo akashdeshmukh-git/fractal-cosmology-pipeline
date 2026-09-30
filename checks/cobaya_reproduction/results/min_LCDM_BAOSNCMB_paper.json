@@ -1,0 +1,17 @@
+{
+ "name": "LCDM_BAOSNCMB_paper",
+ "minus_logpost": 738.88284,
+ "chi2": 1471.7742,
+ "chi2_parts": {
+  "chi2__bao.desi_dr2.desi_bao_all": 10.829999,
+  "chi2__fractal_cobaya.PantheonPlusPaperCut": 1459.8016,
+  "chi2__fractal_cobaya.CompressedCMB": 1.142658
+ },
+ "params": {
+  "H0": 68.718715,
+  "omegam": 0.3010533,
+  "H0_local": 68.718715,
+  "hrdrag": 101.07836,
+  "omegamh2": 0.14216525
+ }
+}

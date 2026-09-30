@@ -1,0 +1,5 @@
+paper    computed LCDM      chi2=1472.696 H_E=68.47 Om=0.3032 wm=0.1422 rd=147.30 shape=None Hloc=68.47
+paper    computed exp_fix   chi2=1468.064 H_E=62.94 Om=0.3601 wm=0.1426 rd=147.18 shape=0.4420866489832007 Hloc=68.37
+paper    computed pl_fix    chi2=1476.088 H_E=61.58 Om=0.3720 wm=0.1411 rd=147.60 shape=2.262 Hloc=67.06
+paper    computed exp_free  chi2=1465.657 H_E=62.14 Om=0.3685 wm=0.1423 rd=147.28 shape=0.5259269003969217 Hloc=67.62
+paper    computed pl_free   chi2=1471.599 H_E=62.56 Om=0.3625 wm=0.1419 rd=147.39 shape=2.7154769964245644 Hloc=67.99

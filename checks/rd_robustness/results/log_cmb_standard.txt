@@ -1,0 +1,15 @@
+standard fixed            LCDM      chi2=1417.814 H_E=68.73 Om=0.3009 rd=147.09 shape=None Hloc=68.73
+standard fixed            exp_fix   chi2=1414.346 H_E=63.07 Om=0.3585 rd=147.09 shape=0.4420866489832007 Hloc=68.49
+standard fixed            pl_fix    chi2=1417.820 H_E=62.21 Om=0.3643 rd=147.09 shape=2.262 Hloc=67.64
+standard fixed            exp_free  chi2=1411.793 H_E=62.32 Om=0.3661 rd=147.09 shape=0.5350559053665808 Hloc=67.79
+standard fixed            pl_free   chi2=1415.920 H_E=62.76 Om=0.3596 rd=147.09 shape=2.5931567264146542 Hloc=68.17
+standard free             LCDM      chi2=1416.644 H_E=68.14 Om=0.3067 rd=147.93 shape=None Hloc=68.14
+standard free             exp_fix   chi2=1412.768 H_E=62.32 Om=0.3681 rd=148.06 shape=0.4420866489832007 Hloc=67.81
+standard free             pl_fix    chi2=1417.798 H_E=62.30 Om=0.3632 rd=146.97 shape=2.262 Hloc=67.73
+standard free             exp_free  chi2=1411.486 H_E=62.09 Om=0.3696 rd=147.58 shape=0.5151927468347887 Hloc=67.58
+standard free             pl_free   chi2=1415.638 H_E=62.51 Om=0.3631 rd=147.55 shape=2.66508434463176 Hloc=67.95
+standard free_consistent  LCDM      chi2=1416.868 H_E=69.19 Om=0.2987 rd=146.42 shape=None Hloc=69.19
+standard free_consistent  exp_fix   chi2=1414.150 H_E=63.28 Om=0.3571 rd=146.78 shape=0.4420866489832007 Hloc=68.70
+standard free_consistent  pl_fix    chi2=1412.953 H_E=63.26 Om=0.3573 rd=145.57 shape=2.262 Hloc=68.68
+standard free_consistent  exp_free  chi2=1410.897 H_E=62.65 Om=0.3644 rd=146.40 shape=0.5567286455653778 Hloc=68.11
+standard free_consistent  pl_free   chi2=1412.883 H_E=63.31 Om=0.3568 rd=145.69 shape=2.3378015169601403 Hloc=68.72

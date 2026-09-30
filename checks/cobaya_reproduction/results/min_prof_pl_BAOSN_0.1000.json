@@ -1,0 +1,16 @@
+{
+ "name": "prof_pl_BAOSN_0.1000",
+ "minus_logpost": 737.13636,
+ "chi2": 1468.2812,
+ "chi2_parts": {
+  "chi2__bao.desi_dr2.desi_bao_all": 10.316858,
+  "chi2__fractal_cobaya.PantheonPlusPaperCut": 1457.9644
+ },
+ "params": {
+  "H0": 64.747352,
+  "omegam": 0.23573593,
+  "H0_local": 68.456906,
+  "hrdrag": 95.23688,
+  "omegamh2": 0.098825679
+ }
+}

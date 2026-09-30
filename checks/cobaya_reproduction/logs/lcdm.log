@@ -1,0 +1,138 @@
+[output] Output to be read-from/written-into folder 'chains', with prefix 'lcdm_bao'
+[output] Found existing info files with the requested output prefix: 'chains/lcdm_bao'
+[output] Will delete previous products ('force' was requested).
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/10 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/10 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/10 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Run 4/10 will start from random initial point:
+[minimize] {'H0': np.float64(58.01999093864861), 'omegam': np.float64(0.3766534325848949)}
+[minimize] Run 5/10 will start from random initial point:
+[minimize] {'H0': np.float64(64.4402746253114), 'omegam': np.float64(0.3012002521768178)}
+[minimize] Run 6/10 will start from random initial point:
+[minimize] {'H0': np.float64(61.49711781013561), 'omegam': np.float64(0.26550583937426037)}
+[minimize] Run 7/10 will start from random initial point:
+[minimize] {'H0': np.float64(70.36928103800007), 'omegam': np.float64(0.254568508828742)}
+[minimize] Run 8/10 will start from random initial point:
+[minimize] {'H0': np.float64(61.699014310623646), 'omegam': np.float64(0.2834819567118284)}
+[minimize] Run 9/10 will start from random initial point:
+[minimize] {'H0': np.float64(71.00196887305235), 'omegam': np.float64(0.3279749466129508)}
+[minimize] Run 10/10 will start from random initial point:
+[minimize] {'H0': np.float64(67.8410459620596), 'omegam': np.float64(0.29026399123632074)}
+[minimize] Starting run 1/10
+[minimize] Run 1/10 converged.
+[minimize] Starting run 2/10
+[minimize] Run 2/10 converged.
+[minimize] Starting run 3/10
+[minimize] Run 3/10 converged.
+[minimize] Starting run 4/10
+[minimize] Run 4/10 converged.
+[minimize] Starting run 5/10
+[minimize] Run 5/10 converged.
+[minimize] Starting run 6/10
+[minimize] Run 6/10 converged.
+[minimize] Starting run 7/10
+[minimize] Run 7/10 converged.
+[minimize] Starting run 8/10
+[minimize] Run 8/10 converged.
+[minimize] Starting run 9/10
+[minimize] Run 9/10 converged.
+[minimize] Starting run 10/10
+[minimize] Run 10/10 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 8.13743
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO  minuslogprior  minuslogprior__0       chi2  chi2__bao.desi_dr2.desi_bao_all
+0     1.0      8.137425  69.038487  0.297151  147.09  0.141632  69.038487  101.54871  10.283386       2.995732          2.995732  10.283386                        10.283386
+[minimize] Full set of minima:
+{'0': (8.137425147873802, True), '1': (8.13742514787347, True), '2': (8.137425147873854, True), '3': (8.1374251478737, True), '4': (8.137425147873614, True), '5': (8.13742514787363, True), '6': (8.137425147873856, True), '7': (8.137425147873772, True), '8': (8.137425147873696, True), '9': (8.137425147873588, True)}
+MIN {'name': 'lcdm_bao', 'minus_logpost': np.float64(8.1374251), 'chi2': np.float64(10.283386), 'chi2_parts': {'chi2__bao.desi_dr2.desi_bao_all': np.float64(10.283386)}, 'params': {'H0': np.float64(69.038487), 'omegam': np.float64(0.29715136), 'H0_local': np.float64(69.038487), 'hrdrag': np.float64(101.54871), 'omegamh2': np.float64(0.14163163)}}
+[output] Output to be read-from/written-into folder 'chains', with prefix 'lcdm_bao_mcmc'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[mcmc] *WARNING* This run has been SEEDED with seed 3
+[mcmc] Getting initial point... (this may take a few seconds)
+[mcmc] Initial point: H0:67.04788, omegam:0.310981
+[model] Measuring speeds... (this may take a few seconds)
+[model] Setting measured speeds (per sec): {bao.desi_dr2.desi_bao_all: 2300.0, fractal_cobaya.FractalBackground: 350.0}
+[mcmc] Covariance matrix not present. We will start learning the covariance of the proposal earlier: R-1 = 30 (would be 2 if all params loaded).
+[mcmc] Sampling!
+[mcmc] Progress @ 2026-09-28 17:29:02 : 1 steps taken, and 0 accepted.
+[mcmc] Learn + convergence test @ 80 samples accepted.
+[mcmc]  - Acceptance rate: 0.106
+[mcmc]  - Convergence of means: R-1 = 0.118724 after 64 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 160 samples accepted.
+[mcmc]  - Acceptance rate: 0.189
+[mcmc]  - Convergence of means: R-1 = 0.392265 after 128 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 240 samples accepted.
+[mcmc]  - Acceptance rate: 0.241
+[mcmc]  - Convergence of means: R-1 = 0.032750 after 192 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 320 samples accepted.
+[mcmc]  - Acceptance rate: 0.285
+[mcmc]  - Convergence of means: R-1 = 0.132817 after 256 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 400 samples accepted.
+[mcmc]  - Acceptance rate: 0.320
+[mcmc]  - Convergence of means: R-1 = 0.022595 after 320 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 480 samples accepted.
+[mcmc]  - Acceptance rate: 0.311
+[mcmc]  - Convergence of means: R-1 = 0.046696 after 384 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 560 samples accepted.
+[mcmc]  - Acceptance rate: 0.307
+[mcmc]  - Convergence of means: R-1 = 0.048589 after 448 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 640 samples accepted.
+[mcmc]  - Acceptance rate: 0.316
+[mcmc]  - Convergence of means: R-1 = 0.041674 after 512 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 720 samples accepted.
+[mcmc]  - Acceptance rate: 0.312
+[mcmc]  - Convergence of means: R-1 = 0.025307 after 576 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 800 samples accepted.
+[mcmc]  - Acceptance rate: 0.300
+[mcmc]  - Convergence of means: R-1 = 0.008578 after 640 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 880 samples accepted.
+[mcmc]  - Acceptance rate: 0.297
+[mcmc]  - Convergence of means: R-1 = 0.034746 after 704 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 960 samples accepted.
+[mcmc]  - Acceptance rate: 0.292
+[mcmc]  - Convergence of means: R-1 = 0.034383 after 768 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 1040 samples accepted.
+[mcmc]  - Acceptance rate: 0.299
+[mcmc]  - Convergence of means: R-1 = 0.017326 after 832 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 1120 samples accepted.
+[mcmc]  - Acceptance rate: 0.303
+[mcmc]  - Convergence of means: R-1 = 0.030062 after 896 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 1200 samples accepted.
+[mcmc]  - Acceptance rate: 0.300
+[mcmc]  - Convergence of means: R-1 = 0.022653 after 960 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 1280 samples accepted.
+[mcmc]  - Acceptance rate: 0.302
+[mcmc]  - Convergence of means: R-1 = 0.017130 after 1024 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 1360 samples accepted.
+[mcmc]  - Acceptance rate: 0.302
+[mcmc]  - Convergence of means: R-1 = 0.003314 after 1088 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 1440 samples accepted.
+[mcmc]  - Acceptance rate: 0.298
+[mcmc]  - Convergence of means: R-1 = 0.004520 after 1152 accepted steps
+[mcmc]  - Convergence of bounds: R-1 = 0.110918 after 1440 accepted steps
+[mcmc] The run has converged!
+[mcmc] Sampling complete after 1440 accepted steps.
