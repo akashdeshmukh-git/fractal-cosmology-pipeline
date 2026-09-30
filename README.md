@@ -13,6 +13,15 @@ This package runs three distinct analyses:
 
 ---
 
+## ✅ Independent checks (DESI DR2)
+Two independent checks of the paper's DESI DR2 analysis live in `checks/`:
+- [`checks/cobaya_reproduction/`](checks/cobaya_reproduction/) – the main DR2 fits re-run with [Cobaya](https://cobaya.readthedocs.io) and its official DESI DR2 BAO and Pantheon+ likelihoods. All 15 χ² minima of the paper agree to within 0.004. The check also found a half-bin offset in the grid quantiles (z_char = 0.52 → 0.54) and shows how the standard Pantheon+ cut (z > 0.01) changes each Δχ².
+- [`checks/rd_robustness/`](checks/rd_robustness/) – tests whether the result depends on fixing the sound horizon r_d. The preference for the fractal model (Δχ² ≈ −6 to −7 with BAO+SN+CMB) survives with r_d fixed, free, or computed from ω_m.
+
+Each folder has its own README with results, limitations and instructions to rerun.
+
+---
+
 ## 🛠️ Requirements & Installation
 - **Python 3.13** (or later)
 
@@ -30,6 +39,7 @@ pip install emcee corner numpy scipy pandas matplotlib
 - `step2_joint_mcmc.py` – Full 3-parameter joint MCMC script.
 - `step3_cmb_check.py` – CMB consistency check pipeline.
 - `/data/` – Local folder structure for official data inputs.
+- `checks/` – Independent DESI DR2 checks (Cobaya reproduction, sound-horizon robustness).
 
 ---
 
@@ -60,8 +70,8 @@ All execution results save directly to an automatically generated `/results/` fo
 ---
 
 ## 🛰️ Data Sources
-- **DESI DR1:** [://github.com](https://://github.com) *(Official DESI release)*
-- **Pantheon+:** [://github.com](https://://github.com) *(Official SH0ES release)*
+- **DESI DR1/DR2 BAO:** [CobayaSampler/bao_data](https://github.com/CobayaSampler/bao_data) *(official DESI mean vectors and covariances)*
+- **Pantheon+:** [PantheonPlusSH0ES/DataRelease](https://github.com/PantheonPlusSH0ES/DataRelease) *(official release)*
 
 ---
 

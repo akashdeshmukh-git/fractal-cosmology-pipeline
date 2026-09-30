@@ -1,0 +1,2 @@
+#        weight    minuslogpost              H0          omegam           rdrag        omegamh2        H0_local          hrdrag       chi2__BAO        chi2__SN   minuslogprior minuslogprior__0            chi2 chi2__bao.desi_dr2.desi_bao_all chi2__fractal_cobaya.PantheonPlusPaperCut
+              1       778.38766        67.03636      0.32815639          147.09      0.14746933       72.327174       98.603781       17.017079       1533.7668       2.9957323        2.9957323       1550.7839                       17.017079                                 1533.7668

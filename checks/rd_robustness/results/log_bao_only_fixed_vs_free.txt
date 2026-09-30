@@ -1,0 +1,9 @@
+paper    BAO         fixed            LCDM      chi2=10.283 H_E=69.04 Om=0.2972 rd=147.09 hrd=101.55 shape=None Hloc=69.04
+paper    BAO         fixed            exp_fix   chi2=9.577 H_E=62.97 Om=0.3629 rd=147.09 hrd=92.63 shape=0.4420866489832007 Hloc=68.45
+paper    BAO         fixed            pl_fix    chi2=9.289 H_E=63.06 Om=0.3467 rd=147.09 hrd=92.75 shape=2.262 Hloc=68.31
+paper    BAO         fixed            exp_free  chi2=8.300 H_E=62.15 Om=0.3661 rd=147.09 hrd=91.41 shape=0.5849550834261961 Hloc=67.60
+paper    BAO         fixed            pl_free   chi2=9.234 H_E=62.92 Om=0.3443 rd=147.09 hrd=92.55 shape=2.0614453328959397 Hloc=68.12
+paper    BAO         free             LCDM      chi2=10.277 H_E=100.00 Om=0.2973 rd=101.54 hrd=101.54 shape=None Hloc=100.00
+paper    BAO         free             exp_fix   chi2=9.568 H_E=92.62 Om=0.3632 rd=100.00 hrd=92.62 shape=0.4420866489832007 Hloc=100.68
+paper    BAO         free             pl_fix    chi2=9.289 H_E=46.38 Om=0.3464 rd=200.00 hrd=92.77 shape=2.262 Hloc=50.24
+paper    BAO         free             exp_free  chi2=8.296 H_E=45.71 Om=0.3657 rd=200.00 hrd=91.42 shape=0.5861228379839428 Hloc=49.71

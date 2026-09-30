@@ -1,0 +1,15 @@
+paper    fixed            LCDM      chi2=1471.788 H_E=68.72 Om=0.3010 rd=147.09 shape=None Hloc=68.72
+paper    fixed            exp_fix   chi2=1467.891 H_E=63.06 Om=0.3587 rd=147.09 shape=0.4420866489832007 Hloc=68.48
+paper    fixed            pl_fix    chi2=1471.130 H_E=62.20 Om=0.3645 rd=147.09 shape=2.262 Hloc=67.63
+paper    fixed            exp_free  chi2=1464.895 H_E=62.25 Om=0.3669 rd=147.09 shape=0.5423937008781499 Hloc=67.72
+paper    fixed            pl_free   chi2=1469.518 H_E=62.70 Om=0.3602 rd=147.09 shape=2.5621215291074373 Hloc=68.11
+paper    free             LCDM      chi2=1470.512 H_E=68.10 Om=0.3071 rd=147.97 shape=None Hloc=68.10
+paper    free             exp_fix   chi2=1466.188 H_E=62.27 Om=0.3687 rd=148.10 shape=0.4420866489832007 Hloc=67.77
+paper    free             pl_fix    chi2=1471.119 H_E=62.26 Om=0.3638 rd=147.01 shape=2.262 Hloc=67.69
+paper    free             exp_free  chi2=1464.604 H_E=62.02 Om=0.3703 rd=147.57 shape=0.5229962553157177 Hloc=67.52
+paper    free             pl_free   chi2=1469.243 H_E=62.45 Om=0.3637 rd=147.54 shape=2.630939433596634 Hloc=67.89
+paper    free_consistent  LCDM      chi2=1470.881 H_E=69.17 Om=0.2989 rd=146.43 shape=None Hloc=69.17
+paper    free_consistent  exp_fix   chi2=1467.713 H_E=63.26 Om=0.3574 rd=146.80 shape=0.4420866489832007 Hloc=68.68
+paper    free_consistent  pl_fix    chi2=1466.352 H_E=63.24 Om=0.3576 rd=145.58 shape=2.262 Hloc=68.66
+paper    free_consistent  exp_free  chi2=1463.959 H_E=62.59 Om=0.3651 rd=146.38 shape=0.564900984084192 Hloc=68.06
+paper    free_consistent  pl_free   chi2=1466.330 H_E=63.26 Om=0.3573 rd=145.65 shape=2.3034936017386256 Hloc=68.68

@@ -1,0 +1,16 @@
+{
+ "name": "exp_fix_BAOSN_cobaya",
+ "minus_logpost": 709.37695,
+ "chi2": 1412.7624,
+ "chi2_parts": {
+  "chi2__bao.desi_dr2.desi_bao_all": 9.7125718,
+  "chi2__sn.pantheonplus": 1403.0499
+ },
+ "params": {
+  "H0": 62.75055,
+  "omegam": 0.36762966,
+  "H0_local": 68.274641,
+  "hrdrag": 92.299783,
+  "omegamh2": 0.14475901
+ }
+}

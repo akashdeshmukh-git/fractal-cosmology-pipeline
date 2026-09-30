@@ -1,0 +1,2418 @@
+[output] Output to be read-from/written-into folder 'chains', with prefix 'LCDM_BAOSN_cobaya'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/6 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/6 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/6 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Run 4/6 will start from random initial point:
+[minimize] {'H0': np.float64(58.01999093864861), 'omegam': np.float64(0.3766534325848949)}
+[minimize] Run 5/6 will start from random initial point:
+[minimize] {'H0': np.float64(64.4402746253114), 'omegam': np.float64(0.3012002521768178)}
+[minimize] Run 6/6 will start from random initial point:
+[minimize] {'H0': np.float64(61.49711781013561), 'omegam': np.float64(0.26550583937426037)}
+[minimize] Starting run 1/6
+[minimize] Run 1/6 converged.
+[minimize] Starting run 2/6
+[minimize] Run 2/6 converged.
+[minimize] Starting run 3/6
+[minimize] Run 3/6 converged.
+[minimize] Starting run 4/6
+[minimize] Run 4/6 converged.
+[minimize] Starting run 5/6
+[minimize] Run 5/6 converged.
+[minimize] Starting run 6/6
+[minimize] Run 6/6 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 711.087
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local      hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__sn.pantheonplus
+0     1.0    711.086665  68.678599  0.303933  147.09  0.143358  68.678599  101.019352  10.888049  1405.293816       2.995732          2.995732  1416.181865                        10.888049            1405.293816
+[minimize] Full set of minima:
+{'0': (711.0866646021522, True), '1': (711.0866646021495, True), '2': (711.0866646021498, True), '3': (711.086664602149, True), '4': (711.0866646021564, True), '5': (711.0866646021348, True)}
+RES LCDM_BAOSN_cobaya 1416.182 {'H0': np.float64(68.678599), 'omegam': np.float64(0.30393337), 'H0_local': np.float64(68.678599), 'hrdrag': np.float64(101.01935), 'omegamh2': np.float64(0.14335777)}
+[output] Output to be read-from/written-into folder 'chains', with prefix 'LCDM_BAOSNCMB_cobaya'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/6 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/6 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/6 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Run 4/6 will start from random initial point:
+[minimize] {'H0': np.float64(58.01999093864861), 'omegam': np.float64(0.3766534325848949)}
+[minimize] Run 5/6 will start from random initial point:
+[minimize] {'H0': np.float64(64.4402746253114), 'omegam': np.float64(0.3012002521768178)}
+[minimize] Run 6/6 will start from random initial point:
+[minimize] {'H0': np.float64(61.49711781013561), 'omegam': np.float64(0.26550583937426037)}
+[minimize] Starting run 1/6
+[minimize] Run 1/6 converged.
+[minimize] Starting run 2/6
+[minimize] Run 2/6 converged.
+[minimize] Starting run 3/6
+[minimize] Run 3/6 converged.
+[minimize] Starting run 4/6
+[minimize] Run 4/6 converged.
+[minimize] Starting run 5/6
+[minimize] Run 5/6 converged.
+[minimize] Starting run 6/6
+[minimize] Run 6/6 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 711.896
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local      hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__sn.pantheonplus  chi2__fractal_cobaya.CompressedCMB
+0     1.0    711.895915  68.731483  0.300902  147.09  0.142147  68.731483  101.097138  10.785945  1405.858767       2.995732          2.995732  1417.800365                        10.785945            1405.858767                            1.155652
+[minimize] Full set of minima:
+{'0': (711.8959148051116, True), '1': (711.8959148051097, True), '2': (711.8959148051065, True), '3': (711.8959148051099, True), '4': (711.8959148050978, True), '5': (711.8959148050932, True)}
+RES LCDM_BAOSNCMB_cobaya 1417.8 {'H0': np.float64(68.731483), 'omegam': np.float64(0.30090198), 'H0_local': np.float64(68.731483), 'hrdrag': np.float64(101.09714), 'omegamh2': np.float64(0.1421466)}
+[output] Output to be read-from/written-into folder 'chains', with prefix 'exp_fix_BAOSN_cobaya'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/6 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/6 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/6 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Run 4/6 will start from random initial point:
+[minimize] {'H0': np.float64(58.01999093864861), 'omegam': np.float64(0.3766534325848949)}
+[minimize] Run 5/6 will start from random initial point:
+[minimize] {'H0': np.float64(64.4402746253114), 'omegam': np.float64(0.3012002521768178)}
+[minimize] Run 6/6 will start from random initial point:
+[minimize] {'H0': np.float64(61.49711781013561), 'omegam': np.float64(0.26550583937426037)}
+[minimize] Starting run 1/6
+[minimize] Run 1/6 converged.
+[minimize] Starting run 2/6
+[minimize] Run 2/6 converged.
+[minimize] Starting run 3/6
+[minimize] Run 3/6 converged.
+[minimize] Starting run 4/6
+[minimize] Run 4/6 converged.
+[minimize] Starting run 5/6
+[minimize] Run 5/6 converged.
+[minimize] Starting run 6/6
+[minimize] Run 6/6 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 709.377
+[minimize] Parameter values at minimum:
+   weight  minuslogpost        H0   omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0        chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__sn.pantheonplus
+0     1.0    709.376952  62.75055  0.36763  147.09  0.144759  68.274641  92.299783   9.712572  1403.049868       2.995732          2.995732  1412.76244                         9.712572            1403.049868
+[minimize] Full set of minima:
+{'0': (709.3769523884464, True), '1': (709.376952388449, True), '2': (709.3769523884437, True), '3': (709.3769523884539, True), '4': (709.3769523884501, True), '5': (709.3769523884338, True)}
+RES exp_fix_BAOSN_cobaya 1412.762 {'H0': np.float64(62.75055), 'omegam': np.float64(0.36762966), 'H0_local': np.float64(68.274641), 'hrdrag': np.float64(92.299783), 'omegamh2': np.float64(0.14475901)}
+[output] Output to be read-from/written-into folder 'chains', with prefix 'exp_fix_BAOSNCMB_cobaya'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/6 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/6 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/6 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Run 4/6 will start from random initial point:
+[minimize] {'H0': np.float64(58.01999093864861), 'omegam': np.float64(0.3766534325848949)}
+[minimize] Run 5/6 will start from random initial point:
+[minimize] {'H0': np.float64(64.4402746253114), 'omegam': np.float64(0.3012002521768178)}
+[minimize] Run 6/6 will start from random initial point:
+[minimize] {'H0': np.float64(61.49711781013561), 'omegam': np.float64(0.26550583937426037)}
+[minimize] Starting run 1/6
+[minimize] Run 1/6 converged.
+[minimize] Starting run 2/6
+[minimize] Run 2/6 converged.
+[minimize] Starting run 3/6
+[minimize] Run 3/6 converged.
+[minimize] Starting run 4/6
+[minimize] Run 4/6 converged.
+[minimize] Starting run 5/6
+[minimize] Run 5/6 converged.
+[minimize] Starting run 6/6
+[minimize] Run 6/6 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 710.164
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local    hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__sn.pantheonplus  chi2__fractal_cobaya.CompressedCMB
+0     1.0    710.164014  63.071847  0.358519  147.09  0.142621  68.492056  92.77238  10.132738  1403.721387       2.995732          2.995732  1414.336564                        10.132738            1403.721387                            0.482439
+[minimize] Full set of minima:
+{'0': (710.1640144169054, True), '1': (710.1640144169145, True), '2': (710.1640144169113, True), '3': (710.1640144169196, True), '4': (710.1640144169105, True), '5': (710.1640144169211, True)}
+RES exp_fix_BAOSNCMB_cobaya 1414.337 {'H0': np.float64(63.071847), 'omegam': np.float64(0.35851858), 'H0_local': np.float64(68.492056), 'hrdrag': np.float64(92.77238), 'omegamh2': np.float64(0.14262077)}
+[output] Output to be read-from/written-into folder 'chains', with prefix 'pl_fix_BAOSN_cobaya'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/6 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/6 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/6 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Run 4/6 will start from random initial point:
+[minimize] {'H0': np.float64(58.01999093864861), 'omegam': np.float64(0.3766534325848949)}
+[minimize] Run 5/6 will start from random initial point:
+[minimize] {'H0': np.float64(64.4402746253114), 'omegam': np.float64(0.3012002521768178)}
+[minimize] Run 6/6 will start from random initial point:
+[minimize] {'H0': np.float64(61.49711781013561), 'omegam': np.float64(0.26550583937426037)}
+[minimize] Starting run 1/6
+[minimize] Run 1/6 converged.
+[minimize] Starting run 2/6
+[minimize] Run 2/6 converged.
+[minimize] Starting run 3/6
+[minimize] Run 3/6 converged.
+[minimize] Starting run 4/6
+[minimize] Run 4/6 converged.
+[minimize] Starting run 5/6
+[minimize] Run 5/6 converged.
+[minimize] Starting run 6/6
+[minimize] Run 6/6 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 709.151
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__sn.pantheonplus
+0     1.0    709.151164  62.876063  0.350399  147.09  0.138527  68.161818  92.484401    9.38381  1402.927053       2.995732          2.995732  1412.310864                          9.38381            1402.927053
+[minimize] Full set of minima:
+{'0': (709.151164074025, True), '1': (709.1511640740254, True), '2': (709.1511640740291, True), '3': (709.1511640740396, True), '4': (709.1511640740325, True), '5': (709.1511640740349, True)}
+RES pl_fix_BAOSN_cobaya 1412.311 {'H0': np.float64(62.876063), 'omegam': np.float64(0.35039931), 'H0_local': np.float64(68.161818), 'hrdrag': np.float64(92.484401), 'omegamh2': np.float64(0.13852684)}
+[output] Output to be read-from/written-into folder 'chains', with prefix 'pl_fix_BAOSNCMB_cobaya'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/6 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/6 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/6 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Run 4/6 will start from random initial point:
+[minimize] {'H0': np.float64(58.01999093864861), 'omegam': np.float64(0.3766534325848949)}
+[minimize] Run 5/6 will start from random initial point:
+[minimize] {'H0': np.float64(64.4402746253114), 'omegam': np.float64(0.3012002521768178)}
+[minimize] Run 6/6 will start from random initial point:
+[minimize] {'H0': np.float64(61.49711781013561), 'omegam': np.float64(0.26550583937426037)}
+[minimize] Starting run 1/6
+[minimize] Run 1/6 converged.
+[minimize] Starting run 2/6
+[minimize] Run 2/6 converged.
+[minimize] Starting run 3/6
+[minimize] Run 3/6 converged.
+[minimize] Starting run 4/6
+[minimize] Run 4/6 converged.
+[minimize] Starting run 5/6
+[minimize] Run 5/6 converged.
+[minimize] Starting run 6/6
+[minimize] Run 6/6 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 711.898
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__sn.pantheonplus  chi2__fractal_cobaya.CompressedCMB
+0     1.0    711.898143  62.214205  0.364342  147.09  0.141023  67.644069  91.510874  11.355143  1402.587401       2.995732          2.995732  1417.804822                        11.355143            1402.587401                            3.862278
+[minimize] Full set of minima:
+{'0': (711.8981433736816, True), '1': (711.8981433736868, True), '2': (711.8981433736901, True), '3': (711.8981433736939, True), '4': (711.8981433736878, True), '5': (711.898143373696, True)}
+RES pl_fix_BAOSNCMB_cobaya 1417.805 {'H0': np.float64(62.214205), 'omegam': np.float64(0.36434216), 'H0_local': np.float64(67.644069), 'hrdrag': np.float64(91.510874), 'omegamh2': np.float64(0.14102254)}
+[output] Output to be read-from/written-into folder 'chains', with prefix 'exp_free_BAOSN_cobaya'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/16 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436), 'lnzc': np.float64(-0.6795693191248109)}
+[minimize] Run 2/16 will start from random initial point:
+[minimize] {'H0': np.float64(61.404047731994744), 'omegam': np.float64(0.26452916844462143), 'lnzc': np.float64(0.1595104471691795)}
+[minimize] Run 3/16 will start from random initial point:
+[minimize] {'H0': np.float64(58.01999093864861), 'omegam': np.float64(0.3766534325848949), 'lnzc': np.float64(-1.5469343442508148)}
+[minimize] Run 4/16 will start from random initial point:
+[minimize] {'H0': np.float64(61.826700290242364), 'omegam': np.float64(0.2987283835760171), 'lnzc': np.float64(-3.394062298539771)}
+[minimize] Run 5/16 will start from random initial point:
+[minimize] {'H0': np.float64(70.36928103800007), 'omegam': np.float64(0.254568508828742), 'lnzc': np.float64(-2.2337071284048085)}
+[minimize] Run 6/16 will start from random initial point:
+[minimize] {'H0': np.float64(59.46426089491045), 'omegam': np.float64(0.37001476654789256), 'lnzc': np.float64(-1.307329541733996)}
+[minimize] Run 7/16 will start from random initial point:
+[minimize] {'H0': np.float64(67.8410459620596), 'omegam': np.float64(0.29026399123632074), 'lnzc': np.float64(0.2717906762784019)}
+[minimize] Run 8/16 will start from random initial point:
+[minimize] {'H0': np.float64(55.713523508825034), 'omegam': np.float64(0.39475368162521474), 'lnzc': np.float64(-2.6790358521474316)}
+[minimize] Run 9/16 will start from random initial point:
+[minimize] {'H0': np.float64(68.91633315995058), 'omegam': np.float64(0.33266393683501244), 'lnzc': np.float64(-1.8328366258187887)}
+[minimize] Run 10/16 will start from random initial point:
+[minimize] {'H0': np.float64(67.95874801947282), 'omegam': np.float64(0.3751170212503403), 'lnzc': np.float64(-1.9049491189201215)}
+[minimize] Run 11/16 will start from random initial point:
+[minimize] {'H0': np.float64(72.46988892595958), 'omegam': np.float64(0.26821380510324294), 'lnzc': np.float64(-0.38525860988956984)}
+[minimize] Run 12/16 will start from random initial point:
+[minimize] {'H0': np.float64(72.50775448842393), 'omegam': np.float64(0.35595284057248583), 'lnzc': np.float64(-1.2088273051899727)}
+[minimize] Run 13/16 will start from random initial point:
+[minimize] {'H0': np.float64(69.20194028487809), 'omegam': np.float64(0.3602324753217379), 'lnzc': np.float64(1.0963263517530053)}
+[minimize] Run 14/16 will start from random initial point:
+[minimize] {'H0': np.float64(63.63202094816363), 'omegam': np.float64(0.3348292293434581), 'lnzc': np.float64(-0.3267844256753225)}
+[minimize] Run 15/16 will start from random initial point:
+[minimize] {'H0': np.float64(60.62449423045268), 'omegam': np.float64(0.2600720534531444), 'lnzc': np.float64(0.7066406337332434)}
+[minimize] Run 16/16 will start from random initial point:
+[minimize] {'H0': np.float64(70.75329325912904), 'omegam': np.float64(0.38913447454922984), 'lnzc': np.float64(0.14781420424874847)}
+[minimize] Starting run 1/16
+[minimize] Run 1/16 converged.
+[minimize] Starting run 2/16
+[minimize] Run 2/16 converged.
+[minimize] Starting run 3/16
+[minimize] Run 3/16 converged.
+[minimize] Starting run 4/16
+[minimize] Run 4/16 converged.
+[minimize] Starting run 5/16
+[minimize] Run 5/16 converged.
+[minimize] Starting run 6/16
+[minimize] Run 6/16 converged.
+[minimize] Starting run 7/16
+[minimize] Run 7/16 converged.
+[minimize] Starting run 8/16
+[minimize] Run 8/16 converged.
+[minimize] Starting run 9/16
+[minimize] Run 9/16 converged.
+[minimize] Starting run 10/16
+[minimize] Run 10/16 converged.
+[minimize] Starting run 11/16
+[minimize] Run 11/16 converged.
+[minimize] Starting run 12/16
+[minimize] Run 12/16 converged.
+[minimize] Starting run 13/16
+[minimize] Run 13/16 converged.
+[minimize] Starting run 14/16
+[minimize] Run 14/16 converged.
+[minimize] Starting run 15/16
+[minimize] Run 15/16 converged.
+[minimize] Starting run 16/16
+[minimize] Run 16/16 converged.
+[minimize] Finished successfully!
+[minimize] *WARNING* Big spread in minima: [712.42890211451, 712.428902114522, 712.428902114507, 710.0553583402716, 742.20896190619, 710.0553583402796, 710.0553583402699, 710.0553583402636, 710.0553583402707, 710.0553583402735, 710.0553583402673, 710.0553583402988, 710.0553583402624, 710.0553583402743, 712.4289021145112, 710.0553583402638]
+[minimize] -log(posterior) minimized to 710.055
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam      lnzc   rdrag  omegamh2   H0_local     hrdrag     zchar  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__sn.pantheonplus
+0     1.0    710.055358  62.349647  0.364541 -0.588094  147.09  0.141715  67.794186  91.710096  0.555385   8.358869  1402.537258       4.607295          4.607295  1410.896127                         8.358869            1402.537258
+[minimize] Full set of minima:
+{'0': (712.42890211451, True), '1': (712.428902114522, True), '2': (712.428902114507, True), '3': (710.0553583402716, True), '4': (742.20896190619, True), '5': (710.0553583402796, True), '6': (710.0553583402699, True), '7': (710.0553583402636, True), '8': (710.0553583402707, True), '9': (710.0553583402735, True), '10': (710.0553583402673, True), '11': (710.0553583402988, True), '12': (710.0553583402624, True), '13': (710.0553583402743, True), '14': (712.4289021145112, True), '15': (710.0553583402638, True)}
+RES exp_free_BAOSN_cobaya 1410.896 {'H0': np.float64(62.349647), 'omegam': np.float64(0.36454129), 'lnzc': np.float64(-0.58809371), 'zchar': np.float64(0.555385), 'H0_local': np.float64(67.794186), 'hrdrag': np.float64(91.710096), 'omegamh2': np.float64(0.14171464)}
+[output] Output to be read-from/written-into folder 'chains', with prefix 'exp_free_BAOSNCMB_cobaya'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/16 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436), 'lnzc': np.float64(-0.6795693191248109)}
+[minimize] Run 2/16 will start from random initial point:
+[minimize] {'H0': np.float64(61.404047731994744), 'omegam': np.float64(0.26452916844462143), 'lnzc': np.float64(0.1595104471691795)}
+[minimize] Run 3/16 will start from random initial point:
+[minimize] {'H0': np.float64(58.01999093864861), 'omegam': np.float64(0.3766534325848949), 'lnzc': np.float64(-1.5469343442508148)}
+[minimize] Run 4/16 will start from random initial point:
+[minimize] {'H0': np.float64(61.826700290242364), 'omegam': np.float64(0.2987283835760171), 'lnzc': np.float64(-3.394062298539771)}
+[minimize] Run 5/16 will start from random initial point:
+[minimize] {'H0': np.float64(70.36928103800007), 'omegam': np.float64(0.254568508828742), 'lnzc': np.float64(-2.2337071284048085)}
+[minimize] Run 6/16 will start from random initial point:
+[minimize] {'H0': np.float64(59.46426089491045), 'omegam': np.float64(0.37001476654789256), 'lnzc': np.float64(-1.307329541733996)}
+[minimize] Run 7/16 will start from random initial point:
+[minimize] {'H0': np.float64(67.8410459620596), 'omegam': np.float64(0.29026399123632074), 'lnzc': np.float64(0.2717906762784019)}
+[minimize] Run 8/16 will start from random initial point:
+[minimize] {'H0': np.float64(55.713523508825034), 'omegam': np.float64(0.39475368162521474), 'lnzc': np.float64(-2.6790358521474316)}
+[minimize] Run 9/16 will start from random initial point:
+[minimize] {'H0': np.float64(68.91633315995058), 'omegam': np.float64(0.33266393683501244), 'lnzc': np.float64(-1.8328366258187887)}
+[minimize] Run 10/16 will start from random initial point:
+[minimize] {'H0': np.float64(67.95874801947282), 'omegam': np.float64(0.3751170212503403), 'lnzc': np.float64(-1.9049491189201215)}
+[minimize] Run 11/16 will start from random initial point:
+[minimize] {'H0': np.float64(72.46988892595958), 'omegam': np.float64(0.26821380510324294), 'lnzc': np.float64(-0.38525860988956984)}
+[minimize] Run 12/16 will start from random initial point:
+[minimize] {'H0': np.float64(72.50775448842393), 'omegam': np.float64(0.35595284057248583), 'lnzc': np.float64(-1.2088273051899727)}
+[minimize] Run 13/16 will start from random initial point:
+[minimize] {'H0': np.float64(69.20194028487809), 'omegam': np.float64(0.3602324753217379), 'lnzc': np.float64(1.0963263517530053)}
+[minimize] Run 14/16 will start from random initial point:
+[minimize] {'H0': np.float64(63.63202094816363), 'omegam': np.float64(0.3348292293434581), 'lnzc': np.float64(-0.3267844256753225)}
+[minimize] Run 15/16 will start from random initial point:
+[minimize] {'H0': np.float64(60.62449423045268), 'omegam': np.float64(0.2600720534531444), 'lnzc': np.float64(0.7066406337332434)}
+[minimize] Run 16/16 will start from random initial point:
+[minimize] {'H0': np.float64(70.75329325912904), 'omegam': np.float64(0.38913447454922984), 'lnzc': np.float64(0.14781420424874847)}
+[minimize] Starting run 1/16
+[minimize] Run 1/16 converged.
+[minimize] Starting run 2/16
+[minimize] Run 2/16 converged.
+[minimize] Starting run 3/16
+[minimize] Run 3/16 converged.
+[minimize] Starting run 4/16
+[minimize] Run 4/16 converged.
+[minimize] Starting run 5/16
+[minimize] Run 5/16 converged.
+[minimize] Starting run 6/16
+[minimize] Run 6/16 converged.
+[minimize] Starting run 7/16
+[minimize] Run 7/16 converged.
+[minimize] Starting run 8/16
+[minimize] Run 8/16 converged.
+[minimize] Starting run 9/16
+[minimize] Run 9/16 converged.
+[minimize] Starting run 10/16
+[minimize] Run 10/16 converged.
+[minimize] Starting run 11/16
+[minimize] Run 11/16 converged.
+[minimize] Starting run 12/16
+[minimize] Run 12/16 converged.
+[minimize] Starting run 13/16
+[minimize] Run 13/16 converged.
+[minimize] Starting run 14/16
+[minimize] Run 14/16 converged.
+[minimize] Starting run 15/16
+[minimize] Run 15/16 converged.
+[minimize] Starting run 16/16
+[minimize] Run 16/16 converged.
+[minimize] Finished successfully!
+[minimize] *WARNING* Big spread in minima: [710.5007803280791, 710.5007803280921, 710.5007803280877, 710.5007803280753, 743.5365588948101, 710.500780328077, 710.5007803280857, 710.5007803280845, 710.5007803280819, 710.5007803280959, 710.5007803280909, 710.5007803280893, 710.5007803280938, 710.5007803281185, 710.500780328084, 710.5007803280935]
+[minimize] -log(posterior) minimized to 710.501
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam      lnzc   rdrag  omegamh2   H0_local     hrdrag     zchar  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__sn.pantheonplus  chi2__fractal_cobaya.CompressedCMB
+0     1.0     710.50078  62.321912  0.366139 -0.625462  147.09  0.142209  67.786918  91.669301  0.535014   8.498106  1402.512386       4.607295          4.607295  1411.786971                         8.498106            1402.512386                            0.776479
+[minimize] Full set of minima:
+{'0': (710.5007803280791, True), '1': (710.5007803280921, True), '2': (710.5007803280877, True), '3': (710.5007803280753, True), '4': (743.5365588948101, True), '5': (710.500780328077, True), '6': (710.5007803280857, True), '7': (710.5007803280845, True), '8': (710.5007803280819, True), '9': (710.5007803280959, True), '10': (710.5007803280909, True), '11': (710.5007803280893, True), '12': (710.5007803280938, True), '13': (710.5007803281185, True), '14': (710.500780328084, True), '15': (710.5007803280935, True)}
+RES exp_free_BAOSNCMB_cobaya 1411.787 {'H0': np.float64(62.321912), 'omegam': np.float64(0.36613891), 'lnzc': np.float64(-0.62546222), 'zchar': np.float64(0.53501408), 'H0_local': np.float64(67.786918), 'hrdrag': np.float64(91.669301), 'omegamh2': np.float64(0.14220911)}
+[output] Output to be read-from/written-into folder 'chains', with prefix 'pl_free_BAOSN_cobaya'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/16 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436), 'n': np.float64(6.486673468753215)}
+[minimize] Run 2/16 will start from random initial point:
+[minimize] {'H0': np.float64(61.404047731994744), 'omegam': np.float64(0.26452916844462143), 'n': np.float64(8.144525058171036)}
+[minimize] Run 3/16 will start from random initial point:
+[minimize] {'H0': np.float64(58.01999093864861), 'omegam': np.float64(0.3766534325848949), 'n': np.float64(4.772935939529145)}
+[minimize] Run 4/16 will start from random initial point:
+[minimize] {'H0': np.float64(61.826700290242364), 'omegam': np.float64(0.2987283835760171), 'n': np.float64(1.1233853987011824)}
+[minimize] Run 5/16 will start from random initial point:
+[minimize] {'H0': np.float64(70.36928103800007), 'omegam': np.float64(0.254568508828742), 'n': np.float64(3.416012083758706)}
+[minimize] Run 6/16 will start from random initial point:
+[minimize] {'H0': np.float64(59.46426089491045), 'omegam': np.float64(0.37001476654789256), 'n': np.float64(5.246346476454752)}
+[minimize] Run 7/16 will start from random initial point:
+[minimize] {'H0': np.float64(67.8410459620596), 'omegam': np.float64(0.29026399123632074), 'n': np.float64(8.366368038738988)}
+[minimize] Run 8/16 will start from random initial point:
+[minimize] {'H0': np.float64(55.713523508825034), 'omegam': np.float64(0.39475368162521474), 'n': np.float64(2.5361327658114288)}
+[minimize] Run 9/16 will start from random initial point:
+[minimize] {'H0': np.float64(68.91633315995058), 'omegam': np.float64(0.33266393683501244), 'n': np.float64(4.208050965590235)}
+[minimize] Run 10/16 will start from random initial point:
+[minimize] {'H0': np.float64(67.95874801947282), 'omegam': np.float64(0.3751170212503403), 'n': np.float64(4.065571291896092)}
+[minimize] Run 11/16 will start from random initial point:
+[minimize] {'H0': np.float64(72.46988892595958), 'omegam': np.float64(0.26821380510324294), 'n': np.float64(7.0681717919023574)}
+[minimize] Run 12/16 will start from random initial point:
+[minimize] {'H0': np.float64(72.50775448842393), 'omegam': np.float64(0.35595284057248583), 'n': np.float64(5.4409669356477846)}
+[minimize] Run 13/16 will start from random initial point:
+[minimize] {'H0': np.float64(69.20194028487809), 'omegam': np.float64(0.3602324753217379), 'n': np.float64(9.995483451871623)}
+[minimize] Run 14/16 will start from random initial point:
+[minimize] {'H0': np.float64(63.63202094816363), 'omegam': np.float64(0.3348292293434581), 'n': np.float64(7.1837049308644225)}
+[minimize] Run 15/16 will start from random initial point:
+[minimize] {'H0': np.float64(60.62449423045268), 'omegam': np.float64(0.2600720534531444), 'n': np.float64(9.22554343788953)}
+[minimize] Run 16/16 will start from random initial point:
+[minimize] {'H0': np.float64(70.75329325912904), 'omegam': np.float64(0.38913447454922984), 'n': np.float64(8.121415652254244)}
+[minimize] Starting run 1/16
+[minimize] Run 1/16 converged.
+[minimize] Starting run 2/16
+[minimize] Run 2/16 converged.
+[minimize] Starting run 3/16
+[minimize] Run 3/16 converged.
+[minimize] Starting run 4/16
+[minimize] Run 4/16 converged.
+[minimize] Starting run 5/16
+[minimize] Run 5/16 converged.
+[minimize] Starting run 6/16
+[minimize] Run 6/16 converged.
+[minimize] Starting run 7/16
+[minimize] Run 7/16 converged.
+[minimize] Starting run 8/16
+[minimize] Run 8/16 converged.
+[minimize] Starting run 9/16
+[minimize] Run 9/16 converged.
+[minimize] Starting run 10/16
+[minimize] Run 10/16 converged.
+[minimize] Starting run 11/16
+[minimize] Run 11/16 converged.
+[minimize] Starting run 12/16
+[minimize] Run 12/16 converged.
+[minimize] Starting run 13/16
+[minimize] Run 13/16 converged.
+[minimize] Starting run 14/16
+[minimize] Run 14/16 converged.
+[minimize] Starting run 15/16
+[minimize] Run 15/16 converged.
+[minimize] Starting run 16/16
+[minimize] Run 16/16 converged.
+[minimize] Finished successfully!
+[minimize] *WARNING* Modest spread in minima: [711.2001275583315, 711.2001275583227, 711.2001275583316, 711.2001275583558, 711.5555971355406, 711.20012755833, 711.2001275583264, 711.200127558332, 711.2001275583275, 711.2001275583336, 711.2001275583316, 711.2001275583381, 711.200127558331, 711.2001275583315, 711.2001275583206, 711.2001275583463]
+[minimize] -log(posterior) minimized to 711.2
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam         n   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__sn.pantheonplus
+0     1.0    711.200128  62.773247  0.341908  1.872284  147.09  0.134728  67.927317  92.333169   9.289245  1402.534476       5.288267          5.288267  1411.823721                         9.289245            1402.534476
+[minimize] Full set of minima:
+{'0': (711.2001275583315, True), '1': (711.2001275583227, True), '2': (711.2001275583316, True), '3': (711.2001275583558, True), '4': (711.5555971355406, True), '5': (711.20012755833, True), '6': (711.2001275583264, True), '7': (711.200127558332, True), '8': (711.2001275583275, True), '9': (711.2001275583336, True), '10': (711.2001275583316, True), '11': (711.2001275583381, True), '12': (711.200127558331, True), '13': (711.2001275583315, True), '14': (711.2001275583206, True), '15': (711.2001275583463, True)}
+RES pl_free_BAOSN_cobaya 1411.824 {'H0': np.float64(62.773247), 'omegam': np.float64(0.3419075), 'n': np.float64(1.8722838), 'H0_local': np.float64(67.927317), 'hrdrag': np.float64(92.333169), 'omegamh2': np.float64(0.13472798)}
+[output] Output to be read-from/written-into folder 'chains', with prefix 'pl_free_BAOSNCMB_cobaya'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/16 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436), 'n': np.float64(6.486673468753215)}
+[minimize] Run 2/16 will start from random initial point:
+[minimize] {'H0': np.float64(61.404047731994744), 'omegam': np.float64(0.26452916844462143), 'n': np.float64(8.144525058171036)}
+[minimize] Run 3/16 will start from random initial point:
+[minimize] {'H0': np.float64(58.01999093864861), 'omegam': np.float64(0.3766534325848949), 'n': np.float64(4.772935939529145)}
+[minimize] Run 4/16 will start from random initial point:
+[minimize] {'H0': np.float64(61.826700290242364), 'omegam': np.float64(0.2987283835760171), 'n': np.float64(1.1233853987011824)}
+[minimize] Run 5/16 will start from random initial point:
+[minimize] {'H0': np.float64(70.36928103800007), 'omegam': np.float64(0.254568508828742), 'n': np.float64(3.416012083758706)}
+[minimize] Run 6/16 will start from random initial point:
+[minimize] {'H0': np.float64(59.46426089491045), 'omegam': np.float64(0.37001476654789256), 'n': np.float64(5.246346476454752)}
+[minimize] Run 7/16 will start from random initial point:
+[minimize] {'H0': np.float64(67.8410459620596), 'omegam': np.float64(0.29026399123632074), 'n': np.float64(8.366368038738988)}
+[minimize] Run 8/16 will start from random initial point:
+[minimize] {'H0': np.float64(55.713523508825034), 'omegam': np.float64(0.39475368162521474), 'n': np.float64(2.5361327658114288)}
+[minimize] Run 9/16 will start from random initial point:
+[minimize] {'H0': np.float64(68.91633315995058), 'omegam': np.float64(0.33266393683501244), 'n': np.float64(4.208050965590235)}
+[minimize] Run 10/16 will start from random initial point:
+[minimize] {'H0': np.float64(67.95874801947282), 'omegam': np.float64(0.3751170212503403), 'n': np.float64(4.065571291896092)}
+[minimize] Run 11/16 will start from random initial point:
+[minimize] {'H0': np.float64(72.46988892595958), 'omegam': np.float64(0.26821380510324294), 'n': np.float64(7.0681717919023574)}
+[minimize] Run 12/16 will start from random initial point:
+[minimize] {'H0': np.float64(72.50775448842393), 'omegam': np.float64(0.35595284057248583), 'n': np.float64(5.4409669356477846)}
+[minimize] Run 13/16 will start from random initial point:
+[minimize] {'H0': np.float64(69.20194028487809), 'omegam': np.float64(0.3602324753217379), 'n': np.float64(9.995483451871623)}
+[minimize] Run 14/16 will start from random initial point:
+[minimize] {'H0': np.float64(63.63202094816363), 'omegam': np.float64(0.3348292293434581), 'n': np.float64(7.1837049308644225)}
+[minimize] Run 15/16 will start from random initial point:
+[minimize] {'H0': np.float64(60.62449423045268), 'omegam': np.float64(0.2600720534531444), 'n': np.float64(9.22554343788953)}
+[minimize] Run 16/16 will start from random initial point:
+[minimize] {'H0': np.float64(70.75329325912904), 'omegam': np.float64(0.38913447454922984), 'n': np.float64(8.121415652254244)}
+[minimize] Starting run 1/16
+[minimize] Run 1/16 converged.
+[minimize] Starting run 2/16
+[minimize] Run 2/16 converged.
+[minimize] Starting run 3/16
+[minimize] Run 3/16 converged.
+[minimize] Starting run 4/16
+[minimize] Run 4/16 converged.
+[minimize] Starting run 5/16
+[minimize] Run 5/16 converged.
+[minimize] Starting run 6/16
+[minimize] Run 6/16 converged.
+[minimize] Starting run 7/16
+[minimize] Run 7/16 converged.
+[minimize] Starting run 8/16
+[minimize] Run 8/16 converged.
+[minimize] Starting run 9/16
+[minimize] Run 9/16 converged.
+[minimize] Starting run 10/16
+[minimize] Run 10/16 converged.
+[minimize] Starting run 11/16
+[minimize] Run 11/16 converged.
+[minimize] Starting run 12/16
+[minimize] Run 12/16 converged.
+[minimize] Starting run 13/16
+[minimize] Run 13/16 converged.
+[minimize] Starting run 14/16
+[minimize] Run 14/16 converged.
+[minimize] Starting run 15/16
+[minimize] Run 15/16 converged.
+[minimize] Starting run 16/16
+[minimize] Run 16/16 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 713.241
+[minimize] Parameter values at minimum:
+   weight  minuslogpost        H0    omegam         n   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO    chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__sn.pantheonplus  chi2__fractal_cobaya.CompressedCMB
+0     1.0    713.241093  62.75803  0.359622  2.593072  147.09   0.14164  68.167215  92.310786  10.458504  1403.35444       5.288267          5.288267  1415.905652                        10.458504             1403.35444                            2.092708
+[minimize] Full set of minima:
+{'0': (713.2410929364431, True), '1': (713.2410929364503, True), '2': (713.241092936446, True), '3': (713.2410929364355, True), '4': (713.2410929365004, True), '5': (713.2410929364299, True), '6': (713.24109293645, True), '7': (713.2410929364415, True), '8': (713.2410929364432, True), '9': (713.2410929364493, True), '10': (713.2410929364462, True), '11': (713.2410929364376, True), '12': (713.2410929364461, True), '13': (713.2410929364452, True), '14': (713.2410929364464, True), '15': (713.2410929364398, True)}
+RES pl_free_BAOSNCMB_cobaya 1415.906 {'H0': np.float64(62.75803), 'omegam': np.float64(0.35962232), 'n': np.float64(2.5930719), 'H0_local': np.float64(68.167215), 'hrdrag': np.float64(92.310786), 'omegamh2': np.float64(0.14163978)}
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAO_0.1000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 7.92363
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO  minuslogprior  minuslogprior__0      chi2  chi2__bao.desi_dr2.desi_bao_all
+0     1.0      7.923629  65.121142  0.230596  147.09  0.097791  68.772929  95.786688   9.855793       2.995732          2.995732  9.855793                         9.855793
+[minimize] Full set of minima:
+{'0': (7.923628987411849, True), '1': (7.9236289874120445, True), '2': (7.923628987411933, True)}
+PROF pl BAO 0.1 9.856
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAO_0.3000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 7.8375
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local    hrdrag  chi2__BAO  minuslogprior  minuslogprior__0      chi2  chi2__bao.desi_dr2.desi_bao_all
+0     1.0      7.837496  64.411055  0.251021  147.09  0.104143  68.333732  94.74222   9.683528       2.995732          2.995732  9.683528                         9.683528
+[minimize] Full set of minima:
+{'0': (7.837496389118124, True), '1': (7.837496389117867, True), '2': (7.837496389118064, True)}
+PROF pl BAO 0.3 9.684
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAO_0.6000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 8.0013
+[minimize] Parameter values at minimum:
+   weight  minuslogpost        H0    omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO  minuslogprior  minuslogprior__0      chi2  chi2__bao.desi_dr2.desi_bao_all
+0     1.0      8.001297  63.60853  0.278296  147.09    0.1126  67.889946  93.561787   10.01113       2.995732          2.995732  10.01113                         10.01113
+[minimize] Full set of minima:
+{'0': (8.00129731948986, True), '1': (8.001297319489758, True), '2': (8.001297319489854, True)}
+PROF pl BAO 0.6 10.011
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAO_1.0000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 8.0648
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2  H0_local     hrdrag  chi2__BAO  minuslogprior  minuslogprior__0       chi2  chi2__bao.desi_dr2.desi_bao_all
+0     1.0      8.064798  62.977207  0.307066  147.09  0.121786  67.63919  92.633173  10.138131       2.995732          2.995732  10.138131                        10.138131
+[minimize] Full set of minima:
+{'0': (8.064797787181861, True), '1': (8.064797787182057, True), '2': (8.0647977871821, True)}
+PROF pl BAO 1.0 10.138
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAO_1.5000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 7.8055
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO  minuslogprior  minuslogprior__0      chi2  chi2__bao.desi_dr2.desi_bao_all
+0     1.0      7.805505  62.734226  0.330746  147.09  0.130168  67.723134  92.275774   9.619545       2.995732          2.995732  9.619545                         9.619545
+[minimize] Full set of minima:
+{'0': (7.805504713131125, True), '1': (7.805504713131008, True), '2': (7.8055047131311674, True)}
+PROF pl BAO 1.5 9.62
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAO_2.0000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 7.6154
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2  H0_local     hrdrag  chi2__BAO  minuslogprior  minuslogprior__0      chi2  chi2__bao.desi_dr2.desi_bao_all
+0     1.0      7.615399  62.885905  0.343334  147.09  0.135776  68.06995  92.498878   9.239334       2.995732          2.995732  9.239334                         9.239334
+[minimize] Full set of minima:
+{'0': (7.6153993554999815, True), '1': (7.6153993554999335, True), '2': (7.615399355499813, True)}
+PROF pl BAO 2.0 9.239
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAO_2.3000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 7.65184
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO  minuslogprior  minuslogprior__0      chi2  chi2__bao.desi_dr2.desi_bao_all
+0     1.0      7.651841  63.087811  0.347069  147.09  0.138136  68.342897  92.795861   9.312217       2.995732          2.995732  9.312217                         9.312217
+[minimize] Full set of minima:
+{'0': (7.651840566550453, True), '1': (7.65184056655035, True), '2': (7.651840566550375, True)}
+PROF pl BAO 2.3 9.312
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAO_2.6000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 7.80334
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO  minuslogprior  minuslogprior__0      chi2  chi2__bao.desi_dr2.desi_bao_all
+0     1.0      7.803335  63.336171  0.348812  147.09  0.139925  68.637415  93.161174   9.615206       2.995732          2.995732  9.615206                         9.615206
+[minimize] Full set of minima:
+{'0': (7.803335311568649, True), '1': (7.803335311568597, True), '2': (7.8033353115686115, True)}
+PROF pl BAO 2.6 9.615
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAO_3.0000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 8.13743
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO  minuslogprior  minuslogprior__0       chi2  chi2__bao.desi_dr2.desi_bao_all
+0     1.0      8.137425  63.703645  0.349005  147.09  0.141632  69.038486  93.701692  10.283386       2.995732          2.995732  10.283386                        10.283386
+[minimize] Full set of minima:
+{'0': (8.137425147874003, True), '1': (8.137425147873728, True), '2': (8.137425147873847, True)}
+PROF pl BAO 3.0 10.283
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAO_3.5000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 8.65878
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO  minuslogprior  minuslogprior__0       chi2  chi2__bao.desi_dr2.desi_bao_all
+0     1.0      8.658783  64.175928  0.347178  147.09  0.142987  69.523272  94.396372  11.326101       2.995732          2.995732  11.326101                        11.326101
+[minimize] Full set of minima:
+{'0': (8.658782901541112, True), '1': (8.65878290154082, True), '2': (8.65878290154111, True)}
+PROF pl BAO 3.5 11.326
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAO_4.0000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 9.18178
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO  minuslogprior  minuslogprior__0       chi2  chi2__bao.desi_dr2.desi_bao_all
+0     1.0      9.181775  64.628525  0.344207  147.09   0.14377  69.969251  95.062097  12.372085       2.995732          2.995732  12.372085                        12.372085
+[minimize] Full set of minima:
+{'0': (9.181775016636454, True), '1': (9.181775016636198, True), '2': (9.18177501663617, True)}
+PROF pl BAO 4.0 12.372
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAO_5.0000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 9.98787
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2  H0_local     hrdrag  chi2__BAO  minuslogprior  minuslogprior__0       chi2  chi2__bao.desi_dr2.desi_bao_all
+0     1.0      9.987866  65.416576  0.337402  147.09  0.144385  70.71955  96.221241  13.984267       2.995732          2.995732  13.984267                        13.984267
+[minimize] Full set of minima:
+{'0': (9.987865734324162, True), '1': (9.987865734324222, True), '2': (9.987865734324233, True)}
+PROF pl BAO 5.0 13.984
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAO_6.0000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 10.4031
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO  minuslogprior  minuslogprior__0       chi2  chi2__bao.desi_dr2.desi_bao_all
+0     1.0      10.40308  66.036449  0.331159  147.09  0.144412  71.294273  97.133013  14.814696       2.995732          2.995732  14.814696                        14.814696
+[minimize] Full set of minima:
+{'0': (10.40308023124126, True), '1': (10.403080231241427, True), '2': (10.403080231240892, True)}
+PROF pl BAO 6.0 14.815
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAO_8.0000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 10.4731
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO  minuslogprior  minuslogprior__0      chi2  chi2__bao.desi_dr2.desi_bao_all
+0     1.0     10.473142  66.883467  0.321882  147.09  0.143991  72.064914  98.378892   14.95482       2.995732          2.995732  14.95482                         14.95482
+[minimize] Full set of minima:
+{'0': (10.473142346431704, True), '1': (10.473142346431914, True), '2': (10.473142346431949, True)}
+PROF pl BAO 8.0 14.955
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAO_10.0000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 10.166
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local    hrdrag  chi2__BAO  minuslogprior  minuslogprior__0       chi2  chi2__bao.desi_dr2.desi_bao_all
+0     1.0     10.166024  67.400312  0.315962  147.09  0.143535  72.529162  99.13912  14.340583       2.995732          2.995732  14.340583                        14.340583
+[minimize] Full set of minima:
+{'0': (10.166023763591676, True), '1': (10.166023763591761, True), '2': (10.166023763592092, True)}
+PROF pl BAO 10.0 14.341
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAO_15.0000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 9.42029
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2  H0_local      hrdrag  chi2__BAO  minuslogprior  minuslogprior__0       chi2  chi2__bao.desi_dr2.desi_bao_all
+0     1.0      9.420289  68.049111  0.308415  147.09  0.142817  73.10791  100.093437  12.849114       2.995732          2.995732  12.849114                        12.849114
+[minimize] Full set of minima:
+{'0': (9.420289186861337, True), '1': (9.42028918686112, True), '2': (9.420289186861279, True)}
+PROF pl BAO 15.0 12.849
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAO_25.0000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 8.79757
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local      hrdrag  chi2__BAO  minuslogprior  minuslogprior__0       chi2  chi2__bao.desi_dr2.desi_bao_all
+0     1.0      8.797574  68.498087  0.303233  147.09  0.142276  73.507621  100.753836  11.603682       2.995732          2.995732  11.603682                        11.603682
+[minimize] Full set of minima:
+{'0': (8.797573506239193, True), '1': (8.797573506239285, True), '2': (8.797573506239612, True)}
+PROF pl BAO 25.0 11.604
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAO_50.0000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 8.43034
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local      hrdrag  chi2__BAO  minuslogprior  minuslogprior__0       chi2  chi2__bao.desi_dr2.desi_bao_all
+0     1.0       8.43034  68.785686  0.299977  147.09  0.141933  73.764062  101.176866  10.869215       2.995732          2.995732  10.869215                        10.869215
+[minimize] Full set of minima:
+{'0': (8.430339896723005, True), '1': (8.430339896723051, True), '2': (8.430339896723886, True)}
+PROF pl BAO 50.0 10.869
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAO_100.0000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 8.27589
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local      hrdrag  chi2__BAO  minuslogprior  minuslogprior__0       chi2  chi2__bao.desi_dr2.desi_bao_all
+0     1.0      8.275885  68.916077  0.298516  147.09  0.141778  73.880409  101.368657  10.560306       2.995732          2.995732  10.560306                        10.560306
+[minimize] Full set of minima:
+{'0': (8.275885466624661, True), '1': (8.275885466624702, True), '2': (8.275885466624707, True)}
+PROF pl BAO 100.0 10.56
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAOSN_0.1000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 737.136
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local    hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0        chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__fractal_cobaya.PantheonPlusPaperCut
+0     1.0    737.136357  64.747352  0.235736  147.09  0.098826  68.456906  95.23688  10.316858  1457.964391       2.995732          2.995732  1468.28125                        10.316858                                1457.964391
+[minimize] Full set of minima:
+{'0': (737.1363570553835, True), '1': (737.1363570553815, True), '2': (737.1363570553996, True)}
+PROF pl BAO+SN 0.1 1468.281
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAOSN_0.3000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 736.215
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__fractal_cobaya.PantheonPlusPaperCut
+0     1.0    736.214544  64.186113  0.254348  147.09  0.104788  68.145407  94.411354   9.844239  1456.593385       2.995732          2.995732  1466.437624                         9.844239                                1456.593385
+[minimize] Full set of minima:
+{'0': (736.214544196142, True), '1': (736.2145441961509, True), '2': (736.2145441961364, True)}
+PROF pl BAO+SN 0.3 1466.438
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAOSN_0.6000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 735.938
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0   omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__fractal_cobaya.PantheonPlusPaperCut
+0     1.0    735.938201  63.547777  0.27928  147.09  0.112782  67.839749  93.472425   10.02232  1455.862616       2.995732          2.995732  1465.884937                         10.02232                                1455.862616
+[minimize] Full set of minima:
+{'0': (735.9382005525848, True), '1': (735.9382005525893, True), '2': (735.9382005525931, True)}
+PROF pl BAO+SN 0.6 1465.885
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAOSN_1.0000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 735.934
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__fractal_cobaya.PantheonPlusPaperCut
+0     1.0    735.933784  63.018786  0.306329  147.09  0.121655  67.673044  92.694333  10.143151  1455.732953       2.995732          2.995732  1465.876104                        10.143151                                1455.732953
+[minimize] Full set of minima:
+{'0': (735.9337844876666, True), '1': (735.9337844876751, True), '2': (735.933784487659, True)}
+PROF pl BAO+SN 1.0 1465.876
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAOSN_1.5000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 735.659
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__fractal_cobaya.PantheonPlusPaperCut
+0     1.0    735.659157  62.746245  0.330517  147.09  0.130128  67.732783  92.293451   9.619953  1455.706897       2.995732          2.995732  1465.326849                         9.619953                                1455.706897
+[minimize] Full set of minima:
+{'0': (735.6591569558191, True), '1': (735.6591569558143, True), '2': (735.6591569558158, True)}
+PROF pl BAO+SN 1.5 1465.327
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAOSN_2.0000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 735.613
+[minimize] Parameter values at minimum:
+   weight  minuslogpost        H0    omegam   rdrag  omegamh2  H0_local     hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__fractal_cobaya.PantheonPlusPaperCut
+0     1.0    735.612696  62.75909  0.345852  147.09  0.136221  67.96916  92.312345   9.284439  1455.949489       2.995732          2.995732  1465.233928                         9.284439                                1455.949489
+[minimize] Full set of minima:
+{'0': (735.6126960593544, True), '1': (735.6126960593479, True), '2': (735.6126960593496, True)}
+PROF pl BAO+SN 2.0 1465.234
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAOSN_2.3000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 735.956
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__fractal_cobaya.PantheonPlusPaperCut
+0     1.0    735.956259  62.852982  0.351802  147.09  0.138979  68.157121  92.450451   9.467409  1456.453645       2.995732          2.995732  1465.921054                         9.467409                                1456.453645
+[minimize] Full set of minima:
+{'0': (735.956259411352, True), '1': (735.9562594113497, True), '2': (735.9562594113468, True)}
+PROF pl BAO+SN 2.3 1465.921
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAOSN_2.6000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 736.639
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0        chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__fractal_cobaya.PantheonPlusPaperCut
+0     1.0    736.638702  62.987898  0.355901  147.09  0.141203  68.362931  92.648899   9.959102  1457.326838       2.995732          2.995732  1467.28594                         9.959102                                1457.326838
+[minimize] Full set of minima:
+{'0': (736.6387022601874, True), '1': (736.6387022601983, True), '2': (736.6387022601982, True)}
+PROF pl BAO+SN 2.6 1467.286
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAOSN_3.0000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 738.045
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__fractal_cobaya.PantheonPlusPaperCut
+0     1.0    738.044659  63.207695  0.359179  147.09  0.143499  68.649181  92.972199  10.990787  1459.107066       2.995732          2.995732  1470.097853                        10.990787                                1459.107066
+[minimize] Full set of minima:
+{'0': (738.0446588658504, True), '1': (738.0446588658577, True), '2': (738.0446588658455, True)}
+PROF pl BAO+SN 3.0 1470.098
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAOSN_3.5000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 740.431
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__fractal_cobaya.PantheonPlusPaperCut
+0     1.0    740.431132  63.514377  0.360798  147.09  0.145549  69.005941  93.423297   12.61312  1462.257679       2.995732          2.995732  1474.870799                         12.61312                                1462.257679
+[minimize] Full set of minima:
+{'0': (740.4311315597896, True), '1': (740.4311315597872, True), '2': (740.431131559785, True)}
+PROF pl BAO+SN 3.5 1474.871
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAOSN_4.0000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 743.261
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0   omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__fractal_cobaya.PantheonPlusPaperCut
+0     1.0    743.260793  63.829611  0.36065  147.09  0.146937  69.346258  93.886975  14.295993  1466.234129       2.995732          2.995732  1480.530122                        14.295993                                1466.234129
+[minimize] Full set of minima:
+{'0': (743.2607933423359, True), '1': (743.2607933423285, True), '2': (743.2607933423369, True)}
+PROF pl BAO+SN 4.0 1480.53
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAOSN_5.0000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 749.356
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__fractal_cobaya.PantheonPlusPaperCut
+0     1.0     749.35621  64.426493  0.357661  147.09  0.148457  69.950396  94.764929  17.091452  1475.629504       2.995732          2.995732  1492.720956                        17.091452                                1475.629504
+[minimize] Full set of minima:
+{'0': (749.3562100263678, True), '1': (749.3562100263645, True), '2': (749.3562100263567, True)}
+PROF pl BAO+SN 5.0 1492.721
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAOSN_6.0000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 755.156
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__fractal_cobaya.PantheonPlusPaperCut
+0     1.0    755.155518  64.942292  0.353371  147.09  0.149034  70.446243  95.523618  18.789294  1485.530278       2.995732          2.995732  1504.319572                        18.789294                                1485.530278
+[minimize] Full set of minima:
+{'0': (755.1555184153648, True), '1': (755.1555184153607, True), '2': (755.1555184153649, True)}
+PROF pl BAO+SN 6.0 1504.32
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAOSN_8.0000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 764.469
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__fractal_cobaya.PantheonPlusPaperCut
+0     1.0    764.469235  65.727571  0.345012  147.09  0.149049  71.171341  96.678684  19.732324  1503.214681       2.995732          2.995732  1522.947005                        19.732324                                1503.214681
+[minimize] Full set of minima:
+{'0': (764.4692349652598, True), '1': (764.4692349652755, True), '2': (764.4692349652595, True)}
+PROF pl BAO+SN 8.0 1522.947
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAOSN_10.0000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 770.808
+[minimize] Parameter values at minimum:
+   weight  minuslogpost        H0    omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__fractal_cobaya.PantheonPlusPaperCut
+0     1.0    770.808219  66.26635  0.338413  147.09  0.148605  71.653704  97.471174  19.186698  1516.438275       2.995732          2.995732  1535.624973                        19.186698                                1516.438275
+[minimize] Full set of minima:
+{'0': (770.8082186365805, True), '1': (770.8082186365837, True), '2': (770.8082186365741, True)}
+PROF pl BAO+SN 10.0 1535.625
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAOSN_15.0000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 778.388
+[minimize] Parameter values at minimum:
+   weight  minuslogpost        H0    omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__fractal_cobaya.PantheonPlusPaperCut
+0     1.0     778.38766  67.03636  0.328156  147.09  0.147469  72.327174  98.603781  17.017079  1533.766777       2.995732          2.995732  1550.783856                        17.017079                                1533.766777
+[minimize] Full set of minima:
+{'0': (778.3876600543456, True), '1': (778.3876600543331, True), '2': (778.3876600543431, True)}
+PROF pl BAO+SN 15.0 1550.784
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAOSN_25.0000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 779.356
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__fractal_cobaya.PantheonPlusPaperCut
+0     1.0    779.355948  67.658001  0.319408  147.09  0.146212  72.860598  99.518154  14.645763  1538.074668       2.995732          2.995732  1552.720431                        14.645763                                1538.074668
+[minimize] Full set of minima:
+{'0': (779.3559479136724, True), '1': (779.3559479136801, True), '2': (779.35594791368, True)}
+PROF pl BAO+SN 25.0 1552.72
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAOSN_50.0000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 769.186
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__fractal_cobaya.PantheonPlusPaperCut
+0     1.0    769.185946  68.102155  0.313026  147.09  0.145178  73.237933  100.17146  12.967048  1519.413379       2.995732          2.995732  1532.380427                        12.967048                                1519.413379
+[minimize] Full set of minima:
+{'0': (769.1859456824903, True), '1': (769.1859456824998, True), '2': (769.1859456825031, True)}
+PROF pl BAO+SN 50.0 1532.38
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAOSN_100.0000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 755.872
+[minimize] Parameter values at minimum:
+   weight  minuslogpost        H0    omegam   rdrag  omegamh2   H0_local      hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__fractal_cobaya.PantheonPlusPaperCut
+0     1.0    755.871654  68.33168  0.309621  147.09  0.144569  73.430667  100.509068  12.123829  1493.628014       2.995732          2.995732  1505.751843                        12.123829                                1493.628014
+[minimize] Full set of minima:
+{'0': (755.8716538721634, True), '1': (755.8716538721699, True), '2': (755.8716538721759, True)}
+PROF pl BAO+SN 100.0 1505.752
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAOSNCMB_0.1000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 1295.52
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local    hrdrag   chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__fractal_cobaya.PantheonPlusPaperCut  chi2__fractal_cobaya.CompressedCMB
+0     1.0   1295.523189  59.423455  0.314351  147.09  0.111002  63.923053  87.40596  102.535783  1468.222615       2.995732          2.995732  2585.054914                       102.535783                                1468.222615                         1014.296516
+[minimize] Full set of minima:
+{'0': (1295.52318924657, True), '1': (1295.5231892465677, True), '2': (1295.5231892465745, True)}
+PROF pl BAO+SN+CMB 0.1 2585.055
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAOSNCMB_0.3000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 1044.35
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0        chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__fractal_cobaya.PantheonPlusPaperCut  chi2__fractal_cobaya.CompressedCMB
+0     1.0   1044.346492  58.963608  0.345225  147.09  0.120025  63.850063  86.729571  96.903289  1475.169476       2.995732          2.995732  2082.70152                        96.903289                                1475.169476                          510.628755
+[minimize] Full set of minima:
+{'0': (1044.3464922771268, True), '1': (1044.3464922771336, True), '2': (1044.3464922771116, True)}
+PROF pl BAO+SN+CMB 0.3 2082.702
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAOSNCMB_0.6000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 879.796
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0   omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__fractal_cobaya.PantheonPlusPaperCut  chi2__fractal_cobaya.CompressedCMB
+0     1.0    879.796291  59.055564  0.36801  147.09  0.128346  64.259532  86.864829  77.460535  1475.618311       2.995732          2.995732  1753.601117                        77.460535                                1475.618311                          200.522271
+[minimize] Full set of minima:
+{'0': (879.7962906881453, True), '1': (879.7962906881282, True), '2': (879.796290688141, True)}
+PROF pl BAO+SN+CMB 0.6 1753.601
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAOSNCMB_1.0000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 794.549
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__fractal_cobaya.PantheonPlusPaperCut  chi2__fractal_cobaya.CompressedCMB
+0     1.0    794.548828  59.718925  0.376829  147.09   0.13439  65.102242  87.840567  47.482104  1468.477502       2.995732          2.995732  1583.106191                        47.482104                                1468.477502                           67.146585
+[minimize] Full set of minima:
+{'0': (794.5488277850692, True), '1': (794.5488277850685, True), '2': (794.5488277850712, True)}
+PROF pl BAO+SN+CMB 1.0 1583.106
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAOSNCMB_1.5000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 754.747
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__fractal_cobaya.PantheonPlusPaperCut  chi2__fractal_cobaya.CompressedCMB
+0     1.0    754.747135  60.744472  0.374812  147.09  0.138302  66.192133  89.349044   23.62541  1460.002635       2.995732          2.995732  1503.502806                         23.62541                                1460.002635                           19.874761
+[minimize] Full set of minima:
+{'0': (754.7471350860807, True), '1': (754.747135086087, True), '2': (754.7471350860794, True)}
+PROF pl BAO+SN+CMB 1.5 1503.503
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAOSNCMB_2.0000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 741.082
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0   omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__fractal_cobaya.PantheonPlusPaperCut  chi2__fractal_cobaya.CompressedCMB
+0     1.0    741.082203  61.728573  0.36836  147.09   0.14036  67.173049  90.796558  13.489408  1456.143669       2.995732          2.995732  1476.172941                        13.489408                                1456.143669                            6.539864
+[minimize] Full set of minima:
+{'0': (741.082202533453, True), '1': (741.0822025334627, True), '2': (741.0822025334609, True)}
+PROF pl BAO+SN+CMB 2.0 1476.173
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAOSNCMB_2.3000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 738.348
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__fractal_cobaya.PantheonPlusPaperCut  chi2__fractal_cobaya.CompressedCMB
+0     1.0    738.347534  62.264363  0.364018  147.09  0.141124  67.693964  91.584651  11.218473  1455.944974       2.995732          2.995732  1470.703603                        11.218473                                1455.944974                            3.540156
+[minimize] Full set of minima:
+{'0': (738.3475338858856, True), '1': (738.3475338858896, True), '2': (738.3475338858856, True)}
+PROF pl BAO+SN+CMB 2.3 1470.704
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAOSNCMB_2.6000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 737.758
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__fractal_cobaya.PantheonPlusPaperCut  chi2__fractal_cobaya.CompressedCMB
+0     1.0    737.758204  62.753878  0.359745  147.09  0.141669  68.164473  92.304679  10.498676  1456.986353       2.995732          2.995732  1469.524944                        10.498676                                1456.986353                            2.039915
+[minimize] Full set of minima:
+{'0': (737.7582044049735, True), '1': (737.7582044049615, True), '2': (737.7582044049627, True)}
+PROF pl BAO+SN+CMB 2.6 1469.525
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAOSNCMB_3.0000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 738.883
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0  omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__fractal_cobaya.PantheonPlusPaperCut  chi2__fractal_cobaya.CompressedCMB
+0     1.0    738.882845  63.335895  0.3544  147.09  0.142165  68.718716  93.160769  10.829998  1459.801569       2.995732          2.995732  1471.774225                        10.829998                                1459.801569                            1.142659
+[minimize] Full set of minima:
+{'0': (738.8828447033206, True), '1': (738.8828447033093, True), '2': (738.8828447033196, True)}
+PROF pl BAO+SN+CMB 3.0 1471.774
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAOSNCMB_3.5000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 741.828
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0   omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__fractal_cobaya.PantheonPlusPaperCut  chi2__fractal_cobaya.CompressedCMB
+0     1.0    741.828046  63.959169  0.34846  147.09  0.142547  69.307367  94.077542  12.087344  1464.808411       2.995732          2.995732  1477.664628                        12.087344                                1464.808411                            0.768874
+[minimize] Full set of minima:
+{'0': (741.8280464609553, True), '1': (741.828046460965, True), '2': (741.8280464609581, True)}
+PROF pl BAO+SN+CMB 3.5 1477.665
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAOSNCMB_4.0000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 745.435
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__fractal_cobaya.PantheonPlusPaperCut  chi2__fractal_cobaya.CompressedCMB
+0     1.0      745.4349  64.482095  0.343363  147.09  0.142768  69.798147  94.846714  13.490283  1470.695629       2.995732          2.995732  1484.878336                        13.490283                                1470.695629                            0.692424
+[minimize] Full set of minima:
+{'0': (745.4349003678504, True), '1': (745.4349003678594, True), '2': (745.4349003678501, True)}
+PROF pl BAO+SN+CMB 4.0 1484.878
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAOSNCMB_5.0000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 752.725
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0   omegam   rdrag  omegamh2   H0_local   hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__fractal_cobaya.PantheonPlusPaperCut  chi2__fractal_cobaya.CompressedCMB
+0     1.0    752.725373  65.291658  0.33535  147.09   0.14296  70.553519  96.0375  15.613568  1483.103093       2.995732          2.995732  1499.459282                        15.613568                                1483.103093                             0.74262
+[minimize] Full set of minima:
+{'0': (752.7253732033657, True), '1': (752.7253732033671, True), '2': (752.7253732033676, True)}
+PROF pl BAO+SN+CMB 5.0 1499.459
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAOSNCMB_6.0000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 759.077
+[minimize] Parameter values at minimum:
+   weight  minuslogpost       H0    omegam   rdrag  omegamh2   H0_local    hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__fractal_cobaya.PantheonPlusPaperCut  chi2__fractal_cobaya.CompressedCMB
+0     1.0    759.076692  65.8735  0.329543  147.09  0.142999  71.093702  96.89333  16.644351  1494.710725       2.995732          2.995732  1512.161919                        16.644351                                1494.710725                            0.806843
+[minimize] Full set of minima:
+{'0': (759.0766919912779, True), '1': (759.076691991286, True), '2': (759.0766919912919, True)}
+PROF pl BAO+SN+CMB 6.0 1512.162
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAOSNCMB_8.0000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 768.447
+[minimize] Parameter values at minimum:
+   weight  minuslogpost        H0    omegam   rdrag  omegamh2   H0_local    hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__fractal_cobaya.PantheonPlusPaperCut  chi2__fractal_cobaya.CompressedCMB
+0     1.0    768.446593  66.62714  0.322003  147.09  0.142943  71.790596  98.00186  16.789954  1513.244313       2.995732          2.995732  1530.901722                        16.789954                                1513.244313                            0.867455
+[minimize] Full set of minima:
+{'0': (768.4465931393853, True), '1': (768.4465931393846, True), '2': (768.446593139391, True)}
+PROF pl BAO+SN+CMB 8.0 1530.902
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAOSNCMB_10.0000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 774.407
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local     hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__fractal_cobaya.PantheonPlusPaperCut  chi2__fractal_cobaya.CompressedCMB
+0     1.0     774.40697  67.079153  0.317481  147.09  0.142854  72.207226  98.666726  16.059472  1525.874637       2.995732          2.995732  1542.822476                        16.059472                                1525.874637                            0.888368
+[minimize] Full set of minima:
+{'0': (774.4069704892161, True), '1': (774.4069704892138, True), '2': (774.4069704892136, True)}
+PROF pl BAO+SN+CMB 10.0 1542.822
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAOSNCMB_15.0000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 781.095
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2  H0_local     hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__fractal_cobaya.PantheonPlusPaperCut  chi2__fractal_cobaya.CompressedCMB
+0     1.0    781.095033  67.660997  0.311667  147.09  0.142681  72.74213  99.522561  14.308261  1540.976227       2.995732          2.995732  1556.198601                        14.308261                                1540.976227                            0.914114
+[minimize] Full set of minima:
+{'0': (781.0950329905177, True), '1': (781.0950329905187, True), '2': (781.0950329905093, True)}
+PROF pl BAO+SN+CMB 15.0 1556.199
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAOSNCMB_25.0000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 781.251
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local      hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0        chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__fractal_cobaya.PantheonPlusPaperCut  chi2__fractal_cobaya.CompressedCMB
+0     1.0    781.250537  68.093166  0.307359  147.09  0.142513  73.138513  100.158237  12.787306  1542.766927       2.995732          2.995732  1556.50961                        12.787306                                1542.766927                            0.955377
+[minimize] Full set of minima:
+{'0': (781.2505371465961, True), '1': (781.2505371465867, True), '2': (781.2505371465974, True)}
+PROF pl BAO+SN+CMB 25.0 1556.51
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAOSNCMB_50.0000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 770.565
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local      hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__fractal_cobaya.PantheonPlusPaperCut  chi2__fractal_cobaya.CompressedCMB
+0     1.0    770.564676  68.390131  0.304411  147.09   0.14238  73.410544  100.595044  11.832266  1522.294457       2.995732          2.995732  1535.137888                        11.832266                                1522.294457                            1.011165
+[minimize] Full set of minima:
+{'0': (770.5646762140664, True), '1': (770.5646762140743, True), '2': (770.5646762140681, True)}
+PROF pl BAO+SN+CMB 50.0 1535.138
+[output] Output to be read-from/written-into folder 'chains', with prefix 'prof_pl_BAOSNCMB_100.0000'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[minimize] *WARNING* This run has been SEEDED with seed 1
+[minimize] Initializing
+[minimize] Run 1/3 will start from random initial point:
+[minimize] {'H0': np.float64(68.98069094873671), 'omegam': np.float64(0.27615032820596436)}
+[minimize] Run 2/3 will start from random initial point:
+[minimize] {'H0': np.float64(67.90237064394589), 'omegam': np.float64(0.2980303579899606)}
+[minimize] Run 3/3 will start from random initial point:
+[minimize] {'H0': np.float64(56.93722245928286), 'omegam': np.float64(0.37188674330562177)}
+[minimize] Starting run 1/3
+[minimize] Run 1/3 converged.
+[minimize] Starting run 2/3
+[minimize] Run 2/3 converged.
+[minimize] Starting run 3/3
+[minimize] Run 3/3 converged.
+[minimize] Finished successfully!
+[minimize] -log(posterior) minimized to 757.012
+[minimize] Parameter values at minimum:
+   weight  minuslogpost         H0    omegam   rdrag  omegamh2   H0_local      hrdrag  chi2__BAO     chi2__SN  minuslogprior  minuslogprior__0         chi2  chi2__bao.desi_dr2.desi_bao_all  chi2__fractal_cobaya.PantheonPlusPaperCut  chi2__fractal_cobaya.CompressedCMB
+0     1.0    757.012264  68.536696  0.302947  147.09  0.142302  73.544484  100.810626  11.387653  1495.592052       2.995732          2.995732  1508.033064                        11.387653                                1495.592052                            1.053359
+[minimize] Full set of minima:
+{'0': (757.0122640724787, True), '1': (757.0122640724686, True), '2': (757.0122640724707, True)}
+PROF pl BAO+SN+CMB 100.0 1508.033
+[output] Output to be read-from/written-into folder 'chains', with prefix 'mc_pl_free_BAOSNCMB'
+[bao.desi_dr2.desi_bao_all] Initialized.
+[mcmc] *WARNING* This run has been SEEDED with seed 3
+[mcmc] Getting initial point... (this may take a few seconds)
+[mcmc] Initial point: H0:67.04788, omegam:0.310981, n:3.698739
+[model] Measuring speeds... (this may take a few seconds)
+[model] Setting measured speeds (per sec): {bao.desi_dr2.desi_bao_all: 1210.0, fractal_cobaya.PantheonPlusPaperCut: 172.0, fractal_cobaya.CompressedCMB: 63100.0, fractal_cobaya.FractalBackground: 114.0}
+[mcmc] Covariance matrix not present. We will start learning the covariance of the proposal earlier: R-1 = 30 (would be 2 if all params loaded).
+[mcmc] Sampling!
+[mcmc] Progress @ 2026-09-28 17:36:14 : 1 steps taken, and 0 accepted.
+[mcmc] Learn + convergence test @ 120 samples accepted.
+[mcmc]  - Acceptance rate: 0.074
+[mcmc]  - Convergence of means: R-1 = 1.110922 after 96 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 240 samples accepted.
+[mcmc]  - Acceptance rate: 0.141
+[mcmc]  - Convergence of means: R-1 = 0.462372 after 192 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 360 samples accepted.
+[mcmc]  - Acceptance rate: 0.214
+[mcmc]  - Convergence of means: R-1 = 0.210269 after 288 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 480 samples accepted.
+[mcmc]  - Acceptance rate: 0.265
+[mcmc]  - Convergence of means: R-1 = 0.136380 after 384 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 600 samples accepted.
+[mcmc]  - Acceptance rate: 0.319
+[mcmc]  - Convergence of means: R-1 = 0.082426 after 480 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 720 samples accepted.
+[mcmc]  - Acceptance rate: 0.307
+[mcmc]  - Convergence of means: R-1 = 0.074033 after 576 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 840 samples accepted.
+[mcmc]  - Acceptance rate: 0.299
+[mcmc]  - Convergence of means: R-1 = 0.101345 after 672 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 960 samples accepted.
+[mcmc]  - Acceptance rate: 0.296
+[mcmc]  - Convergence of means: R-1 = 0.038510 after 768 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-09-28 17:37:14 : 4521 steps taken, and 1000 accepted.
+[mcmc] Learn + convergence test @ 1080 samples accepted.
+[mcmc]  - Acceptance rate: 0.290
+[mcmc]  - Convergence of means: R-1 = 0.024874 after 864 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 1200 samples accepted.
+[mcmc]  - Acceptance rate: 0.283
+[mcmc]  - Convergence of means: R-1 = 0.018094 after 960 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 1320 samples accepted.
+[mcmc]  - Acceptance rate: 0.281
+[mcmc]  - Convergence of means: R-1 = 0.012834 after 1056 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 1440 samples accepted.
+[mcmc]  - Acceptance rate: 0.279
+[mcmc]  - Convergence of means: R-1 = 0.032783 after 1152 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 1560 samples accepted.
+[mcmc]  - Acceptance rate: 0.279
+[mcmc]  - Convergence of means: R-1 = 0.031531 after 1248 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 1680 samples accepted.
+[mcmc]  - Acceptance rate: 0.274
+[mcmc]  - Convergence of means: R-1 = 0.010211 after 1344 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 1800 samples accepted.
+[mcmc]  - Acceptance rate: 0.272
+[mcmc]  - Convergence of means: R-1 = 0.009186 after 1440 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 1920 samples accepted.
+[mcmc]  - Acceptance rate: 0.270
+[mcmc]  - Convergence of means: R-1 = 0.013389 after 1536 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 2040 samples accepted.
+[mcmc]  - Acceptance rate: 0.270
+[mcmc]  - Convergence of means: R-1 = 0.010612 after 1632 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 2160 samples accepted.
+[mcmc]  - Acceptance rate: 0.274
+[mcmc]  - Convergence of means: R-1 = 0.008862 after 1728 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-09-28 17:38:14 : 9064 steps taken, and 2238 accepted.
+[mcmc] Learn + convergence test @ 2280 samples accepted.
+[mcmc]  - Acceptance rate: 0.276
+[mcmc]  - Convergence of means: R-1 = 0.005523 after 1824 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 2400 samples accepted.
+[mcmc]  - Acceptance rate: 0.276
+[mcmc]  - Convergence of means: R-1 = 0.010980 after 1920 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 2520 samples accepted.
+[mcmc]  - Acceptance rate: 0.276
+[mcmc]  - Convergence of means: R-1 = 0.012934 after 2016 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 2640 samples accepted.
+[mcmc]  - Acceptance rate: 0.276
+[mcmc]  - Convergence of means: R-1 = 0.012293 after 2112 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 2760 samples accepted.
+[mcmc]  - Acceptance rate: 0.276
+[mcmc]  - Convergence of means: R-1 = 0.008691 after 2208 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 2880 samples accepted.
+[mcmc]  - Acceptance rate: 0.275
+[mcmc]  - Convergence of means: R-1 = 0.014952 after 2304 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 3000 samples accepted.
+[mcmc]  - Acceptance rate: 0.274
+[mcmc]  - Convergence of means: R-1 = 0.010366 after 2400 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 3120 samples accepted.
+[mcmc]  - Acceptance rate: 0.273
+[mcmc]  - Convergence of means: R-1 = 0.006467 after 2496 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 3240 samples accepted.
+[mcmc]  - Acceptance rate: 0.275
+[mcmc]  - Convergence of means: R-1 = 0.007909 after 2592 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 3360 samples accepted.
+[mcmc]  - Acceptance rate: 0.275
+[mcmc]  - Convergence of means: R-1 = 0.012477 after 2688 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-09-28 17:39:14 : 13241 steps taken, and 3414 accepted.
+[mcmc] Learn + convergence test @ 3480 samples accepted.
+[mcmc]  - Acceptance rate: 0.275
+[mcmc]  - Convergence of means: R-1 = 0.012083 after 2784 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 3600 samples accepted.
+[mcmc]  - Acceptance rate: 0.276
+[mcmc]  - Convergence of means: R-1 = 0.008631 after 2880 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 3720 samples accepted.
+[mcmc]  - Acceptance rate: 0.277
+[mcmc]  - Convergence of means: R-1 = 0.011387 after 2976 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 3840 samples accepted.
+[mcmc]  - Acceptance rate: 0.278
+[mcmc]  - Convergence of means: R-1 = 0.009734 after 3072 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 3960 samples accepted.
+[mcmc]  - Acceptance rate: 0.279
+[mcmc]  - Convergence of means: R-1 = 0.006681 after 3168 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 4080 samples accepted.
+[mcmc]  - Acceptance rate: 0.278
+[mcmc]  - Convergence of means: R-1 = 0.006906 after 3264 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 4200 samples accepted.
+[mcmc]  - Acceptance rate: 0.277
+[mcmc]  - Convergence of means: R-1 = 0.007305 after 3360 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 4320 samples accepted.
+[mcmc]  - Acceptance rate: 0.278
+[mcmc]  - Convergence of means: R-1 = 0.012432 after 3456 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 4440 samples accepted.
+[mcmc]  - Acceptance rate: 0.278
+[mcmc]  - Convergence of means: R-1 = 0.007757 after 3552 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 4560 samples accepted.
+[mcmc]  - Acceptance rate: 0.278
+[mcmc]  - Convergence of means: R-1 = 0.009589 after 3648 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-09-28 17:40:14 : 17666 steps taken, and 4674 accepted.
+[mcmc] Learn + convergence test @ 4680 samples accepted.
+[mcmc]  - Acceptance rate: 0.279
+[mcmc]  - Convergence of means: R-1 = 0.006875 after 3744 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 4800 samples accepted.
+[mcmc]  - Acceptance rate: 0.279
+[mcmc]  - Convergence of means: R-1 = 0.006214 after 3840 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 4920 samples accepted.
+[mcmc]  - Acceptance rate: 0.279
+[mcmc]  - Convergence of means: R-1 = 0.007926 after 3936 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 5040 samples accepted.
+[mcmc]  - Acceptance rate: 0.282
+[mcmc]  - Convergence of means: R-1 = 0.012151 after 4032 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 5160 samples accepted.
+[mcmc]  - Acceptance rate: 0.282
+[mcmc]  - Convergence of means: R-1 = 0.014340 after 4128 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 5280 samples accepted.
+[mcmc]  - Acceptance rate: 0.281
+[mcmc]  - Convergence of means: R-1 = 0.013275 after 4224 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 5400 samples accepted.
+[mcmc]  - Acceptance rate: 0.281
+[mcmc]  - Convergence of means: R-1 = 0.008095 after 4320 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 5520 samples accepted.
+[mcmc]  - Acceptance rate: 0.281
+[mcmc]  - Convergence of means: R-1 = 0.009900 after 4416 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 5640 samples accepted.
+[mcmc]  - Acceptance rate: 0.281
+[mcmc]  - Convergence of means: R-1 = 0.008801 after 4512 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 5760 samples accepted.
+[mcmc]  - Acceptance rate: 0.282
+[mcmc]  - Convergence of means: R-1 = 0.010135 after 4608 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 5880 samples accepted.
+[mcmc]  - Acceptance rate: 0.282
+[mcmc]  - Convergence of means: R-1 = 0.010518 after 4704 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-09-28 17:41:14 : 22106 steps taken, and 5955 accepted.
+[mcmc] Learn + convergence test @ 6000 samples accepted.
+[mcmc]  - Acceptance rate: 0.284
+[mcmc]  - Convergence of means: R-1 = 0.006482 after 4800 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 6120 samples accepted.
+[mcmc]  - Acceptance rate: 0.283
+[mcmc]  - Convergence of means: R-1 = 0.004288 after 4896 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 6240 samples accepted.
+[mcmc]  - Acceptance rate: 0.283
+[mcmc]  - Convergence of means: R-1 = 0.003603 after 4992 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 6360 samples accepted.
+[mcmc]  - Acceptance rate: 0.284
+[mcmc]  - Convergence of means: R-1 = 0.005648 after 5088 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 6480 samples accepted.
+[mcmc]  - Acceptance rate: 0.285
+[mcmc]  - Convergence of means: R-1 = 0.008248 after 5184 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 6600 samples accepted.
+[mcmc]  - Acceptance rate: 0.285
+[mcmc]  - Convergence of means: R-1 = 0.008197 after 5280 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 6720 samples accepted.
+[mcmc]  - Acceptance rate: 0.285
+[mcmc]  - Convergence of means: R-1 = 0.007119 after 5376 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 6840 samples accepted.
+[mcmc]  - Acceptance rate: 0.285
+[mcmc]  - Convergence of means: R-1 = 0.009915 after 5472 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 6960 samples accepted.
+[mcmc]  - Acceptance rate: 0.286
+[mcmc]  - Convergence of means: R-1 = 0.008147 after 5568 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 7080 samples accepted.
+[mcmc]  - Acceptance rate: 0.287
+[mcmc]  - Convergence of means: R-1 = 0.007169 after 5664 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-09-28 17:42:14 : 26142 steps taken, and 7188 accepted.
+[mcmc] Learn + convergence test @ 7200 samples accepted.
+[mcmc]  - Acceptance rate: 0.288
+[mcmc]  - Convergence of means: R-1 = 0.006537 after 5760 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 7320 samples accepted.
+[mcmc]  - Acceptance rate: 0.288
+[mcmc]  - Convergence of means: R-1 = 0.005025 after 5856 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 7440 samples accepted.
+[mcmc]  - Acceptance rate: 0.288
+[mcmc]  - Convergence of means: R-1 = 0.005876 after 5952 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 7560 samples accepted.
+[mcmc]  - Acceptance rate: 0.289
+[mcmc]  - Convergence of means: R-1 = 0.006198 after 6048 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 7680 samples accepted.
+[mcmc]  - Acceptance rate: 0.289
+[mcmc]  - Convergence of means: R-1 = 0.005103 after 6144 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 7800 samples accepted.
+[mcmc]  - Acceptance rate: 0.289
+[mcmc]  - Convergence of means: R-1 = 0.004651 after 6240 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 7920 samples accepted.
+[mcmc]  - Acceptance rate: 0.289
+[mcmc]  - Convergence of means: R-1 = 0.005875 after 6336 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 8040 samples accepted.
+[mcmc]  - Acceptance rate: 0.290
+[mcmc]  - Convergence of means: R-1 = 0.007703 after 6432 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 8160 samples accepted.
+[mcmc]  - Acceptance rate: 0.290
+[mcmc]  - Convergence of means: R-1 = 0.005643 after 6528 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 8280 samples accepted.
+[mcmc]  - Acceptance rate: 0.290
+[mcmc]  - Convergence of means: R-1 = 0.004972 after 6624 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 8400 samples accepted.
+[mcmc]  - Acceptance rate: 0.291
+[mcmc]  - Convergence of means: R-1 = 0.004369 after 6720 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-09-28 17:43:14 : 30226 steps taken, and 8405 accepted.
+[mcmc] Learn + convergence test @ 8520 samples accepted.
+[mcmc]  - Acceptance rate: 0.291
+[mcmc]  - Convergence of means: R-1 = 0.005027 after 6816 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 8640 samples accepted.
+[mcmc]  - Acceptance rate: 0.290
+[mcmc]  - Convergence of means: R-1 = 0.006658 after 6912 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 8760 samples accepted.
+[mcmc]  - Acceptance rate: 0.291
+[mcmc]  - Convergence of means: R-1 = 0.004474 after 7008 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 8880 samples accepted.
+[mcmc]  - Acceptance rate: 0.291
+[mcmc]  - Convergence of means: R-1 = 0.005778 after 7104 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 9000 samples accepted.
+[mcmc]  - Acceptance rate: 0.291
+[mcmc]  - Convergence of means: R-1 = 0.004409 after 7200 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 9120 samples accepted.
+[mcmc]  - Acceptance rate: 0.292
+[mcmc]  - Convergence of means: R-1 = 0.006144 after 7296 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 9240 samples accepted.
+[mcmc]  - Acceptance rate: 0.292
+[mcmc]  - Convergence of means: R-1 = 0.004386 after 7392 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 9360 samples accepted.
+[mcmc]  - Acceptance rate: 0.292
+[mcmc]  - Convergence of means: R-1 = 0.003121 after 7488 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 9480 samples accepted.
+[mcmc]  - Acceptance rate: 0.293
+[mcmc]  - Convergence of means: R-1 = 0.003116 after 7584 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 9600 samples accepted.
+[mcmc]  - Acceptance rate: 0.293
+[mcmc]  - Convergence of means: R-1 = 0.003520 after 7680 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-09-28 17:44:14 : 34411 steps taken, and 9658 accepted.
+[mcmc] Learn + convergence test @ 9720 samples accepted.
+[mcmc]  - Acceptance rate: 0.293
+[mcmc]  - Convergence of means: R-1 = 0.003364 after 7776 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 9840 samples accepted.
+[mcmc]  - Acceptance rate: 0.293
+[mcmc]  - Convergence of means: R-1 = 0.003472 after 7872 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 9960 samples accepted.
+[mcmc]  - Acceptance rate: 0.293
+[mcmc]  - Convergence of means: R-1 = 0.005268 after 7968 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 10080 samples accepted.
+[mcmc]  - Acceptance rate: 0.294
+[mcmc]  - Convergence of means: R-1 = 0.006166 after 8064 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 10200 samples accepted.
+[mcmc]  - Acceptance rate: 0.294
+[mcmc]  - Convergence of means: R-1 = 0.006005 after 8160 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 10320 samples accepted.
+[mcmc]  - Acceptance rate: 0.294
+[mcmc]  - Convergence of means: R-1 = 0.004980 after 8256 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 10440 samples accepted.
+[mcmc]  - Acceptance rate: 0.294
+[mcmc]  - Convergence of means: R-1 = 0.005288 after 8352 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 10560 samples accepted.
+[mcmc]  - Acceptance rate: 0.294
+[mcmc]  - Convergence of means: R-1 = 0.003978 after 8448 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 10680 samples accepted.
+[mcmc]  - Acceptance rate: 0.294
+[mcmc]  - Convergence of means: R-1 = 0.004390 after 8544 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 10800 samples accepted.
+[mcmc]  - Acceptance rate: 0.294
+[mcmc]  - Convergence of means: R-1 = 0.003661 after 8640 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-09-28 17:45:14 : 38441 steps taken, and 10890 accepted.
+[mcmc] Learn + convergence test @ 10920 samples accepted.
+[mcmc]  - Acceptance rate: 0.295
+[mcmc]  - Convergence of means: R-1 = 0.002699 after 8736 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 11040 samples accepted.
+[mcmc]  - Acceptance rate: 0.294
+[mcmc]  - Convergence of means: R-1 = 0.002454 after 8832 accepted steps
+[mcmc]  - Convergence of bounds: R-1 = 0.053665 after 11040 accepted steps
+[mcmc] The run has converged!
+[mcmc] Sampling complete after 11040 accepted steps.
+[output] Output to be read-from/written-into folder 'chains', with prefix 'lcdm_bao_mcmc'
+[output] Found existing info files with the requested output prefix: 'chains/lcdm_bao_mcmc'
+[output] Will delete previous products ('force' was requested).
+[bao.desi_dr2.desi_bao_all] Initialized.
+[mcmc] *WARNING* This run has been SEEDED with seed 3
+[mcmc] Getting initial point... (this may take a few seconds)
+[mcmc] Initial point: H0:67.04788, omegam:0.310981
+[model] Measuring speeds... (this may take a few seconds)
+[model] Setting measured speeds (per sec): {bao.desi_dr2.desi_bao_all: 2180.0, fractal_cobaya.FractalBackground: 346.0}
+[mcmc] Covariance matrix not present. We will start learning the covariance of the proposal earlier: R-1 = 30 (would be 2 if all params loaded).
+[mcmc] Sampling!
+[mcmc] Progress @ 2026-09-28 17:45:22 : 1 steps taken, and 0 accepted.
+[mcmc] Learn + convergence test @ 80 samples accepted.
+[mcmc]  - Acceptance rate: 0.106
+[mcmc]  - Convergence of means: R-1 = 0.118724 after 64 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 160 samples accepted.
+[mcmc]  - Acceptance rate: 0.189
+[mcmc]  - Convergence of means: R-1 = 0.392265 after 128 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 240 samples accepted.
+[mcmc]  - Acceptance rate: 0.241
+[mcmc]  - Convergence of means: R-1 = 0.032750 after 192 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 320 samples accepted.
+[mcmc]  - Acceptance rate: 0.285
+[mcmc]  - Convergence of means: R-1 = 0.132817 after 256 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 400 samples accepted.
+[mcmc]  - Acceptance rate: 0.320
+[mcmc]  - Convergence of means: R-1 = 0.022595 after 320 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 480 samples accepted.
+[mcmc]  - Acceptance rate: 0.311
+[mcmc]  - Convergence of means: R-1 = 0.046696 after 384 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 560 samples accepted.
+[mcmc]  - Acceptance rate: 0.307
+[mcmc]  - Convergence of means: R-1 = 0.048589 after 448 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 640 samples accepted.
+[mcmc]  - Acceptance rate: 0.316
+[mcmc]  - Convergence of means: R-1 = 0.041674 after 512 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 720 samples accepted.
+[mcmc]  - Acceptance rate: 0.312
+[mcmc]  - Convergence of means: R-1 = 0.025307 after 576 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 800 samples accepted.
+[mcmc]  - Acceptance rate: 0.300
+[mcmc]  - Convergence of means: R-1 = 0.008578 after 640 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 880 samples accepted.
+[mcmc]  - Acceptance rate: 0.297
+[mcmc]  - Convergence of means: R-1 = 0.034746 after 704 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 960 samples accepted.
+[mcmc]  - Acceptance rate: 0.292
+[mcmc]  - Convergence of means: R-1 = 0.034383 after 768 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 1040 samples accepted.
+[mcmc]  - Acceptance rate: 0.299
+[mcmc]  - Convergence of means: R-1 = 0.017326 after 832 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 1120 samples accepted.
+[mcmc]  - Acceptance rate: 0.303
+[mcmc]  - Convergence of means: R-1 = 0.030062 after 896 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 1200 samples accepted.
+[mcmc]  - Acceptance rate: 0.300
+[mcmc]  - Convergence of means: R-1 = 0.022653 after 960 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 1280 samples accepted.
+[mcmc]  - Acceptance rate: 0.302
+[mcmc]  - Convergence of means: R-1 = 0.017130 after 1024 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 1360 samples accepted.
+[mcmc]  - Acceptance rate: 0.302
+[mcmc]  - Convergence of means: R-1 = 0.003314 after 1088 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 1440 samples accepted.
+[mcmc]  - Acceptance rate: 0.298
+[mcmc]  - Convergence of means: R-1 = 0.004520 after 1152 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 1520 samples accepted.
+[mcmc]  - Acceptance rate: 0.295
+[mcmc]  - Convergence of means: R-1 = 0.011328 after 1216 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 1600 samples accepted.
+[mcmc]  - Acceptance rate: 0.294
+[mcmc]  - Convergence of means: R-1 = 0.006905 after 1280 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 1680 samples accepted.
+[mcmc]  - Acceptance rate: 0.293
+[mcmc]  - Convergence of means: R-1 = 0.007237 after 1344 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 1760 samples accepted.
+[mcmc]  - Acceptance rate: 0.294
+[mcmc]  - Convergence of means: R-1 = 0.006046 after 1408 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 1840 samples accepted.
+[mcmc]  - Acceptance rate: 0.292
+[mcmc]  - Convergence of means: R-1 = 0.005422 after 1472 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 1920 samples accepted.
+[mcmc]  - Acceptance rate: 0.293
+[mcmc]  - Convergence of means: R-1 = 0.007192 after 1536 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 2000 samples accepted.
+[mcmc]  - Acceptance rate: 0.293
+[mcmc]  - Convergence of means: R-1 = 0.004258 after 1600 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 2080 samples accepted.
+[mcmc]  - Acceptance rate: 0.294
+[mcmc]  - Convergence of means: R-1 = 0.006844 after 1664 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 2160 samples accepted.
+[mcmc]  - Acceptance rate: 0.294
+[mcmc]  - Convergence of means: R-1 = 0.007022 after 1728 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 2240 samples accepted.
+[mcmc]  - Acceptance rate: 0.294
+[mcmc]  - Convergence of means: R-1 = 0.001515 after 1792 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 2320 samples accepted.
+[mcmc]  - Acceptance rate: 0.295
+[mcmc]  - Convergence of means: R-1 = 0.004996 after 1856 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 2400 samples accepted.
+[mcmc]  - Acceptance rate: 0.298
+[mcmc]  - Convergence of means: R-1 = 0.000796 after 1920 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Learn + convergence test @ 2480 samples accepted.
+[mcmc]  - Acceptance rate: 0.299
+[mcmc]  - Convergence of means: R-1 = 0.002747 after 1984 accepted steps
+[mcmc]  - Convergence of bounds: R-1 = 0.070809 after 2480 accepted steps
+[mcmc] The run has converged!
+[mcmc] Sampling complete after 2480 accepted steps.

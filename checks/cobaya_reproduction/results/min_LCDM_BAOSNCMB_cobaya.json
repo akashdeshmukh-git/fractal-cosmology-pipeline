@@ -1,0 +1,17 @@
+{
+ "name": "LCDM_BAOSNCMB_cobaya",
+ "minus_logpost": 711.89591,
+ "chi2": 1417.8004,
+ "chi2_parts": {
+  "chi2__bao.desi_dr2.desi_bao_all": 10.785945,
+  "chi2__sn.pantheonplus": 1405.8588,
+  "chi2__fractal_cobaya.CompressedCMB": 1.1556523
+ },
+ "params": {
+  "H0": 68.731483,
+  "omegam": 0.30090198,
+  "H0_local": 68.731483,
+  "hrdrag": 101.09714,
+  "omegamh2": 0.1421466
+ }
+}

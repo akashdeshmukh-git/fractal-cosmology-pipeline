@@ -1,0 +1,16 @@
+{
+ "name": "LCDM_BAOSN_cobaya",
+ "minus_logpost": 711.08666,
+ "chi2": 1416.1819,
+ "chi2_parts": {
+  "chi2__bao.desi_dr2.desi_bao_all": 10.888049,
+  "chi2__sn.pantheonplus": 1405.2938
+ },
+ "params": {
+  "H0": 68.678599,
+  "omegam": 0.30393337,
+  "H0_local": 68.678599,
+  "hrdrag": 101.01935,
+  "omegamh2": 0.14335777
+ }
+}

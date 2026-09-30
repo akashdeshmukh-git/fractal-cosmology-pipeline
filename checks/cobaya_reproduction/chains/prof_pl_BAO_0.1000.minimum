@@ -1,0 +1,13 @@
+ -log(Like) = 7.923628987411849
+  chi-sq    = 15.847257974823698
+
+    1  6.512114202e+01   H0                                H_E
+    2  2.305964984e-01   omegam                            \Omega_m
+
+
+    3  147.09            rdrag                             r_d
+    4  9.779051300e-02   omegamh2                          \omega_m
+    5  6.877292856e+01   H0_local                          H_{\rm local}
+    6  9.578668780e+01   hrdrag                            h r_d
+    7  9.855793428e+00   chi2__BAO                         \chi^2_\mathrm{BAO}
+    8  9.855793428e+00   chi2__bao.desi_dr2.desi_bao_all   \chi^2_{\rm bao.desi\ dr2.desi\ bao\ all}

@@ -1,0 +1,2 @@
+#        weight    minuslogpost              H0          omegam           rdrag        omegamh2        H0_local          hrdrag       chi2__BAO   minuslogprior minuslogprior__0            chi2 chi2__bao.desi_dr2.desi_bao_all
+              1       8.9965182       63.821995      0.35599876          147.09      0.14500709       69.269636       93.875772       12.001572       2.9957323        2.9957323       12.001572                       12.001572

@@ -1,0 +1,19 @@
+{
+ "name": "exp_free_BAOSNCMB_cobaya",
+ "minus_logpost": 710.50078,
+ "chi2": 1411.787,
+ "chi2_parts": {
+  "chi2__bao.desi_dr2.desi_bao_all": 8.498106,
+  "chi2__sn.pantheonplus": 1402.5124,
+  "chi2__fractal_cobaya.CompressedCMB": 0.77647899
+ },
+ "params": {
+  "H0": 62.321912,
+  "omegam": 0.36613891,
+  "lnzc": -0.62546222,
+  "zchar": 0.53501408,
+  "H0_local": 67.786918,
+  "hrdrag": 91.669301,
+  "omegamh2": 0.14220911
+ }
+}

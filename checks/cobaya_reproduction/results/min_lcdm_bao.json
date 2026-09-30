@@ -1,0 +1,15 @@
+{
+ "name": "lcdm_bao",
+ "minus_logpost": 8.1374251,
+ "chi2": 10.283386,
+ "chi2_parts": {
+  "chi2__bao.desi_dr2.desi_bao_all": 10.283386
+ },
+ "params": {
+  "H0": 69.038487,
+  "omegam": 0.29715136,
+  "H0_local": 69.038487,
+  "hrdrag": 101.54871,
+  "omegamh2": 0.14163163
+ }
+}

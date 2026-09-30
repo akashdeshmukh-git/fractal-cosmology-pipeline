@@ -1,0 +1,5 @@
+standard computed LCDM      chi2=1418.762 H_E=68.48 Om=0.3031 wm=0.1422 rd=147.31 shape=None Hloc=68.48
+standard computed exp_fix   chi2=1414.537 H_E=62.95 Om=0.3599 wm=0.1426 rd=147.19 shape=0.4420866489832007 Hloc=68.38
+standard computed pl_fix    chi2=1422.873 H_E=61.58 Om=0.3719 wm=0.1410 rd=147.61 shape=2.262 Hloc=67.07
+standard computed exp_free  chi2=1412.526 H_E=62.21 Om=0.3677 wm=0.1423 rd=147.27 shape=0.5190937498985828 Hloc=67.69
+standard computed pl_free   chi2=1417.917 H_E=62.63 Om=0.3617 wm=0.1419 rd=147.39 shape=2.746067256125939 Hloc=68.05
