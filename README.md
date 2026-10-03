@@ -92,9 +92,10 @@ All execution results save directly to an automatically generated `/results/` fo
 
 ## Independent Checks (DESI DR2)
 
-The `checks/` directory contains two independent verifications of the DESI DR2 analysis reported in the paper. They are self-contained and do not import or modify the DR1 pipeline above.
+The `checks/` directory contains three independent verifications of the DESI DR2 analysis reported in the paper. They are self-contained and do not import or modify the DR1 pipeline above.
 
 - **[`checks/cobaya_reproduction/`](checks/cobaya_reproduction/)** — Reproduction of the main DR2 fits with [Cobaya](https://cobaya.readthedocs.io), using its official DESI DR2 BAO and Pantheon+ likelihoods. All fifteen χ² minima reported in the paper are recovered to within 0.004.
 - **[`checks/rd_robustness/`](checks/rd_robustness/)** — Sensitivity of the results to the treatment of the BAO sound horizon r_d (fixed, free, or derived from ω_m).
+- **[`checks/sn_cut_robustness/`](checks/sn_cut_robustness/)** — Sensitivity of the results to the minimum supernova redshift (z > 0.01, 0.02, 0.03), testing for contamination by peculiar velocities.
 
 Each directory includes its own README describing the method, results, limitations, and instructions for reproduction.
