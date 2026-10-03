@@ -1,0 +1,2 @@
+zmin=0.03 N=1233 BAO+SN: dchi2 exp_free=-5.97 zc=0.580 Hloc=67.62 | exp_fix=-3.49
+zmin=0.03 N=1233 BAO+SN+CMB: dchi2 exp_free=-6.67 zc=0.553 Hloc=67.63 | exp_fix=-3.37
