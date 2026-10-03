@@ -1,5 +1,7 @@
 # Fractal Hubble Model — Analysis Package
 
+> **Note:** This branch contains the original DESI DR1 pipeline. The DESI DR2 analysis used in the paper is on the [`desi-dr2`](../../tree/desi-dr2) branch. Independent checks of the DR2 results are in [`checks/`](checks/).
+
 Complete analysis package for the paper:  
 **"Redshift Evolution of the Fractal Cosmic Web Correction to the Hubble Constant"**
 
