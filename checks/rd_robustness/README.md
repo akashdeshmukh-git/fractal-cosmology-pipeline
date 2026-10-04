@@ -1,22 +1,22 @@
-# Does the result depend on fixing the sound horizon r_d?
+# Sensitivity to the treatment of the sound horizon r_d
 
 A robustness test for *Redshift Evolution of the Fractal Cosmic Web Correction to the Hubble Constant* (Annalen der Physik ms 9212113). The paper fixes the BAO sound horizon at r_d = 147.09 Mpc, the Planck ΛCDM value. This folder refits every model with r_d treated four different ways and checks whether the preference for the fractal model survives.
 
 Date of runs: 28 September 2026.
 
-## Short answer
+## Summary
 
 - **BAO alone and BAO+SN: r_d cannot matter.** H_E is already a free parameter and BAO only measures distances in units of r_d, so the data constrain only the product H_E·r_d. Supernovae, with the absolute magnitude marginalised, do not depend on the absolute scale at all. Fixing or freeing r_d therefore gives the same χ²_min (checked numerically in `results/log_bao_only_fixed_vs_free.txt`). The BAO+SN preference (Δχ² = −6.1) is already independent of r_d.
 - **BAO+SN+CMB: the main result is robust.** The free exponential beats ΛCDM in every treatment:
-  - Δχ² from −5.9 to −7.0 with the paper's SN sample
+  - Δχ² from −5.9 to −7.0 with the 1624-SN sample
   - Δχ² from −5.2 to −6.2 with the standard SN cut
   - z_char stays at 0.52 to 0.57
   - H_local stays at 67.5 to 68.1 km/s/Mpc, so the Hubble-tension conclusion is unchanged
 - **One claim depends on how r_d is treated: that the CMB favours the exponential over the power law.** If r_d is left completely free *and* the CMB's r* is allowed to move with it, the fixed power law (−4.5) beats the fixed exponential (−3.2). It does this by shrinking r_d to 145.6 Mpc. With pre-recombination physics unchanged (as in this model), that would need ω_m ≈ 0.149, about 5σ from the CMB value 0.1430 ± 0.0011. When r_d is computed from ω_m instead, the exponential–power-law gap gets wider (−4.6 against +3.4).
 
-## Suggested sentence for the paper
+## Statement in the revised paper (R2)
 
-> Since the model leaves pre-recombination physics unchanged, r_d is set by ω_m. Computing r_d from ω_m instead of fixing it changes the Δχ² of the free exponential by about 0.2 (0.15 with the paper's SN sample, 0.22 with the standard cut). Treating r_d as fully free leaves the preference for the fractal correction intact (Δχ² between −5.9 and −6.9), but removes the distinction between the exponential and power-law forms, and only for r_d values that the CMB excludes.
+Since the model leaves pre-recombination physics unchanged, r_d is set by ω_m. Computing r_d from ω_m instead of fixing it changes the Δχ² of the free exponential by about 0.2 (0.15 with the 1624-SN sample, 0.22 with the standard cut). Treating r_d as fully free leaves the preference for the fractal correction intact (Δχ² between −5.9 and −6.9), but removes the distinction between the exponential and power-law forms, and only for r_d values that the CMB excludes.
 
 ## Results (Δχ² relative to ΛCDM fitted the same way)
 
