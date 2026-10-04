@@ -6,7 +6,7 @@ theory:
     speed: -1
     stop_at_error: false
     version: null
-    python_path: /home/claude/cobaya_repro
+    python_path: .
     input_params:
     - H0
     - omegam
@@ -38,7 +38,7 @@ likelihood:
     input_params: []
     output_params: []
   fractal_cobaya.PantheonPlusPaperCut:
-    path: /home/claude/cobaya_repro/packages/data/sn_data
+    path: ./packages/data/sn_data
     dataset_file: PantheonPlus/config.dataset
     dataset_params: null
     aliases:
@@ -48,7 +48,7 @@ likelihood:
     type: SN
     stop_at_error: false
     version: null
-    python_path: /home/claude/cobaya_repro
+    python_path: .
     input_params: []
     output_params: []
 params:
@@ -141,6 +141,6 @@ sampler:
     drag_limits: null
     fallback_covmat_scale: 4
     version: 3.6.2
-packages_path: /home/claude/cobaya_repro/packages
+packages_path: ./packages
 output: mc_exp_free_BAOSN
 version: 3.6.2

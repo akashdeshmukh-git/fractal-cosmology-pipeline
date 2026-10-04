@@ -1,6 +1,6 @@
 theory:
   fractal_cobaya.FractalBackground:
-    python_path: /home/claude/cobaya_repro
+    python_path: .
     family: lcdm
     kind: exp
     shape_fixed: null
@@ -43,5 +43,5 @@ sampler:
     max_tries: 100000
     learn_proposal: true
     seed: 3
-packages_path: /home/claude/cobaya_repro/packages
+packages_path: ./packages
 output: lcdm_bao_mcmc

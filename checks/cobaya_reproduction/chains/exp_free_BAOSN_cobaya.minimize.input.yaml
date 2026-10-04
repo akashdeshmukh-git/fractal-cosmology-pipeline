@@ -1,6 +1,6 @@
 theory:
   fractal_cobaya.FractalBackground:
-    python_path: /home/claude/cobaya_repro
+    python_path: .
     family: A
     kind: exp
     shape_fixed: null
@@ -57,5 +57,5 @@ sampler:
     seed: 1
     override_bobyqa:
       rhoend: 1.0e-09
-packages_path: /home/claude/cobaya_repro/packages
+packages_path: ./packages
 output: exp_free_BAOSN_cobaya
