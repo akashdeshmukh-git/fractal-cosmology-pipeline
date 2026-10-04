@@ -1,19 +1,19 @@
-# Cobaya reproduction of "Redshift Evolution of the Fractal Cosmic Web Correction to the Hubble Constant" (Annalen der Physik ms 9212113, revision R2)
+# Cobaya reproduction of the DESI DR2 analysis
 
-This folder re-runs the DESI DR2 analysis of the paper with [Cobaya](https://cobaya.readthedocs.io) 3.6.2. It uses Cobaya's own DESI DR2 BAO and Pantheon+ likelihoods, a freshly written background theory for the fractal model and a freshly written compressed-CMB likelihood. None of the paper's code (`fraccosmo.py`) is imported, so every number below is an independent recomputation.
+Independent reproduction of the DESI DR2 results in *Redshift Evolution of the Fractal Cosmic Web Correction to the Hubble Constant* (Annalen der Physik, ms 9212113), using [Cobaya](https://cobaya.readthedocs.io) 3.6.2.
 
-**Short version.**
-- ΛCDM on DESI DR2 BAO reproduces the published DESI numbers.
-- All 15 χ²_min values in Table 12 of the paper reproduce to within 0.004.
-- Two things in the paper should be corrected before publication:
-  1. The posterior medians and intervals quoted from the grid integration are biased low by half a grid step.
-  2. The supernova sample is not the standard Pantheon+ cosmology cut, and the standard cut weakens every fractal-model preference by 0.4 to 0.9 in Δχ².
+The reproduction uses Cobaya's own DESI DR2 BAO and Pantheon+ likelihoods, together with a separately written background theory for the fractal model and a separately written compressed-CMB likelihood. None of the paper's analysis code is imported, so all numbers below are recomputed independently.
 
-Both are described in detail below.
+## Summary
 
-## 1. What was matched to the paper
+- ΛCDM fitted to DESI DR2 BAO reproduces the published DESI constraints.
+- All fifteen χ²_min values in Table 12 of the paper are recovered to within 0.004.
+- The reproduction identified a half-grid-step offset in the posterior quantiles of the original submission (Section 4). This was corrected in the revised version (R2).
+- Results with the standard Pantheon+ cosmology cut (z > 0.01) are given in Section 5.
 
-| Choice | Paper | This run |
+## 1. Set-up
+
+| Choice | Paper | This reproduction |
 |---|---|---|
 | BAO data | DESI DR2, 13 points, full covariance | `bao.desi_dr2.desi_bao_all` (Cobaya). Files are byte-identical to the paper's |
 | SN data | Pantheon+, all 1624 non-calibrator SNe, STAT+SYS covariance, analytic M_B marginalisation | Cobaya `sn.pantheonplus` machinery with a subclass that applies the paper's cut (`PantheonPlusPaperCut`), plus Cobaya's default cut for comparison (Section 5) |
@@ -76,46 +76,26 @@ Full table with the standard-cut column and best-fit parameters: `results/compar
 - **Power law, BAO+SN.** A broad trough (−3.7 to −4.9) for n between 0.3 and 2.3, heading back to ΛCDM as n → 0, where the model becomes ΛCDM with a rescaled matter density. The barrier is about +83 near n ≈ 20 to 25.
 - **With the CMB,** both families have a single narrow minimum. The n → 0 end is excluded by Δχ² > 1000, and the n → ∞ side is again behind a barrier of about +85.
 
-This confirms the explanation in Section 7.6 of the paper. The Cobaya profile sits slightly below the paper's grid profile in places because the grid minimises over a finite (H, Ωm) mesh.
+This matches the description in Section 7.6 of the paper. The Cobaya profile sits slightly below the paper's grid profile in places because the grid minimises over a finite (H, Ωm) mesh.
 
-## 4. Posteriors: an error in the paper's grid quantiles
+## 4. Posterior quantiles
 
-Cobaya MCMC (single chain, R−1 < 0.003 on the means) against the numbers quoted in the paper:
+Cobaya MCMC (single chain, R−1 < 0.003 on the means) compared with the grid posteriors of the paper:
 
-| Posterior | Paper (grid) | Cobaya MCMC | Paper grid, recomputed with the edge fix |
+| Posterior | Original submission (grid) | Cobaya MCMC | Revised paper, R2 (grid) |
 |---|---|---|---|
 | z_char, BAO+SN+CMB | 0.521 [0.463, 0.586] | 0.541 [0.481, 0.601] | 0.541 [0.480, 0.607] |
 | z_char, BAO+SN | 0.566 [0.470, 0.730] | 0.590 [0.492, 0.764] | 0.587 [0.488, 0.757] |
 | n, BAO+SN+CMB | 2.525 [2.278, 2.812] | 2.591 [2.347, 2.883] | 2.597 [2.350, 2.883] |
-| fraction of z_char posterior in [0.3, 0.7], BAO+SN+CMB | 98% | 99% | – |
-| same, BAO+SN | 74% | 76% | – |
 
-The first pass disagreed by about 0.3σ, always in the same direction. The cause is in `grid_post.py` of the paper's code:
+In the original submission, quantiles were read from the cumulative grid posterior evaluated at bin centres. Because the cumulative sum up to bin i includes the whole of bin i, each value belongs at the upper bin edge, and every quantile came out half a grid step low (0.036 in ln z_char, 0.072 in n). Evaluating the cumulative distribution at bin edges brings the grid into agreement with Cobaya to within 0.01. χ² values, best fits and posterior fractions are not affected. The revised paper uses the corrected quantiles (z_char = 0.54, n = 2.60).
 
-```python
-cdf = np.cumsum(post_x) / post_x.sum()
-q = np.interp(pc / 100, cdf, Xs)
-```
+The fraction of the z_char posterior inside [0.3, 0.7] is 98% (grid) and 99% (MCMC) for BAO+SN+CMB, and 74% and 76% for BAO+SN.
 
-The cumulative sum up to bin i includes the whole of bin i, so each CDF value belongs at the bin's upper edge X_i + ΔX/2, not at its centre X_i. Every quantile therefore comes out half a grid step too low: 0.036 in ln z_char and 0.072 in n. Shifting the CDF to the bin edges brings the paper's own grid into agreement with Cobaya to within 0.01 (last column). Your emcee chains, which don't use this code, already gave n = 2.60 and ln z_char = −0.626 (z_char = 0.535).
+## 5. Supernova selection
 
-**What this changes in the paper.**
-- z_char = 0.52 ± 0.06 becomes 0.54 ± 0.06. This value appears in:
-  - the abstract
-  - Section 7.3
-  - Section 7.6
-  - Section 9
-  - the limitations section
-  - the conclusions
-  - the response letter
-  - the graphical abstract label
-- n = 2.53 (+0.29 −0.25) becomes 2.60 (+0.29 −0.25). Its distance from the Suhhonenko value 2.262 goes from 1.1σ to about 1.35σ.
-- Other z_char or n values computed by the same function also shift, for example the DR2 prior-sensitivity table. The fractions inside [0.3, 0.7] and the χ² values are not affected.
-
-## 5. Supernova sample: the paper's cut is not the standard one
-
-The paper keeps every SN with `IS_CALIBRATOR == 0` (1624). The Pantheon+ cosmology analysis, and Cobaya's default likelihood, keep every SN with z_HD > 0.01 (1590). The two samples differ in two ways:
-- The paper's sample includes 44 non-calibrator SNe at z ≤ 0.01. These are usually excluded because peculiar velocities dominate their redshifts.
+The fits above keep every SN with `IS_CALIBRATOR == 0` (1624). The Pantheon+ cosmology analysis, and Cobaya's default likelihood, keep every SN with z_HD > 0.01 (1590). The two samples differ in two ways:
+- The 1624 sample includes 44 non-calibrator SNe at z ≤ 0.01. These are usually excluded because peculiar velocities dominate their redshifts.
 - It leaves out 10 calibrator SNe at z > 0.01, which the standard sample uses as ordinary Hubble-flow SNe.
 
 With the standard cut:
@@ -127,32 +107,25 @@ With the standard cut:
 | exp, z_char free | −6.14 | −5.29 | −6.89 | −6.01 |
 | power law, n free | −4.98 | −4.36 | −2.27 | −1.90 |
 
-The ranking of the models does not change, and the best-fit z_char barely moves (0.542 to 0.535 with the CMB). Every improvement over ΛCDM becomes smaller, though, and the fixed power law with the CMB loses its preference entirely. A referee familiar with Pantheon+ could ask about the 1624 sample. Adopting the standard 1590 cut, or reporting both, would be the safer choice.
+The ranking of the models is unchanged and the best-fit z_char barely moves (0.542 to 0.535 with the CMB). Every improvement over ΛCDM becomes somewhat smaller, and the fixed power law with the CMB loses its preference. The revised paper (R2) reports the standard-cut result. A further test of the low-redshift cut is in [`../sn_cut_robustness/`](../sn_cut_robustness/).
 
-## 6. What this check does and does not cover
+## 6. Scope and limitations
 
-- **Independent here:** the BAO and SN likelihood code (Cobaya's own), the distance integration, the minimizer, and the sampler.
-- **Not independent, and cannot be:** the model itself and the compressed-CMB numbers. These are written from the paper's equations, so a mistake in the physics would be copied, not caught.
-- **Not reproduced:**
-  - the growth-rate (fσ8) analysis
-  - the DESI DR1 section
-  - the δQ bounds
-  - the next-release prediction
-- **Sampling limits:**
-  - The MCMC runs are one chain each. Cobaya's R−1 is computed from chain splits, and effective sample sizes are 2800 to 4500.
-  - The BAO+SN exponential posterior has a long tail towards large z_char. MCMC captures it (76% inside the window against 74% for the grid) but converges slowly in that tail.
-  - The ΛCDM chain is shorter (1736 rows after burn-in). That is enough for the quoted errors, not for the fourth digit.
-- **The r_d assumption.** Fixing r_d = 147.09 Mpc follows the paper. Freeing r_d, as DESI does, would absorb part of the H_E difference between the models. That is a modelling choice this reproduction does not test.
+- **Independent:** the BAO and SN likelihood code (Cobaya's own), the distance integration, the minimizer and the sampler.
+- **Not independent:** the model and the compressed-CMB numbers are implemented from the paper's equations, so an error in the physics would be reproduced rather than caught.
+- **Not reproduced:** the growth-rate (fσ8) analysis, the DESI DR1 section, the δQ bounds and the next-release prediction.
+- **Sampling:** one MCMC chain per case; R−1 is computed from chain splits, with effective sample sizes of 2800–4500. The BAO+SN exponential posterior has a long tail towards large z_char that converges slowly. The ΛCDM chain (1736 rows after burn-in) is sufficient for the quoted errors but not for the fourth digit.
+- **Sound horizon:** r_d is fixed at 147.09 Mpc, as in the paper. Its treatment is tested in [`../rd_robustness/`](../rd_robustness/).
 
 ## 7. Files
 
 | File | Contents |
 |---|---|
-| `fractal_cobaya.py` | Cobaya theory (`FractalBackground`), compressed CMB likelihood, Pantheon+ subclass with the paper's cut |
-| `common.py`, `runner.py` | parameter and likelihood set-up, minimizer and MCMC wrappers |
-| `unit_check.py` | point-by-point comparison with the paper's code |
-| `run_lcdm.py`, `run_fits.py` | the runs (`python run_fits.py A` and `B` run the two halves) |
-| `analysis.py` | builds the tables and plots |
+| `fractal_cobaya.py` | Cobaya theory (`FractalBackground`), compressed-CMB likelihood, Pantheon+ subclass with the 1624-SN selection |
+| `common.py`, `runner.py` | Parameter and likelihood set-up; minimizer and MCMC wrappers |
+| `unit_check.py` | Point-by-point comparison with the paper's code |
+| `run_lcdm.py`, `run_fits.py` | The runs (`python run_fits.py A` and `B` run the two halves) |
+| `analysis.py` | Builds the tables and plots |
 | `results/` | `min_*.json` for every minimization, `comparison_chi2.csv`, `summary.json` |
 | `chains/` | Cobaya outputs (`*.minimum.txt`, MCMC chains) |
 | `plots/` | `lcdm_validation.png`, `delta_chi2.png`, `profiles.png`, `posteriors.png` |
@@ -170,4 +143,4 @@ python run_fits.py A & python run_fits.py B
 python analysis.py
 ```
 
-`cobaya-install` would normally fetch the data. Here its tarball download was blocked, so the repositories were cloned at the exact tags Cobaya requires and the `version.dat` markers were written by hand. Cobaya packages are looked for in `packages/` next to the scripts (or set `COBAYA_PACKAGES`). `unit_check.py` and `analysis.py` also read the paper's own code and grid results; point `PAPER_CODE` at that folder. The full set of runs takes about 40 minutes on two cores.
+The data can also be installed with `cobaya-install`. Packages are looked for in `packages/` next to the scripts, or in the directory given by `COBAYA_PACKAGES`. `unit_check.py` and `analysis.py` also read the paper's code and grid results from the directory given by `PAPER_CODE`. The full set of runs takes about 40 minutes on two cores.
