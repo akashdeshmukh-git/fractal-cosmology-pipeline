@@ -1,15 +1,42 @@
-# Sensitivity to the low-redshift supernova cut
+# Low-redshift supernova cut
 
-Peculiar velocities make the redshifts of nearby supernovae unreliable distance indicators, and z < 0.02 is often treated as problematic. This check refits the model with the Pantheon+ sample restricted to progressively higher minimum redshift.
+Refits ΛCDM and the fractal model with the Pantheon+ sample restricted to z > 0.01, 0.02 and 0.03, to test whether nearby supernovae, whose redshifts are most affected by peculiar velocities, drive the preference for the fractal correction.
 
-## Setup
+## Files
 
-- Data: DESI DR2 BAO (13 points, full covariance), Pantheon+ (STAT+SYS covariance, analytic M_B marginalisation), and the paper's compressed CMB likelihood.
-- r_d fixed at 147.09 Mpc, as in the paper.
-- Models: ΛCDM; exponential formation function with z_char free; exponential with z_char = 1/2.262.
-- The z > 0.01 row reproduces the standard-cut values of the Cobaya reproduction (`../cobaya_reproduction/`), which validates the set-up.
+| File | Description |
+|---|---|
+| `zcut.py` | Fits ΛCDM and the exponential model for a given minimum supernova redshift |
+| `model.py`, `fit.py` | Likelihoods and minimiser, identical to those in `../rd_robustness/` |
+| `results/` | Run logs for z > 0.01, 0.02 and 0.03 |
 
-## Results (Δχ² relative to ΛCDM)
+## Requirements
+
+Python 3 with NumPy, SciPy and pandas. The BAO and supernova data come from Cobaya's data repositories (see Usage).
+
+## Usage
+
+```bash
+pip install numpy scipy pandas
+git clone --depth 1 --branch v2.6 https://github.com/CobayaSampler/bao_data.git
+git clone --depth 1 --branch v1.8 https://github.com/CobayaSampler/sn_data.git
+python zcut.py 0.02
+```
+
+The argument is the minimum supernova redshift. Each run takes about 10 minutes on one core.
+
+## Method
+
+- Data: DESI DR2 BAO (13 points, full covariance), Pantheon+ (STAT+SYS covariance, M_B marginalised analytically) and the paper's compressed CMB likelihood.
+- r_d is fixed at 147.09 Mpc, as in the paper.
+- Models: ΛCDM, the exponential formation function with z_char free, and the exponential with z_char = 1/2.262.
+- Best fits from Nelder–Mead with multiple starting points.
+
+The z > 0.01 case reproduces the standard-cut values of `../cobaya_reproduction/`.
+
+## Results
+
+Δχ² relative to ΛCDM.
 
 | SN selection | N_SN | BAO+SN, z_char free | BAO+SN+CMB, z_char free | BAO+SN+CMB, z_char fixed | best-fit z_char (with CMB) | H_local (with CMB) |
 |---|---|---|---|---|---|---|
@@ -17,19 +44,12 @@ Peculiar velocities make the redshifts of nearby supernovae unreliable distance 
 | z > 0.02 | 1436 | −4.44 | −5.15 | −2.95 | 0.530 | 67.83 |
 | z > 0.03 | 1233 | −5.97 | −6.67 | −3.37 | 0.553 | 67.63 |
 
-## Conclusion
+With the CMB included, the free-exponential Δχ² ranges from −5.15 to −6.67 across the three cuts and does not change monotonically with the cut. The best-fit z_char stays between 0.53 and 0.55 and H_local between 67.6 and 67.8 km s⁻¹ Mpc⁻¹.
 
-Removing the low-redshift supernovae changes the preference for the fractal correction by less than one unit of χ², with no monotonic trend with the cut. The best-fit z_char and H_local are essentially unchanged. The result is therefore not driven by peculiar-velocity-dominated supernovae.
+## Assumptions and caveats
 
-## Running
-
-```bash
-git clone --depth 1 --branch v2.6 https://github.com/CobayaSampler/bao_data.git
-git clone --depth 1 --branch v1.8 https://github.com/CobayaSampler/sn_data.git
-python zcut.py 0.02    # minimum supernova redshift
-```
-
-`model.py` and `fit.py` are the same likelihood and minimiser as in `../rd_robustness/`. Each run takes about 10 minutes on one core. Results are best fits only; no MCMC was run.
+- Results are best fits only. No MCMC was run.
+- r_d is fixed. Its treatment is tested separately in `../rd_robustness/`.
 
 ## Acknowledgement
 
