@@ -30,3 +30,7 @@ python zcut.py 0.02    # minimum supernova redshift
 ```
 
 `model.py` and `fit.py` are the same likelihood and minimiser as in `../rd_robustness/`. Each run takes about 10 minutes on one core. Results are best fits only; no MCMC was run.
+
+## Acknowledgement
+
+This test was suggested by George Efstathiou (private communication).
