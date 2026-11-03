@@ -108,7 +108,7 @@ Each directory includes its own README describing the method, results, limitatio
 
 ## Citation
 
-If you use this code, please cite the paper:
+If you use this code, cite the paper:
 
 ```bibtex
 @article{Deshmukh2026,
