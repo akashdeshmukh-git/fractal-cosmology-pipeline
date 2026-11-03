@@ -3,7 +3,8 @@
 > **Note:** This branch contains the original DESI DR1 pipeline. The DESI DR2 analysis used in the paper is on the [`desi-dr2`](../../tree/desi-dr2) branch. Independent checks of the DR2 results are in [`checks/`](checks/).
 
 Complete analysis package for the paper:  
-**"Redshift Evolution of the Fractal Cosmic Web Correction to the Hubble Constant"**
+**"Redshift Evolution of the Fractal Cosmic Web Correction to the Hubble Constant"**  
+Akash Deshmukh, *Annalen der Physik* (2026). DOI: [10.1002/andp.70321](https://doi.org/10.1002/andp.70321)
 
 ---
 
@@ -62,8 +63,8 @@ All execution results save directly to an automatically generated `/results/` fo
 ---
 
 ## 🛰️ Data Sources
-- **DESI DR1:** [://github.com](https://://github.com) *(Official DESI release)*
-- **Pantheon+:** [://github.com](https://://github.com) *(Official SH0ES release)*
+- **DESI DR1:** [CobayaSampler/bao_data](https://github.com/CobayaSampler/bao_data) *(Official DESI BAO release)*
+- **Pantheon+:** [PantheonPlusSH0ES/DataRelease](https://github.com/PantheonPlusSH0ES/DataRelease) *(Official SH0ES release)*
 
 ---
 
@@ -102,3 +103,21 @@ The `checks/` directory contains four independent verifications of the DESI DR2 
 - **[`checks/cmb_secondary_anisotropies/`](checks/cmb_secondary_anisotropies/)** — Effect of the late-time correction on the CMB integrated Sachs–Wolfe and lensing signals, and the resulting bias on early-universe parameters inferred with ΛCDM.
 
 Each directory includes its own README describing the method, results, limitations, and instructions for reproduction.
+
+---
+
+## Citation
+
+If you use this code, please cite the paper:
+
+```bibtex
+@article{Deshmukh2026,
+  author  = {Deshmukh, Akash},
+  title   = {Redshift Evolution of the Fractal Cosmic Web Correction to the Hubble Constant},
+  journal = {Annalen der Physik},
+  year    = {2026},
+  doi     = {10.1002/andp.70321}
+}
+```
+
+The code in this repository is released under the [MIT License](LICENSE).
