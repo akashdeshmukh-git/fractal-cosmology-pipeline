@@ -4,7 +4,7 @@
 
 Complete analysis package for the paper:  
 **"Redshift Evolution of the Fractal Cosmic Web Correction to the Hubble Constant"**  
-Akash Deshmukh, *Annalen der Physik* (2026). DOI: [10.1002/andp.70321](https://doi.org/10.1002/andp.70321)
+Akash Deshmukh, *Annalen der Physik* **538**, e70321 (2026). DOI: [10.1002/andp.70321](https://doi.org/10.1002/andp.70321)
 
 ---
 
@@ -116,6 +116,8 @@ If you use this code, please cite the paper:
   title   = {Redshift Evolution of the Fractal Cosmic Web Correction to the Hubble Constant},
   journal = {Annalen der Physik},
   year    = {2026},
+  volume  = {538},
+  pages   = {e70321},
   doi     = {10.1002/andp.70321}
 }
 ```
