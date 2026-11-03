@@ -2,6 +2,7 @@
 
 Complete analysis package for the paper:  
 **"Redshift Evolution of the Fractal Cosmic Web Correction to the Hubble Constant"**  
+Akash Deshmukh, *Annalen der Physik* (2026). DOI: [10.1002/andp.70321](https://doi.org/10.1002/andp.70321)  
 **Updated to DESI DR2 (September 2026)**
 
 ---
@@ -162,3 +163,21 @@ Switch branches with: `git checkout desi-dr2`
 
 **Version:** DESI DR2  
 **Previous:** DESI DR1 (main branch)
+
+---
+
+## Citation
+
+If you use this code, please cite the paper:
+
+```bibtex
+@article{Deshmukh2026,
+  author  = {Deshmukh, Akash},
+  title   = {Redshift Evolution of the Fractal Cosmic Web Correction to the Hubble Constant},
+  journal = {Annalen der Physik},
+  year    = {2026},
+  doi     = {10.1002/andp.70321}
+}
+```
+
+The code in this repository is released under the [MIT License](LICENSE).
