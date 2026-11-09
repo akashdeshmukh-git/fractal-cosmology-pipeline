@@ -9,7 +9,7 @@ Inputs are in the Cobaya bao_data format: a mean file with lines "z value quanti
 
 Part 1 (the test). Nothing is refitted. The fractal model and LCDM predictions are the frozen
 posterior-predictive distributions published in Deshmukh, Ann. Phys. 538, e70321 (2026),
-Section 11 and Table 15, built from DESI DR2 + Pantheon+ (DR1 + Pantheon+ for the 95% union).
+Section 11 and Table 15, built from DESI DR2 + Pantheon+. Only the DR2-based prediction is used.
 They are evaluated at whatever effective redshifts the new release uses. The script reports
   - each measurement against the fractal 68%/95% ranges and the LCDM prediction,
   - chi^2 of the new data for both frozen predictions (data covariance + prediction spread),
@@ -42,7 +42,7 @@ Z95 = 1.96                  # a measurement is inconsistent if |pull| > 1.96, pu
 
 def load_samples():
     d = np.load(os.path.join(FROZEN, 'posterior_samples.npz'))
-    return {k: (d[f'{k}_H'], d[f'{k}_Om'], d[f'{k}_zc']) for k in ('frac_DR2', 'frac_DR1', 'lcdm_DR2')}
+    return {k: (d[f'{k}_H'], d[f'{k}_Om'], d[f'{k}_zc']) for k in ('frac_DR2', 'lcdm_DR2')}
 
 
 def predictive(S, key, z, qty):
@@ -95,18 +95,15 @@ def calibrate(bao, Pf2, Pl2, med_f, med_l, Cf, Cl, lowz_idx, highz_idx, n=4000, 
 
 def test_prediction(bao, S, table):
     Pf2 = predictive(S, 'frac_DR2', bao.z, bao.qty)
-    Pf1 = predictive(S, 'frac_DR1', bao.z, bao.qty)
     Pl2 = predictive(S, 'lcdm_DR2', bao.z, bao.qty)
     med_f, med_l = np.median(Pf2, axis=0), np.median(Pl2, axis=0)
 
     rows = []
     for i, (z, q, o, e) in enumerate(zip(bao.z, bao.qty, bao.obs, bao.err)):
         f2 = np.percentile(Pf2[:, i], [2.5, 16, 50, 84, 97.5])
-        f1 = np.percentile(Pf1[:, i], [2.5, 97.5])
-        lo, hi = min(f2[0], f1[0]), max(f2[4], f1[1])
-        sf, sl, s1 = Pf2[:, i].std(), Pl2[:, i].std(), Pf1[:, i].std()
+        lo, hi = f2[0], f2[4]
+        sf, sl = Pf2[:, i].std(), Pl2[:, i].std()
         pull_f2 = (o - f2[2]) / np.hypot(e, sf)
-        pull_f1 = (o - np.median(Pf1[:, i])) / np.hypot(e, s1)
         pull_l = (o - med_l[i]) / np.hypot(e, sl)
         pub = published_bin(table, z, q)
         rows.append(dict(
@@ -114,8 +111,8 @@ def test_prediction(bao, S, table):
             frac_median=f2[2], frac_68=[f2[1], f2[3]], frac_95=[lo, hi],
             lcdm_median=float(med_l[i]),
             inside_model_band=bool(lo <= o <= hi),
-            pull_frac=float(pull_f2), pull_frac_DR1=float(pull_f1), pull_lcdm=float(pull_l),
-            consistent_frac=bool(min(abs(pull_f2), abs(pull_f1)) <= Z95),
+            pull_frac=float(pull_f2), pull_lcdm=float(pull_l),
+            consistent_frac=bool(abs(pull_f2) <= Z95),
             consistent_lcdm=bool(abs(pull_l) <= Z95),
             obs_vs_lcdm_pct=float(100 * (o / med_l[i] - 1)),
             obs_vs_lcdm_err_pct=float(100 * e / med_l[i]),
@@ -181,7 +178,7 @@ def test_prediction(bao, S, table):
 
     # the paper's falsification criterion. A measurement counts as outside the predicted 95% range when
     # it is inconsistent with the prediction once its own error is included (|pull| > 1.96 against the
-    # DR2- and the DR1-based prediction). Comparing the measured value with the prediction band alone,
+    # DR2-based prediction). Comparing the measured value with the prediction band alone,
     # ignoring the measurement error, would fail even the DR2 data the prediction was built from.
     from scipy.stats import binom
     n_out = sum(not r['consistent_frac'] for r in rows)
@@ -267,13 +264,9 @@ def figure(bao, rows, S, path, label):
         qq = np.full(zg.size, q)
         l2 = np.median(predictive(S, 'lcdm_DR2', zg, qq), axis=0)
         f2 = 100 * (predictive(S, 'frac_DR2', zg, qq) / l2 - 1)
-        f1 = 100 * (predictive(S, 'frac_DR1', zg, qq) / l2 - 1)
         p2 = np.percentile(f2, [2.5, 16, 50, 84, 97.5], axis=0)
-        p1 = np.percentile(f1, [2.5, 97.5], axis=0)
-        ax.fill_between(zg, p2[0], p2[4], color='C0', alpha=0.18, lw=0, label='Fractal, published 95%')
-        ax.fill_between(zg, p2[1], p2[3], color='C0', alpha=0.35, lw=0, label='Fractal, published 68%')
-        ax.plot(zg, p1[0], 'C1--', lw=1, label='Fractal, DR1-based 95%')
-        ax.plot(zg, p1[1], 'C1--', lw=1)
+        ax.fill_between(zg, p2[0], p2[4], color='C0', alpha=0.18, lw=0, label='Fractal prediction (DR2), 95%')
+        ax.fill_between(zg, p2[1], p2[3], color='C0', alpha=0.35, lw=0, label='Fractal prediction (DR2), 68%')
         ax.axhline(0, color='k', lw=0.8, label='LCDM (DR2 + Pantheon+)')
         sel = [r for r in rows if r['quantity'] == q]
         ax.errorbar([r['z'] for r in sel], [r['obs_vs_lcdm_pct'] for r in sel],

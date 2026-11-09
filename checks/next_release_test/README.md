@@ -8,12 +8,12 @@ Tests the prediction published in Section 11 and Table 15 of the paper ([doi:10.
 |---|---|
 | `PREDICTION.md` | The published prediction, the paper's three statements and the scoring rules |
 | `prediction/table15.json` | Table 15 in machine-readable form |
-| `prediction/posterior_samples.npz` | 6000 posterior samples of (H_E, Ωm, z_char) for the fractal model (DR2 and DR1 based) and ΛCDM, the frozen basis of the prediction |
+| `prediction/posterior_samples.npz` | 6000 posterior samples of (H_E, Ωm, z_char) for the fractal model and ΛCDM fitted to DESI DR2 + Pantheon+, the frozen basis of the prediction (DR1-based samples are also stored, only to reproduce the paper's table) |
 | `check_next_release.py` | Runs the test on a new release |
-| `make_prediction.py` | Rebuilds `prediction/` from DESI DR1/DR2 + Pantheon+ (writes to `results/remake/`, never overwrites the frozen files) |
+| `make_prediction.py` | Rebuilds `prediction/` and checks it against the paper's Table 15 (writes to `results/remake/`, never overwrites the frozen files) |
 | `model.py` | Background model and likelihoods, the same numerics as the paper |
 | `get_data.py` | Downloads DESI DR1/DR2 and Pantheon+ into `data/` |
-| `results/` | Dry runs on DR2 and DR1 |
+| `results/` | Dry run on DR2 |
 
 ## Requirements
 
@@ -46,7 +46,7 @@ python make_prediction.py     # about 3 minutes on two cores
 
 ## Method
 
-**The test.** Nothing is refitted. Both models' predictions are the frozen posterior-predictive distributions, evaluated at the new release's effective redshifts. For each measurement the script computes the pull against the prediction, with the measurement error and the prediction spread added in quadrature. Over all measurements it computes χ² against each prediction, using the new covariance plus the prediction's own covariance, and Δχ² = χ²_fractal − χ²_ΛCDM. Because both predictions are fixed, exp(−Δχ²/2) is their likelihood ratio.
+**The test.** Nothing is refitted. Both models' predictions are the frozen posterior-predictive distributions from DESI DR2 + Pantheon+, evaluated at the new release's effective redshifts. DR1 is not used: DR2 already contains the DR1 galaxies. For each measurement the script computes the pull against the prediction, with the measurement error and the prediction spread added in quadrature. Over all measurements it computes χ² against each prediction, using the new covariance plus the prediction's own covariance, and Δχ² = χ²_fractal − χ²_ΛCDM. Because both predictions are fixed, exp(−Δχ²/2) is their likelihood ratio.
 
 **Calibration.** The script simulates 4000 releases under each model (a posterior-predictive draw plus noise with the new covariance) to show how often a Δχ² as large as the observed one would occur under each, and how often the paper's sign test fires by chance.
 
@@ -58,16 +58,15 @@ python make_prediction.py     # about 3 minutes on two cores
 
 Mock releases drawn from each model at the forecast precision (DR2 covariance × 3/5) behave as expected. The median Δχ² is −2.8 when the fractal model is true and +0.7 when ΛCDM is true. The two are not symmetric because the fractal prediction has the wider spread, and χ² includes each prediction's spread. So one release on its own gives at most moderate evidence, as the paper says (about 1.8σ), and a ΛCDM universe would usually look inconclusive rather than clearly against the model. The paper's sign test fires in 6% of fractal-true mocks and 24% of ΛCDM-true mocks.
 
-## Dry runs
+## Dry run
 
-These use data the prediction was built from, so they check the code, not the model.
+This uses DR2, the data the prediction was built from, so it checks the code, not the model.
 
 | Data | χ² fractal | χ² ΛCDM | Δχ² | Points off at 95% |
 |---|---|---|---|---|
 | DESI DR2 (13 points) | 8.43 | 10.70 | −2.27 | 0 |
-| DESI DR1 (12 points) | 12.49 | 13.21 | −0.72 | 1 |
 
-The DR1 run includes D_V/r_d at z = 1.491, which is not in Table 15, and shows that redshifts outside the published table are handled.
+The script evaluates the frozen samples at whatever redshifts a release uses, so new or shifted bins are handled. This was checked with a release whose bins differ from Table 15.
 
 ## Assumptions and caveats
 
