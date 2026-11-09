@@ -1,0 +1,14 @@
+# z value quantity  (MOCK release: DR2 + new data drawn from the lcdm prediction)
+0.295 7.85879069 DV_over_rs
+0.510 13.41181329 DM_over_rs
+0.510 22.45070952 DH_over_rs
+0.706 17.45891354 DM_over_rs
+0.706 19.54934965 DH_over_rs
+0.934 21.69252901 DM_over_rs
+0.934 17.48900003 DH_over_rs
+1.321 27.75370424 DM_over_rs
+1.321 14.04539685 DH_over_rs
+1.484 29.70753109 DM_over_rs
+1.484 13.09003977 DH_over_rs
+2.330 8.59673935 DH_over_rs
+2.330 38.44055508 DM_over_rs
