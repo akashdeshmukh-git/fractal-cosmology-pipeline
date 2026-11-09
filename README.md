@@ -6,17 +6,6 @@ Complete analysis package for the paper:
 **"Redshift Evolution of the Fractal Cosmic Web Correction to the Hubble Constant"**  
 Akash Deshmukh, *Annalen der Physik* **538**, e70321 (2026). DOI: [10.1002/andp.70321](https://doi.org/10.1002/andp.70321)
 
-## Test the published prediction yourself
-
-The paper predicts what DESI's next BAO release will measure. Anyone can check it against the new data with one command; see [`checks/next_release_test/`](checks/next_release_test/).
-
-```bash
-cd checks/next_release_test
-pip install -r requirements.txt
-python check_next_release.py --demo                     # see what a result looks like (mock data)
-python check_next_release.py --cobaya desi_bao_dr3      # the real test, once the release is on CobayaSampler/bao_data (check the folder name)
-```
-
 ---
 
 ## 🔬 What This Is
@@ -112,9 +101,20 @@ The `checks/` directory contains independent verifications of the DESI DR2 analy
 - **[`checks/rd_robustness/`](checks/rd_robustness/)** — Sensitivity of the results to the treatment of the BAO sound horizon r_d (fixed, free, or derived from ω_m).
 - **[`checks/sn_cut_robustness/`](checks/sn_cut_robustness/)** — Sensitivity of the results to the minimum supernova redshift (z > 0.01, 0.02, 0.03), testing for contamination by peculiar velocities.
 - **[`checks/cmb_secondary_anisotropies/`](checks/cmb_secondary_anisotropies/)** — Effect of the late-time correction on the CMB integrated Sachs–Wolfe and lensing signals, and the resulting bias on early-universe parameters inferred with ΛCDM.
-- **[`checks/next_release_test/`](checks/next_release_test/)** — Ready-to-run test of the paper's published prediction (Section 11, Table 15) against the next DESI BAO release. The prediction is frozen and dated in [`PREDICTION.md`](checks/next_release_test/PREDICTION.md).
 
 Each directory includes its own README describing the method, results, limitations, and instructions for reproduction.
+
+### Test of the prediction for the next DESI release
+
+Section 11 and Table 15 of the paper predict the BAO distances the next DESI release will measure. That prediction is frozen in [`checks/next_release_test/`](checks/next_release_test/), and the scoring rules were recorded in [`PREDICTION.md`](checks/next_release_test/PREDICTION.md) before the data were available. The next release will contain the DR2 galaxies the prediction was built from, so the test first removes the DR2 information and compares the prediction, and ΛCDM, with the new data only.
+
+```bash
+cd checks/next_release_test
+pip install -r requirements.txt
+python check_next_release.py NEW_mean.txt NEW_cov.txt --label DR3
+```
+
+The run takes under a minute and writes a summary, a figure and a full report to `results/`. `--demo` shows the output on a mock release.
 
 ---
 
