@@ -1,0 +1,30 @@
+
+Published prediction (doi:10.1002/andp.70321) vs DESI DR2_dryrun: 13 measurements
+
+     z  obs          measured          fractal [95% band]     LCDM   pull  pullL  ok   bin
+ 0.295   DV     7.942±0.076      7.938 [7.807,8.041]    7.931  +0.04  +0.13  yes  published
+ 0.510   DM    13.588±0.168     13.295 [13.093,13.455]   13.297  +1.62  +1.63  yes  published
+ 0.510   DH    21.863±0.429     22.323 [22.027,22.590]   22.480  -1.04  -1.42  yes  published
+ 0.706   DM    17.351±0.180     17.425 [17.180,17.618]   17.454  -0.38  -0.54  yes  published
+ 0.706   DH    19.455±0.334     19.868 [19.569,20.116]   19.978  -1.18  -1.54  yes  published
+ 0.934   DM    21.576±0.162     21.666 [21.381,21.888]   21.712  -0.49  -0.77  yes  published
+ 0.934   DH    17.641±0.201     17.399 [17.109,17.620]   17.434  +1.08  +0.98  yes  published
+ 1.321   DM    27.601±0.325     27.717 [27.379,27.976]   27.759  -0.34  -0.47  yes  published
+ 1.321   DH    14.176±0.225     14.039 [13.797,14.257]   13.985  +0.57  +0.81  yes  published
+ 1.484   DM    30.512±0.764     29.910 [29.552,30.186]   29.941  +0.78  +0.74  yes  published
+ 1.484   DH    12.817±0.518     12.891 [12.653,13.109]   12.814  -0.14  +0.01  yes  published
+ 2.330   DH     8.632±0.101      8.686 [8.444,8.954]    8.587  -0.41  +0.38  yes  published
+ 2.330   DM    38.989±0.532     38.860 [38.396,39.245]   38.810  +0.23  +0.33  yes  published
+
+chi2 fractal = 8.43   chi2 LCDM = 10.70   Delta chi2 = -2.27   (data-cov only: -2.55)
+statement 1: DH/r_d at z~0.5-0.7 is 0.5-0.7% below LCDM: predicted [-0.7, -0.55]%, measured -2.67 ± 1.26% -> same sign
+statement 2: DH/r_d at z=2.33 is about 1.2% above LCDM: predicted 1.16%, measured +0.52 ± 1.18% -> same sign
+statement 3: DM/r_d within 0.3% of LCDM over 0.5<z<2.4 (DM does not discriminate): pulls [1.62, -0.38, -0.49, -0.34, 0.78, 0.23]
+inconsistent at 95% (|pull| > 1.96): fractal 0, LCDM 0 (expected by chance 0.65; probability of 0 or more 1.00)
+paper's sign test (low-z DH above LCDM and z=2.33 DH below): not triggered
+
+VERDICT: SURVIVES: the new data are consistent with the published prediction (goodness of fit p = 0.81; 0 of 13 points off at 95%).
+Fractal vs LCDM: Delta chi2 = -2.27 (likelihood ratio 3.1), moderate support for the fractal prediction over LCDM. If the fractal model were true a value this high or higher would occur 54% of the time; if LCDM were true, this low or lower 8% of the time.
+Paper's sign test did not fire (at this precision it fires 8% of the time even if the fractal model is right, and 24% if LCDM is right, so on its own it is weak evidence).
+
+wrote results/DR2_dryrun_report.json and results/DR2_dryrun_figure.png
