@@ -28,4 +28,9 @@ SURVIVES: consistent with the published prediction (goodness of fit p = 0.814; 0
 Fractal vs LCDM: Delta chi2 = -2.27 (likelihood ratio 3.1), moderate support for the fractal prediction over LCDM. In simulations, a value this high or higher occurs 52% of the time if the fractal model is true; this low or lower 8% of the time if LCDM is true.
 Paper's sign test did not fire (in simulations it fires 8% of the time if the fractal model is true and 23% if LCDM is true, so on its own it is weak evidence).
 
-wrote results/DR2_dryrun_report.json and results/DR2_dryrun_figure.png
+==============================================================================
+SUMMARY: published prediction vs DESI DR2_dryrun
+  New data only (the test): not available: the release carries no information beyond DR2 (is it DR2 itself?).
+  Whole release (reference): The data are consistent with the published prediction. They moderately prefer the fractal model over LCDM. (Delta chi2 = -2.27, 0 of 13 points off at 95%.)
+  Files: results/DR2_dryrun_summary.md, results/DR2_dryrun_figure.png, results/DR2_dryrun_report.json
+==============================================================================

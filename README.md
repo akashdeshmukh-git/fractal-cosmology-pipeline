@@ -6,6 +6,17 @@ Complete analysis package for the paper:
 **"Redshift Evolution of the Fractal Cosmic Web Correction to the Hubble Constant"**  
 Akash Deshmukh, *Annalen der Physik* **538**, e70321 (2026). DOI: [10.1002/andp.70321](https://doi.org/10.1002/andp.70321)
 
+## Test the published prediction yourself
+
+The paper predicts what DESI's next BAO release will measure. Anyone can check it against the new data with one command; see [`checks/next_release_test/`](checks/next_release_test/).
+
+```bash
+cd checks/next_release_test
+pip install -r requirements.txt
+python check_next_release.py --demo                     # see what a result looks like (mock data)
+python check_next_release.py --cobaya desi_bao_dr3      # the real test, once the release is on CobayaSampler/bao_data (check the folder name)
+```
+
 ---
 
 ## 🔬 What This Is

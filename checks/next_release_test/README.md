@@ -1,53 +1,73 @@
 # Next DESI release test
 
-Tests the prediction published in Section 11 and Table 15 of the paper ([doi:10.1002/andp.70321](https://doi.org/10.1002/andp.70321)) against a new DESI BAO release. The prediction is frozen in `prediction/` and written out in [`PREDICTION.md`](PREDICTION.md), together with the scoring rules, which were fixed before the new data.
+The paper ([doi:10.1002/andp.70321](https://doi.org/10.1002/andp.70321), Section 11 and Table 15) predicted what DESI's next BAO release will measure. This folder lets anyone check that prediction against the new data with one command, and compares it with ΛCDM. The prediction is frozen in [`prediction/`](prediction/) and written out, with the scoring rules, in [`PREDICTION.md`](PREDICTION.md). Both were fixed before the new data existed.
+
+## Quick start
+
+```bash
+git clone https://github.com/akashdeshmukh-git/fractal-cosmology-pipeline.git
+cd fractal-cosmology-pipeline/checks/next_release_test
+pip install -r requirements.txt
+
+python check_next_release.py --demo
+```
+
+`--demo` runs on a bundled mock release, so you can see what a result looks like right away. Its output is in [`results/demo_summary.md`](results/demo_summary.md).
+
+When DESI publishes the next release, run it on the real data in one of two ways:
+
+```bash
+# if the release is in CobayaSampler/bao_data under the same file names as DR2:
+python check_next_release.py --cobaya desi_bao_dr3
+
+# or with the mean and covariance files from anywhere:
+python check_next_release.py NEW_mean.txt NEW_cov.txt --label DR3
+```
+
+The files are in the Cobaya `bao_data` format: a mean file with lines `z value quantity` (quantity `DM_over_rs`, `DH_over_rs` or `DV_over_rs`) and a covariance matrix file. A run takes under a minute and needs nothing else.
+
+## What you get
+
+- **A summary at the end of the output**, in plain words. For example: "The data are consistent with the published prediction. They moderately prefer LCDM over the fractal model."
+- **`results/<label>_summary.md`**: the result, a figure and a table of every measurement against both predictions. It is readable directly on GitHub.
+- **`results/<label>_figure.png`**: the measurements against the predicted band, relative to ΛCDM.
+- **`results/<label>_report.json`**: every number, for further analysis.
+
+## How to read the result
+
+The new release contains the DR2 galaxies the prediction was built from, so the script first removes the DR2 part and tests the prediction on the **new data only**. That is the real test. The **whole release** is shown too, for reference, but it partly re-uses DR2 and so leans toward the fractal model.
+
+For each, the script answers two questions:
+
+1. **Is the prediction still consistent with the data?** It fails if the data disagree with it clearly: the χ² goodness of fit has p < 0.01, or 3 or more measurements are off at 95% when that is unlikely by chance.
+2. **Which prediction fits better, the fractal model or ΛCDM?** This is Δχ² = χ²_fractal − χ²_ΛCDM. Negative favours the fractal model. |Δχ²| < 2 means no clear preference, 2 to 6 moderate, 6 or more strong.
+
+About 40% of each bin's information in a release like the forecast is new, so one release on its own is unlikely to be decisive. Expect "leaning one way" rather than a final answer.
+
+## Other options
+
+```bash
+python get_data.py                                           # DESI DR1/DR2 and Pantheon+, needed only for the two below
+python check_next_release.py NEW_mean.txt NEW_cov.txt --label DR3 --refit
+python make_prediction.py                                    # rebuild the frozen prediction from scratch (about 3 min)
+python make_mock_release.py frac                             # make your own mock release (truth: frac or lcdm)
+```
+
+`--refit` also refits both models to the new BAO + Pantheon+ with the paper's grid and priors. The refit uses the whole release, so it includes DR2. It updates the parameter constraints but is not an independent test: on the example ΛCDM-truth mock release it still prefers the fractal model (Δχ²_min = −3.3).
 
 ## Files
 
 | File | Description |
 |---|---|
+| `check_next_release.py` | Runs the test |
 | `PREDICTION.md` | The published prediction, the paper's three statements and the scoring rules |
-| `prediction/table15.json` | Table 15 in machine-readable form |
-| `prediction/desi_dr2_*.txt` | The DESI DR2 BAO data the prediction was built from (from [CobayaSampler/bao_data](https://github.com/CobayaSampler/bao_data)), used to separate the new data from DR2 |
-| `prediction/posterior_samples.npz` | 6000 posterior samples of (H_E, Ωm, z_char) for the fractal model and ΛCDM fitted to DESI DR2 + Pantheon+, the frozen basis of the prediction (DR1-based samples are also stored, only to reproduce the paper's table) |
-| `check_next_release.py` | Runs the test on a new release |
-| `make_prediction.py` | Rebuilds `prediction/` and checks it against the paper's Table 15 (writes to `results/remake/`, never overwrites the frozen files) |
+| `prediction/` | The frozen prediction: Table 15 (`table15.json`), 6000 posterior samples of (H_E, Ωm, z_char) for both models fitted to DESI DR2 + Pantheon+ (`posterior_samples.npz`), and the DR2 BAO data they were built from (`desi_dr2_*.txt`, from [CobayaSampler/bao_data](https://github.com/CobayaSampler/bao_data)) |
 | `model.py` | Background model and likelihoods, the same numerics as the paper |
+| `make_prediction.py` | Rebuilds `prediction/` and checks it against the paper's Table 15 (writes to `results/remake/`, never overwrites the frozen files) |
 | `get_data.py` | Downloads DESI DR1/DR2 and Pantheon+ into `data/` |
-| `make_mock_release.py` | Builds a mock next release (DR2 plus new data drawn from one model) to see how the test behaves |
-| `mock/` | An example mock release with ΛCDM as the truth |
-| `results/` | Dry run on DR2 and the example mock release |
-
-## Requirements
-
-Python 3 with NumPy, SciPy, pandas and Matplotlib.
-
-## Usage
-
-When DESI publishes a new release, get its BAO mean vector and covariance in the Cobaya `bao_data` format (a mean file with lines `z value quantity`, where the quantity is `DM_over_rs`, `DH_over_rs` or `DV_over_rs`, plus a covariance matrix file). Then:
-
-```bash
-pip install numpy scipy pandas matplotlib
-python check_next_release.py NEW_mean.txt NEW_cov.txt --label DR3
-```
-
-This takes under a minute and needs no other data. It prints two sections, the new data only (the test) and the whole release (for reference). Each has a table of every measurement against the prediction, the χ² of both models, the paper's three statements and a plain-language verdict. It writes `results/DR3_report.json` and `results/DR3_figure.png`.
-
-To also refit both models to the new BAO + Pantheon+ (same grid and priors as the paper):
-
-```bash
-python get_data.py
-python check_next_release.py NEW_mean.txt NEW_cov.txt --label DR3 --refit
-```
-
-The refit uses the whole release, so it includes DR2. It updates the parameter constraints but is not an independent test. On the example ΛCDM-truth mock release, the refit still prefers the fractal model (Δχ²_min = −3.3), because the DR2 part and Pantheon+ are unchanged.
-
-To check that the frozen prediction reproduces the paper:
-
-```bash
-python get_data.py
-python make_prediction.py     # about 3 minutes on two cores
-```
+| `make_mock_release.py`, `mock/` | Mock releases (real DR2 plus new data drawn from one model), and the one used by `--demo` |
+| `results/` | The demo and a dry run on DR2 |
+| `requirements.txt` | Python packages (NumPy, SciPy, pandas, Matplotlib) |
 
 ## Method
 
@@ -76,11 +96,10 @@ x_new is independent of DR2, so the frozen prediction genuinely predicts it. Thi
 
 When ΛCDM is true, the whole release still leans toward the fractal model because it re-uses DR2. The new data alone do not. The cost is that the new data carry less information, so one release on its own is unlikely to be decisive. The paper's sign test fires in about 9% of fractal-true and 24% of ΛCDM-true simulations of new data.
 
-## Dry run and example
+## Dry run and demo
 
-`results/DR2_dryrun_*` runs the script on DR2 itself. There is no new data, so the new-data test is reported as not available, and the whole-release comparison only checks the code (Δχ² = −2.27, 0 of 13 points off at 95%).
-
-`results/mock_lcdm_*` runs it on the example mock release in `mock/`, made with `python make_mock_release.py lcdm`, where ΛCDM is the truth. The new data give Δχ² = +2.89 (moderate support for ΛCDM), while the whole release gives +0.90 (no clear preference), showing the DR2 overlap pulling the whole-release result toward the fractal model.
+- `results/DR2_dryrun_*`: the script run on DR2 itself. There is no new data, so the new-data test is reported as not available, and the whole-release comparison only checks the code (Δχ² = −2.27, 0 of 13 points off at 95%).
+- `results/demo_*`: the bundled mock release, where ΛCDM is the truth. The new data give Δχ² = +2.89 (moderate support for ΛCDM), while the whole release gives +0.90 (no clear preference). This shows the DR2 overlap pulling the whole-release result toward the fractal model.
 
 ## Assumptions and caveats
 

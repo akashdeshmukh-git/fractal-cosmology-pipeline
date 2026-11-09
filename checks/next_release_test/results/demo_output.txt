@@ -1,4 +1,5 @@
-Published prediction (doi:10.1002/andp.70321) vs DESI mock_lcdm
+Published prediction (doi:10.1002/andp.70321) vs DESI demo
+NOTE: this is a MOCK release (real DR2 plus simulated new data), not real DESI data.
 
 New data only: DR2 removed from 13 matched bins (new information per bin 40% of the release; largest redshift shift 0.000).
 
@@ -54,4 +55,9 @@ SURVIVES: consistent with the published prediction (goodness of fit p = 0.858; 0
 Fractal vs LCDM: Delta chi2 = +0.90 (likelihood ratio 0.64), no clear preference; these data cannot yet separate the two. In simulations, a value this high or higher occurs <1% of the time if the fractal model is true; this low or lower 99% of the time if LCDM is true.
 Paper's sign test did not fire (in simulations it fires <1% of the time if the fractal model is true and <1% if LCDM is true).
 
-wrote results/mock_lcdm_report.json and results/mock_lcdm_figure.png
+==============================================================================
+SUMMARY: published prediction vs DESI demo (MOCK data)
+  New data only (the test): The data are consistent with the published prediction. They moderately prefer LCDM over the fractal model. (Delta chi2 = +2.89, 1 of 13 points off at 95%.)
+  Whole release (reference): The data are consistent with the published prediction. They do not clearly prefer either model yet. (Delta chi2 = +0.90, 0 of 13 points off at 95%.)
+  Files: results/demo_summary.md, results/demo_figure.png, results/demo_report.json
+==============================================================================

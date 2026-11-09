@@ -1,6 +1,8 @@
 """
 Test the published prediction against a new DESI BAO release.
 
+    python check_next_release.py --demo                          # bundled mock release, to see the output
+    python check_next_release.py --cobaya desi_bao_dr3           # download a release from CobayaSampler/bao_data
     python check_next_release.py NEW_mean.txt NEW_cov.txt --label DR3
     python check_next_release.py NEW_mean.txt NEW_cov.txt --label DR3 --refit   # also refit (needs get_data.py)
 
@@ -27,7 +29,8 @@ The script reports, for the new-data-only measurement (primary) and for the whol
 
 --refit additionally refits both models to the new BAO + Pantheon+ with the paper's grid and priors.
 
-Outputs: results/<label>_report.json and results/<label>_figure.png.
+Outputs: results/<label>_summary.md (readable on GitHub), results/<label>_figure.png and
+results/<label>_report.json.
 """
 import os
 os.environ.setdefault('OMP_NUM_THREADS', '2')
@@ -384,20 +387,117 @@ def figure(full_rows, new_rows, S, path, label):
     plt.close(fig)
 
 
+COBAYA_RAW = 'https://raw.githubusercontent.com/CobayaSampler/bao_data/master/'
+
+
+def fetch_cobaya(folder):
+    """Download '<folder>/desi_gaussian_bao_ALL_GCcomb_{mean,cov}.txt' from CobayaSampler/bao_data,
+    the file names DESI DR2 uses there, into data/."""
+    import urllib.request
+    import urllib.error
+    os.makedirs(os.path.join(HERE, 'data'), exist_ok=True)
+    paths = []
+    for kind in ('mean', 'cov'):
+        url = f'{COBAYA_RAW}{folder}/desi_gaussian_bao_ALL_GCcomb_{kind}.txt'
+        path = os.path.join(HERE, 'data', f'{folder}_{kind}.txt')
+        try:
+            urllib.request.urlretrieve(url, path)
+        except urllib.error.URLError as e:
+            raise SystemExit(f'Could not download {url} ({e}).\nFind the release files at '
+                             f'https://github.com/CobayaSampler/bao_data and pass them directly:\n'
+                             f'  python check_next_release.py MEAN_FILE COV_FILE --label NAME')
+        paths.append(path)
+    print(f'downloaded {folder} from CobayaSampler/bao_data')
+    return paths
+
+
+def headline(res):
+    """one short line per section for the summary"""
+    if res['fails']:
+        first = 'The data are INCONSISTENT with the published prediction.'
+    else:
+        first = 'The data are consistent with the published prediction.'
+    d = res['delta_chi2']
+    if d <= -6:
+        second = 'They strongly prefer the fractal model over LCDM.'
+    elif d <= -2:
+        second = 'They moderately prefer the fractal model over LCDM.'
+    elif d < 2:
+        second = 'They do not clearly prefer either model yet.'
+    elif d < 6:
+        second = 'They moderately prefer LCDM over the fractal model.'
+    else:
+        second = 'They strongly prefer LCDM over the fractal model.'
+    return f'{first} {second} (Delta chi2 = {d:+.2f}, {res["falsification"]["n_outside_95"]} of {res["n_points"]} points off at 95%.)'
+
+
+def write_summary(path, label, out, figname):
+    names = {'DM_over_rs': 'D_M/r_d', 'DH_over_rs': 'D_H/r_d', 'DV_over_rs': 'D_V/r_d'}
+    L = [f'# Published prediction vs DESI {label}', '',
+         f'Prediction: [doi:{DOI}](https://doi.org/{DOI}), Section 11 and Table 15, frozen in '
+         f'[`prediction/`](../prediction/) (see [`PREDICTION.md`](../PREDICTION.md)). Data: `{out["mean_file"]}`, '
+         f'`{out["cov_file"]}`.', '']
+    if out['mean_file'].startswith('mock_'):
+        L += ['> **This is a mock release** (real DR2 plus simulated new data), made to show what the output '
+              'looks like. It is not real DESI data.', '']
+    L += ['## Result', '']
+    nd = out['new_data_only']
+    if nd.get('available', True):
+        L += [f'**New data only (the test):** {headline(nd)}', '']
+    else:
+        L += [f'**New data only (the test):** not available: {nd["reason"]}.', '']
+    wr = out['whole_release']
+    L += [f'**Whole release (reference, contains DR2):** {headline(wr)}', '']
+    if 'refit' in out:
+        rf = out['refit']
+        L += [f'**Refit to {label} + Pantheon+ (not independent of DR2):** z_char = {rf["zchar_16_50_84"][1]:.2f} '
+              f'[{rf["zchar_16_50_84"][0]:.2f}, {rf["zchar_16_50_84"][2]:.2f}], H_local = {rf["Hlocal_16_50_84"][1]:.1f} km/s/Mpc, '
+              f'Delta chi2_min = {rf["delta_chi2_min"]:+.2f}.', '']
+    L += [f'![Prediction vs data]({figname})', '']
+    rows = nd['rows'] if nd.get('available', True) else wr['rows']
+    which = 'new data only' if nd.get('available', True) else 'whole release'
+    L += [f'## Measurements ({which})', '',
+          '| z | Observable | Measured | Fractal prediction (95%) | LCDM prediction | Pull vs fractal | Consistent |',
+          '|---|---|---|---|---|---|---|']
+    for r in rows:
+        L.append(f"| {r['z']:.3f} | {names.get(r['quantity'], r['quantity'])} | {r['observed']:.3f} ± {r['error']:.3f} | "
+                 f"{r['frac_median']:.3f} [{r['frac_95'][0]:.3f}, {r['frac_95'][1]:.3f}] | {r['lcdm_median']:.3f} | "
+                 f"{r['pull_frac']:+.2f} | {'yes' if r['consistent_frac'] else 'no'} |")
+    res = nd if nd.get('available', True) else wr
+    L += ['', '## Details', '', '```', res['verdict'], '```', '',
+          'Full numbers are in the JSON report next to this file.', '']
+    open(path, 'w').write('\n'.join(L))
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument('mean')
-    ap.add_argument('cov')
-    ap.add_argument('--label', default='new')
-    ap.add_argument('--refit', action='store_true')
+    ap.add_argument('mean', nargs='?', help='BAO mean file of the new release')
+    ap.add_argument('cov', nargs='?', help='BAO covariance file of the new release')
+    ap.add_argument('--cobaya', metavar='FOLDER',
+                    help='download the release from CobayaSampler/bao_data, e.g. --cobaya desi_bao_dr3')
+    ap.add_argument('--demo', action='store_true', help='run on the bundled mock release to see the output')
+    ap.add_argument('--label', default=None)
+    ap.add_argument('--refit', action='store_true', help='also refit both models (needs get_data.py first)')
     ap.add_argument('--data-dir', default=os.path.join(HERE, 'data'))
     a = ap.parse_args()
+
+    if a.demo:
+        a.mean, a.cov = (os.path.join(HERE, 'mock', f'mock_lcdm_{k}.txt') for k in ('mean', 'cov'))
+        a.label = a.label or 'demo'
+    elif a.cobaya:
+        a.mean, a.cov = fetch_cobaya(a.cobaya.strip('/'))
+        a.label = a.label or a.cobaya.strip('/')
+    elif not (a.mean and a.cov):
+        ap.error('give MEAN and COV files, or --cobaya FOLDER, or --demo')
+    a.label = a.label or 'new'
 
     new = Data.from_files(a.mean, a.cov)
     dr2 = Data.from_files(os.path.join(FROZEN, 'desi_dr2_mean.txt'), os.path.join(FROZEN, 'desi_dr2_cov.txt'))
     S = load_samples()
     table = json.load(open(os.path.join(FROZEN, 'table15.json')))['rows']
     print(f'Published prediction (doi:{DOI}) vs DESI {a.label}')
+    if os.path.basename(a.mean).startswith('mock_'):
+        print('NOTE: this is a MOCK release (real DR2 plus simulated new data), not real DESI data.')
 
     sep = separate_new_data(new, dr2, S)
     out = dict(label=a.label, mean_file=os.path.basename(a.mean), cov_file=os.path.basename(a.cov),
@@ -434,7 +534,7 @@ def main():
     if a.refit:
         rf = refit(new, a.data_dir)
         out['refit'] = rf
-        print(f"\nRefit to {a.label} + Pantheon+: z_char = {rf['zchar_16_50_84'][1]:.2f} "
+        print(f"\nRefit to {a.label} + Pantheon+ (not independent of DR2): z_char = {rf['zchar_16_50_84'][1]:.2f} "
               f"[{rf['zchar_16_50_84'][0]:.2f}, {rf['zchar_16_50_84'][2]:.2f}], "
               f"{100 * rf['zchar_fraction_in_0.3_0.7']:.0f}% in [0.3, 0.7]; H_local = {rf['Hlocal_16_50_84'][1]:.1f}; "
               f"Delta chi2_min (fractal - LCDM) = {rf['delta_chi2_min']:+.2f}")
@@ -442,7 +542,17 @@ def main():
     os.makedirs(RESULTS, exist_ok=True)
     json.dump(out, open(os.path.join(RESULTS, f'{a.label}_report.json'), 'w'), indent=1, default=float)
     figure(full_rows, new_rows, S, os.path.join(RESULTS, f'{a.label}_figure.png'), a.label)
-    print(f"\nwrote results/{a.label}_report.json and results/{a.label}_figure.png")
+    write_summary(os.path.join(RESULTS, f'{a.label}_summary.md'), a.label, out, f'{a.label}_figure.png')
+
+    bar = '=' * 78
+    print(f'\n{bar}\nSUMMARY: published prediction vs DESI {a.label}'
+          + (' (MOCK data)' if os.path.basename(a.mean).startswith('mock_') else ''))
+    if out['new_data_only'].get('available', True):
+        print(f"  New data only (the test): {headline(out['new_data_only'])}")
+    else:
+        print(f"  New data only (the test): not available: {out['new_data_only']['reason']}.")
+    print(f"  Whole release (reference): {headline(full_res)}")
+    print(f"  Files: results/{a.label}_summary.md, results/{a.label}_figure.png, results/{a.label}_report.json\n{bar}")
 
 
 if __name__ == '__main__':

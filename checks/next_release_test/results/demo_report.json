@@ -1,5 +1,5 @@
 {
- "label": "mock_lcdm",
+ "label": "demo",
  "mean_file": "mock_lcdm_mean.txt",
  "cov_file": "mock_lcdm_cov.txt",
  "prediction_doi": "10.1002/andp.70321",
