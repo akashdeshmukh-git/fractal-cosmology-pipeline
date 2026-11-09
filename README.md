@@ -93,7 +93,7 @@ All execution results save directly to an automatically generated `/results/` fo
 
 ---
 
-## Independent Checks (DESI DR2)
+## ✅ Independent Checks (DESI DR2)
 
 The `checks/` directory contains independent verifications of the DESI DR2 analysis reported in the paper. They are self-contained and do not import or modify the DR1 pipeline above.
 
